@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+	<WorkGiverDef>
+		<defName>VBE_DoBillsBar</defName>
+		<label>mix drinks at bar</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Cooking</workType>
+		<priorityInType>100</priorityInType>
+		<fixedBillGiverDefs>
+			<li>VBE_Bar</li>   
+		</fixedBillGiverDefs>
+		<verb>mix drinks</verb>
+		<gerund>mixing drinks at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
+
+
+
+
+
+
+
+
+</Defs>

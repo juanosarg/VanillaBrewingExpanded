@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+    <ThingCategoryDef>
+      <defName>VBE_Drinks</defName>
+      <label>drinks</label>
+      <parent>Foods</parent>
+      <resourceReadoutRoot>true</resourceReadoutRoot>
+      <iconPath>Things/Items/Drinks/VBE_CocktailLavish/VBE_CocktailLavish_b</iconPath>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+      <defName>VBE_Musts</defName>
+      <label>musts and syrups</label>
+      <parent>Manufactured</parent>
+      <resourceReadoutRoot>true</resourceReadoutRoot>
+      <iconPath>Things/Items/Musts/VBE_SodaSyrup</iconPath>
+    </ThingCategoryDef>
+
+
+</Defs>

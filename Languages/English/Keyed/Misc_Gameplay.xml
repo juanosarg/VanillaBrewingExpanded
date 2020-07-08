@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<VBE_InsertSyrupDesc>Syrup to Insert</VBE_InsertSyrupDesc>
+	<VBE_StartInsertion>Bring Syrup</VBE_StartInsertion>
+	<VBE_StartInsertionDesc>Bring a syrup to the soda fountain to start processing</VBE_StartInsertionDesc>
+	<VBE_CancelBringingSyrup>Cancel Bringing Syrup</VBE_CancelBringingSyrup>
+	<VBE_CancelBringingSyrupDesc>Cancel bringing syrup to the soda fountain.</VBE_CancelBringingSyrupDesc>
+	<VBE_SyrupFailurePower>The soda has spoiled due to a power failure in the soda fountain</VBE_SyrupFailurePower>
+
+</LanguageData>

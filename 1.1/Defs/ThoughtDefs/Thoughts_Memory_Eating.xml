@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- ======= Drinks based thoughts ========= -->
+
+
+	<ThoughtDef>	
+		<defName>VBE_DrankSoda</defName>
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+		<hediff>VBE_DrankSoda</hediff>
+		<durationDays>0.2</durationDays>
+		<stages>
+			<li>
+				<label>sugar rushed</label>
+				<description>I drank a sweet, fizzy soda, a small but welcomed luxury</description>
+				<baseMoodEffect>4</baseMoodEffect>
+			</li>
+		</stages>	
+		
+	</ThoughtDef>
+
+	
+
+
+
+
+</Defs>

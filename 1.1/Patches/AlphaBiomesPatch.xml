@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Alpha Biomes</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+
+				
+
+				<!-- Adding Fruits to Juice Recipe -->
+
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[@Name = "VBE_MixJuiceBase"]/fixedIngredientFilter/thingDefs</xpath>
+					<value>
+
+						
+						<li>AB_RawCrystalHorn</li>
+						<li>AB_RawFrostLeaf</li>
+						<li>AB_RawTentacularFruit</li>
+						<li>AB_RawIashiphus</li>
+						<li>AB_RawBrownBarrelCactus</li>
+						<li>AB_RawSugarFamewort</li>
+						<li>AB_RawBloodBouquet</li>
+						<li>AB_PinkRawFungus</li>
+						<li>AB_BlueRawFungus</li>
+						<li>AB_PurpleRawFungus</li>
+
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[@Name = "VBE_MixJuiceBase"]/defaultIngredientFilter/thingDefs</xpath>
+					<value>
+
+					
+							<li>AB_RawCrystalHorn</li>
+						<li>AB_RawFrostLeaf</li>
+						<li>AB_RawTentacularFruit</li>
+						<li>AB_RawIashiphus</li>
+						<li>AB_RawBrownBarrelCactus</li>
+						<li>AB_RawSugarFamewort</li>
+						<li>AB_RawBloodBouquet</li>
+						<li>AB_PinkRawFungus</li>
+						<li>AB_BlueRawFungus</li>
+						<li>AB_PurpleRawFungus</li>
+						
+
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName = "VBE_MixJuice"]/ingredients/li/filter/thingDefs</xpath>
+					<value>
+
+						
+							<li>AB_RawCrystalHorn</li>
+						<li>AB_RawFrostLeaf</li>
+						<li>AB_RawTentacularFruit</li>
+						<li>AB_RawIashiphus</li>
+						<li>AB_RawBrownBarrelCactus</li>
+						<li>AB_RawSugarFamewort</li>
+						<li>AB_RawBloodBouquet</li>
+						<li>AB_PinkRawFungus</li>
+						<li>AB_BlueRawFungus</li>
+						<li>AB_PurpleRawFungus</li>
+						
+
+					</value>
+				</li>
+				
+
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+

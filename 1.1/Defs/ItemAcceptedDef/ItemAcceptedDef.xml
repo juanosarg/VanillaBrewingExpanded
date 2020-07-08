@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+
+	<ItemProcessor.ItemAcceptedDef>
+		<defName>IP_SodaFountainFirstItem</defName>
+		<building>VBE_SodaFountain</building>
+		<slot>1</slot>
+		<items>			
+			<li>VBE_SodaSyrup</li>						
+		</items>							
+	</ItemProcessor.ItemAcceptedDef>
+	
+	
+	
+	
+</Defs>

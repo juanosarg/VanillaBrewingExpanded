@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<RecipeDef Name="VBE_MixJuiceBase" Abstract="True">
+		<fixedIngredientFilter>			
+			<thingDefs>
+				<li>RawBerries</li>
+			</thingDefs>
+			<categories>
+				
+			</categories>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>			
+			<thingDefs>
+				<li>RawBerries</li>
+			</thingDefs>
+			<categories>
+				
+			</categories>
+		</defaultIngredientFilter>
+		<workSkill>Cooking</workSkill>
+	</RecipeDef>
+
+
+	<RecipeDef ParentName="VBE_MixJuiceBase">
+		<defName>VBE_MixJuice</defName>
+		<label>mix fruit juice</label>
+		<description>Mix a simple fruit juice made from a few fruits.</description>
+		<jobString>Mixing fruit juice.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Brewing</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<recipeUsers>
+			<li>Brewery</li>	
+			<li>VBE_Bar</li>			
+		</recipeUsers>
+
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawBerries</li>
+					</thingDefs>
+				</filter>
+				<count>1.25</count>
+			</li>
+
+		</ingredients>
+		<products>
+			<VBE_Juice>20</VBE_Juice>
+		</products>
+		<researchPrerequisite>VBE_MixologyResearch</researchPrerequisite>
+	</RecipeDef>
+
+	
+
+
+
+
+
+
+
+</Defs>
