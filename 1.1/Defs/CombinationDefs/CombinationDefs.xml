@@ -69,6 +69,33 @@
 		<singleTimeIfNotQualityIncreasing>2</singleTimeIfNotQualityIncreasing>
 	</ItemProcessor.CombinationDef>
 
+	<ItemProcessor.CombinationDef>
+		<defName>VBE_TequilaMustToTequila</defName>
+		<building>VBE_TequilaBarrel</building>
+		<items>
+			<li>VBE_TequilaMust</li>
+		</items>	
+		<amount>
+			<li>25</li>
+		</amount>
+		<result>VBE_Tequila</result>	
+		<yield>25</yield>
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>8</singleTimeIfNotQualityIncreasing>
+	</ItemProcessor.CombinationDef>
 
-
+	<ItemProcessor.CombinationDef>
+		<defName>VBE_VodkaMashToVodka</defName>
+		<building>VBE_VodkaDrum</building>
+		<items>
+			<li>VBE_VodkaMash</li>
+		</items>	
+		<amount>
+			<li>25</li>
+		</amount>
+		<result>VBE_Vodka</result>	
+		<yield>25</yield>
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>3</singleTimeIfNotQualityIncreasing>
+	</ItemProcessor.CombinationDef>
 </Defs>

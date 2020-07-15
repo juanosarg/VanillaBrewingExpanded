@@ -265,6 +265,171 @@
 	</ThingDef>
 
 
+<ThingDef ParentName="BuildingBase">
+		<defName>VBE_TequilaBarrel</defName>
+		<label>tequila barrel</label>
+		<description>A small still and fermenter combo unit, perfect for storing behind the counter of a warm saloon, but doesn’t fare very well in rain.</description>
+		<thingClass>ItemProcessor.Building_ItemProcessor</thingClass>
+		<graphicData>
+			<texPath>Things/Buildings/VBE_TequilaBarrel</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1.5,1.5)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<thingCategories>
+			<li>BuildingsProduction</li>
+		</thingCategories>
+		<costList>
+			
+			<WoodLog>30</WoodLog>
+			<Steel>10</Steel>
+		</costList>
+		<altitudeLayer>Building</altitudeLayer>
+		<rotatable>true</rotatable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<uiIconScale>0.8</uiIconScale>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<Mass>7</Mass>
+			<WorkToBuild>500</WorkToBuild>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1</Flammability>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<size>(1,1)</size>
+		<designationCategory>Production</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<researchPrerequisites>
+			<li>VBE_MixologyResearch</li>
+		</researchPrerequisites>
+		<comps>
+			
+			<li Class="ItemProcessor.CompProperties_ItemProcessor">
+				<buildingOnGraphic>Things/Buildings/VBE_TequilaBarrel</buildingOnGraphic>
+				<numberOfInputs>1</numberOfInputs>
+				<acceptsNoneAsInput>false</acceptsNoneAsInput>
+				<InsertFirstItemDesc>VBE_InsertTequilaMustDesc</InsertFirstItemDesc>
+				<ignoresIngredientLists>true</ignoresIngredientLists>
+				<showProgressBar>true</showProgressBar>
+				<isSemiAutomaticMachine>true</isSemiAutomaticMachine>
+				<resetSemiautomaticIcon>UI/VBE_ResetTequilaMust</resetSemiautomaticIcon>
+				
+				<chooseIngredientsIcon>UI/VBE_EmptySyrupIcon</chooseIngredientsIcon>
 
+				<bringIngredientsText>VBE_StartInsertionTequilaMust</bringIngredientsText>
+				<bringIngredientsDesc>VBE_StartInsertionTequilaMustDesc</bringIngredientsDesc>
+				<bringIngredientsIcon>UI/VBE_InsertTequilaMust</bringIngredientsIcon >
+
+				<cancelIngredientsText>VBE_CancelBringingTequilaMust</cancelIngredientsText> 
+				<cancelIngredientsDesc>VBE_CancelBringingTequilaMustDesc</cancelIngredientsDesc>
+				<cancelIngredientsIcon>UI/VBE_CancelTequilaMust</cancelIngredientsIcon> 
+				<isRainDependingMachine>true</isRainDependingMachine>
+				
+				<isTemperatureDependingMachine>true</isTemperatureDependingMachine>
+				<minTemp>15</minTemp>
+				<maxTemp>41</maxTemp>
+				
+				<destroyIngredientsAtStartOfProcess>true</destroyIngredientsAtStartOfProcess>
+				
+			</li>
+
+		</comps>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+		<minifiedDef>MinifiedThing</minifiedDef>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>VBE_VodkaDrum</defName>
+		<label>vodka drum</label>
+		<description>A cheap container meant for storing water retrofitted to be air tight for short-term fermenting.</description>
+		<thingClass>ItemProcessor.Building_ItemProcessor</thingClass>
+		<graphicData>
+			<texPath>Things/Buildings/VBE_VodkaFermentingBarrel</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1.5,1.5)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<thingCategories>
+			<li>BuildingsProduction</li>
+		</thingCategories>
+		<costList>
+			
+			<WoodLog>40</WoodLog>
+
+		</costList>
+		<altitudeLayer>Building</altitudeLayer>
+		<rotatable>true</rotatable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<uiIconScale>0.8</uiIconScale>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<Mass>2</Mass>
+			<WorkToBuild>250</WorkToBuild>
+			<MaxHitPoints>30</MaxHitPoints>
+			<Flammability>1</Flammability>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<size>(1,1)</size>
+		<designationCategory>Production</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<researchPrerequisites>
+			<li>VBE_MixologyResearch</li>
+		</researchPrerequisites>
+		<comps>
+			
+			<li Class="ItemProcessor.CompProperties_ItemProcessor">
+				<buildingOnGraphic>Things/Buildings/VBE_VodkaDrum</buildingOnGraphic>
+				<numberOfInputs>1</numberOfInputs>
+				<acceptsNoneAsInput>false</acceptsNoneAsInput>
+				<InsertFirstItemDesc>VBE_InsertVodkaMustDesc</InsertFirstItemDesc>
+				<ignoresIngredientLists>true</ignoresIngredientLists>
+				<showProgressBar>true</showProgressBar>
+				<isSemiAutomaticMachine>true</isSemiAutomaticMachine>
+				<resetSemiautomaticIcon>UI/VBE_ResetVodkaMash</resetSemiautomaticIcon>
+				
+				<chooseIngredientsIcon>UI/VBE_EmptySyrupIcon</chooseIngredientsIcon>
+
+				<bringIngredientsText>VBE_StartInsertionVodkaMust</bringIngredientsText>
+				<bringIngredientsDesc>VBE_StartInsertionVodkaMustDesc</bringIngredientsDesc>
+				<bringIngredientsIcon>UI/VBE_InsertVodkaMash</bringIngredientsIcon >
+
+				<cancelIngredientsText>VBE_CancelBringingVodkaMust</cancelIngredientsText> 
+				<cancelIngredientsDesc>VBE_CancelBringingVodkaMustDesc</cancelIngredientsDesc>
+				<cancelIngredientsIcon>UI/VBE_CancelVodkaMash</cancelIngredientsIcon> 
+				
+				<isTemperatureDependingMachine>true</isTemperatureDependingMachine>
+				<minTemp>3</minTemp>
+				<maxTemp>20</maxTemp>
+				
+				<destroyIngredientsAtStartOfProcess>true</destroyIngredientsAtStartOfProcess>
+				
+			</li>
+
+		</comps>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+		<minifiedDef>MinifiedThing</minifiedDef>
+	</ThingDef>
 
 </Defs>

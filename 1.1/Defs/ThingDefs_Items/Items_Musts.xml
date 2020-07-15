@@ -129,7 +129,7 @@
 	<ThingDef ParentName="ResourceBase">
 		<defName>VBE_TequilaMust</defName>
 		<label>tequila must</label>
-		<description>A thin mixture of juiced agave sap and insect meat starter, ready to be cut and fermented in a barrel.</description>
+		<description>A thin mixture of juiced agave sap or prickly cactus pear and insect meat starter, ready to be cut and fermented in a barrel.</description>
 		<graphicData>
 			<texPath>Things/Items/Musts/VBE_TequilaMust</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -157,6 +157,66 @@
 		</comps>
 	</ThingDef>
 
-
+	<ThingDef ParentName="ResourceBase">
+		<defName>VBE_VodkaMash</defName>
+		<label>tequila mash</label>
+		<description>A thick, starchy mash of raw potatoes and a starter, ready to be fermented.</description>
+		<graphicData>
+			<texPath>Things/Items/Musts/VBE_VodkaMust</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<rotatable>false</rotatable>
+		<stackLimit>25</stackLimit>
+		<thingCategories>
+			<li>VBE_Musts</li>
+		</thingCategories>
+		<statBases>
+			<DeteriorationRate>1.0</DeteriorationRate>
+			<MarketValue>2.5</MarketValue>
+			<Mass>0.8</Mass>
+			<Flammability>0.2</Flammability>
+			<MaxHitPoints>60</MaxHitPoints>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>5</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+			<li Class="CompProperties_Ingredients" />
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="ResourceBase">
+		<defName>VBE_GinMush</defName>
+		<label>gin mush</label>
+		<description>A clear but cloudy mixture of juiced berries and miscellaneous grain, ready to be fermented.</description>
+		<graphicData>
+			<texPath>Things/Items/Musts/VBE_GinMust</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<rotatable>false</rotatable>
+		<stackLimit>25</stackLimit>
+		<thingCategories>
+			<li>VBE_Musts</li>
+		</thingCategories>
+		<statBases>
+			<DeteriorationRate>1.0</DeteriorationRate>
+			<MarketValue>2.5</MarketValue>
+			<Mass>0.8</Mass>
+			<Flammability>0.2</Flammability>
+			<MaxHitPoints>60</MaxHitPoints>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>5</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+			<li Class="CompProperties_Ingredients" />
+		</comps>
+	</ThingDef>
 
 </Defs>

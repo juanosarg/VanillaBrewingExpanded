@@ -2,12 +2,11 @@
 <Defs>
 
   <ThingDef ParentName="DrugBase">
-    <defName>VBE_Ambrandy</defName>
-    <label>ambrandy</label>
-    <description>Also known as “liquid sunshine” ambrandy is a double-fermented, distilled liquor of the highest calibre. Glitterworld aristocrats are known to send entire private militias to assist in shipping singular bottles. Inexplicably, this liquor is galaxy renowned to never cause the traditional negative effects of inebriation. The bottle itself is a beauty to behold, when hit with even the tiniest amount of light golden flecks are seen dancing in the liquid within, like sparks rising from a campfire.</description>
-   
+    <defName>VBE_EnergyDrink</defName>
+    <label>energy drink</label>
+    <description>A sour and fizzy drink finished off with a hint of bitterness. The combination of sugar and caffeine means a burst of energy upfront, but with a crash later. Notable aftertaste of radiation.</description>  
     <graphicData>
-      <texPath>Things/Items/Drinks/VBE_Ambrandy</texPath>
+      <texPath>Things/Items/Drinks/VBE_EnergyDrink</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
     </graphicData>
     <equippedAngleOffset>-150</equippedAngleOffset>
@@ -83,9 +82,9 @@
     </tools>
   </ThingDef>
 
-  
-
+   
  
+  
  
 
 </Defs>

@@ -30,5 +30,21 @@
 		</items>							
 	</ItemProcessor.ItemAcceptedDef>
 	
+	<ItemProcessor.ItemAcceptedDef>
+		<defName>IP_TequilaBarrelFirstItem</defName>
+		<building>VBE_TequilaBarrel</building>
+		<slot>1</slot>
+		<items>			
+			<li>VBE_TequilaMust</li>						
+		</items>							
+	</ItemProcessor.ItemAcceptedDef>
 	
+	<ItemProcessor.ItemAcceptedDef>
+		<defName>IP_VodkaDrumFirstItem</defName>
+		<building>VBE_VodkaDrum</building>
+		<slot>1</slot>
+		<items>			
+			<li>VBE_VodkaMash</li>						
+		</items>							
+	</ItemProcessor.ItemAcceptedDef>
 </Defs>

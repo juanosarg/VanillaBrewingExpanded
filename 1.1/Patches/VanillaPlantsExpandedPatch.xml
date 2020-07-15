@@ -49,6 +49,71 @@
 				</li>
 				
 
+				<!-- Adding Prickly Pear to Tequila Recipe -->
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName = "VBE_MakeTequilaMust"]/ingredients/li/filter/thingDefs</xpath>
+					<value>
+
+						
+							<li>VCE_RawPricklyPear</li>
+						
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName = "VBE_MakeTequilaMust"]/fixedIngredientFilter/thingDefs</xpath>
+					<value>
+
+						
+							<li>VCE_RawPricklyPear</li>
+						
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName = "VBE_MakeTequilaMust"]/defaultIngredientFilter/thingDefs</xpath>
+					<value>
+
+						
+							<li>VCE_RawPricklyPear</li>
+						
+					</value>
+				</li>
+				
+				<!-- Adding Bearberries to Gin Recipe -->
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName = "VBE_MakeGinMush"]/ingredients/li/filter/thingDefs</xpath>
+					<value>
+
+						
+							<li>VCE_Bearberry</li>
+						
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName = "VBE_MakeGinMush"]/fixedIngredientFilter/thingDefs</xpath>
+					<value>
+
+						
+							<li>VCE_Bearberry</li>
+						
+					</value>
+				</li>
+				
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName = "VBE_MakeGinMush"]/defaultIngredientFilter/thingDefs</xpath>
+					<value>
+
+						
+							<li>VCE_Bearberry</li>
+						
+					</value>
+				</li>
+				
+
 			</operations>
 		</match>
 	</Operation>
