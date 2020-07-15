@@ -18,9 +18,56 @@
 		<singleTimeIfNotQualityIncreasing>2</singleTimeIfNotQualityIncreasing>
 	</ItemProcessor.CombinationDef>
 	
+	<ItemProcessor.CombinationDef>
+		<defName>VBE_AmbrandyMustToAmbrandy</defName>
+		<building>VBE_AmbrandyDistillery</building>
+		<items>
+			<li>VBE_AmbrandyMust</li>
+		</items>	
+		<amount>
+			<li>1</li>
+		</amount>
+		<result>VBE_Ambrandy</result>	
+		<yield>3</yield>
+		<useQualityIncreasing>true</useQualityIncreasing>
+		<awfulQualityAgeDaysThreshold>10</awfulQualityAgeDaysThreshold>
+		<poorQualityAgeDaysThreshold>15</poorQualityAgeDaysThreshold>
+		<normalQualityAgeDaysThreshold>25</normalQualityAgeDaysThreshold>
+		<goodQualityAgeDaysThreshold>35</goodQualityAgeDaysThreshold>
+		<excellentQualityAgeDaysThreshold>40</excellentQualityAgeDaysThreshold>
+		<masterworkQualityAgeDaysThreshold>45</masterworkQualityAgeDaysThreshold>
+		<legendaryQualityAgeDaysThreshold>75</legendaryQualityAgeDaysThreshold>
+	</ItemProcessor.CombinationDef>
+
+	<ItemProcessor.CombinationDef>
+		<defName>VBE_WhiskeyMashToWhiskey</defName>
+		<building>VBE_WhiskeyCask</building>
+		<items>
+			<li>VBE_WhiskeyMash</li>
+		</items>	
+		<amount>
+			<li>25</li>
+		</amount>
+		<result>VBE_Whiskey</result>	
+		<yield>25</yield>
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>2</singleTimeIfNotQualityIncreasing>
+	</ItemProcessor.CombinationDef>
 	
-
-
+	<ItemProcessor.CombinationDef>
+		<defName>VBE_WhiskeyToDoubleWhiskey</defName>
+		<building>VBE_WhiskeyCask</building>
+		<items>
+			<li>VBE_Whiskey</li>
+		</items>	
+		<amount>
+			<li>25</li>
+		</amount>
+		<result>VBE_DoubleWhiskey</result>	
+		<yield>25</yield>
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>2</singleTimeIfNotQualityIncreasing>
+	</ItemProcessor.CombinationDef>
 
 
 

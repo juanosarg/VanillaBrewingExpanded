@@ -11,7 +11,24 @@
 		</items>							
 	</ItemProcessor.ItemAcceptedDef>
 	
+	<ItemProcessor.ItemAcceptedDef>
+		<defName>IP_AmbrandyDistilleryFirstItem</defName>
+		<building>VBE_AmbrandyDistillery</building>
+		<slot>1</slot>
+		<items>			
+			<li>VBE_AmbrandyMust</li>						
+		</items>							
+	</ItemProcessor.ItemAcceptedDef>
 	
+	<ItemProcessor.ItemAcceptedDef>
+		<defName>IP_WhiskeyCaskFirstItem</defName>
+		<building>VBE_WhiskeyCask</building>
+		<slot>1</slot>
+		<items>			
+			<li>VBE_WhiskeyMash</li>	
+			<li>VBE_Whiskey</li>			
+		</items>							
+	</ItemProcessor.ItemAcceptedDef>
 	
 	
 </Defs>

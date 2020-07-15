@@ -73,22 +73,196 @@
 
 				<cancelIngredientsText>VBE_CancelBringingSyrup</cancelIngredientsText> 
 				<cancelIngredientsDesc>VBE_CancelBringingSyrupDesc</cancelIngredientsDesc>
-				<cancelIngredientsIcon>UI/VBE_CancelSyrupp</cancelIngredientsIcon> 
+				<cancelIngredientsIcon>UI/VBE_CancelSyrup</cancelIngredientsIcon> 
 
 				<noPowerDestroysProgress>true</noPowerDestroysProgress>
 				<rareTicksToDestroy>20</rareTicksToDestroy>
 				<noPowerDestroysMessage>VBE_SyrupFailurePower</noPowerDestroysMessage>
 
 				<destroyIngredientsAtStartOfProcess>true</destroyIngredientsAtStartOfProcess>
-
+				<showProgressBar>true</showProgressBar>
 			</li>
 
 		</comps>
 		<minifiedDef>MinifiedThing</minifiedDef>
 	</ThingDef>
-
 	
+	<ThingDef ParentName="BuildingBase">
+		<defName>VBE_AmbrandyDistillery</defName>
+		<label>ambrandy distillery</label>
+		<description>A gilded distillery of very delicate craftsmanship meant for aging ambrosia must into a drinkable form. Requires a small amount of power to keep perfectly environmentally controlled.</description>
+		<thingClass>ItemProcessor.Building_ItemProcessor</thingClass>
+		<graphicData>
+			<texPath>Things/Buildings/VBE_AmbrandyStill</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2.5,2.5)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<thingCategories>
+			<li>BuildingsProduction</li>
+		</thingCategories>
+		<costList>
+			<Steel>100</Steel>
+			<Gold>40</Gold>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<altitudeLayer>Building</altitudeLayer>
+		<rotatable>true</rotatable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<uiIconScale>0.8</uiIconScale>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<Mass>45</Mass>
+			<WorkToBuild>2500</WorkToBuild>
+			<MaxHitPoints>400</MaxHitPoints>
+			<Flammability>0.75</Flammability>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<size>(2,2)</size>
+		<designationCategory>Production</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<researchPrerequisites>
+			<li>VBE_MixologyResearch</li>
+		</researchPrerequisites>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>false</shortCircuitInRain>
+				<basePowerConsumption>150</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="ItemProcessor.CompProperties_ItemProcessor">
+				<buildingOnGraphic>Things/Buildings/VBE_AmbrandyStill</buildingOnGraphic>
+				<numberOfInputs>1</numberOfInputs>
+				<acceptsNoneAsInput>false</acceptsNoneAsInput>
+				<InsertFirstItemDesc>VBE_InsertAmbMustDesc</InsertFirstItemDesc>
+				<ignoresIngredientLists>true</ignoresIngredientLists>
+				<showProgressBar>true</showProgressBar>
+				<isSemiAutomaticMachine>true</isSemiAutomaticMachine>
+				<resetSemiautomaticIcon>UI/VBE_ResetAmbMust</resetSemiautomaticIcon>
+				<qualitySelector>true</qualitySelector>
+				<chooseIngredientsIcon>UI/VBE_EmptySyrupIcon</chooseIngredientsIcon>
 
+				<bringIngredientsText>VBE_StartInsertionAmbMust</bringIngredientsText>
+				<bringIngredientsDesc>VBE_StartInsertionAmbMustDesc</bringIngredientsDesc>
+				<bringIngredientsIcon>UI/VBE_InsertAmbMust</bringIngredientsIcon >
+
+				<cancelIngredientsText>VBE_CancelBringingAmbMust</cancelIngredientsText> 
+				<cancelIngredientsDesc>VBE_CancelBringingAmbMustDesc</cancelIngredientsDesc>
+				<cancelIngredientsIcon>UI/VBE_CancelAmbMust</cancelIngredientsIcon> 
+				
+				<removeProductText>VBE_RemoveAmbrandy</removeProductText>
+				<removeProductDesc>VBE_RemoveAmbrandyDesc</removeProductDesc>
+				<removeProductIcon>UI/VBE_ExtractAmbrandy</removeProductIcon>
+
+				<noPowerDestroysProgress>true</noPowerDestroysProgress>
+				<rareTicksToDestroy>20</rareTicksToDestroy>
+				<noPowerDestroysMessage>VBE_AmbrandyFailurePower</noPowerDestroysMessage>
+
+				<destroyIngredientsAtStartOfProcess>true</destroyIngredientsAtStartOfProcess>
+				
+			</li>
+
+		</comps>
+		<constructionSkillPrerequisite>7</constructionSkillPrerequisite>
+		<minifiedDef>MinifiedThing</minifiedDef>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>VBE_WhiskeyCask</defName>
+		<label>whiskey cask</label>
+		<description>A huge barrel meant for aging a high volume of whiskey at once. Natural woody flavors are imparted into the mixture as the barrel itself absorbs a portion of the liquid during the fermenting process. Any sunlight hitting the barrel may slow down the fermenting process, or even ruin the whole batch.</description>
+		<thingClass>ItemProcessor.Building_ItemProcessor</thingClass>
+		<graphicData>
+			<texPath>Things/Buildings/VBE_WhiskyBarrel</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2.5,2.5)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<thingCategories>
+			<li>BuildingsProduction</li>
+		</thingCategories>
+		<costList>
+			
+			<WoodLog>150</WoodLog>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<altitudeLayer>Building</altitudeLayer>
+		<rotatable>true</rotatable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<uiIconScale>0.8</uiIconScale>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<Mass>150</Mass>
+			<WorkToBuild>1000</WorkToBuild>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Flammability>1</Flammability>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<size>(2,2)</size>
+		<designationCategory>Production</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<researchPrerequisites>
+			<li>VBE_MixologyResearch</li>
+		</researchPrerequisites>
+		<comps>
+			
+			<li Class="ItemProcessor.CompProperties_ItemProcessor">
+				<buildingOnGraphic>Things/Buildings/VBE_WhiskyBarrel</buildingOnGraphic>
+				<numberOfInputs>1</numberOfInputs>
+				<acceptsNoneAsInput>false</acceptsNoneAsInput>
+				<InsertFirstItemDesc>VBE_InsertMustOrWhiskeyDesc</InsertFirstItemDesc>
+				<ignoresIngredientLists>true</ignoresIngredientLists>
+				<showProgressBar>true</showProgressBar>
+				<isSemiAutomaticMachine>true</isSemiAutomaticMachine>
+				<resetSemiautomaticIcon>UI/VBE_ResetMustOrWhiskey</resetSemiautomaticIcon>
+				
+				<chooseIngredientsIcon>UI/VBE_EmptySyrupIcon</chooseIngredientsIcon>
+
+				<bringIngredientsText>VBE_StartInsertionMustOrWhiskey</bringIngredientsText>
+				<bringIngredientsDesc>VBE_StartInsertionMustOrWhiskeyDesc</bringIngredientsDesc>
+				<bringIngredientsIcon>UI/VBE_InsertMustOrWhiskey</bringIngredientsIcon >
+
+				<cancelIngredientsText>VBE_CancelBringingMustOrWhiskey</cancelIngredientsText> 
+				<cancelIngredientsDesc>VBE_CancelBringingMustOrWhiskeyDesc</cancelIngredientsDesc>
+				<cancelIngredientsIcon>UI/VBE_CancelMustOrWhiskey</cancelIngredientsIcon> 
+				<isLightDependingMachine>true</isLightDependingMachine>
+				<minLight>-1</minLight>
+				<maxLight>0.5</maxLight>
+				<isTemperatureDependingMachine>true</isTemperatureDependingMachine>
+				<minTemp>7</minTemp>
+				<maxTemp>25</maxTemp>
+				
+				<destroyIngredientsAtStartOfProcess>true</destroyIngredientsAtStartOfProcess>
+				
+			</li>
+
+		</comps>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+		<minifiedDef>MinifiedThing</minifiedDef>
+	</ThingDef>
 
 
 

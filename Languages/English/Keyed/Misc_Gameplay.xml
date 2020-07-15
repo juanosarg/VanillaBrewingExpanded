@@ -7,5 +7,26 @@
 	<VBE_CancelBringingSyrup>Cancel Bringing Syrup</VBE_CancelBringingSyrup>
 	<VBE_CancelBringingSyrupDesc>Cancel bringing syrup to the soda fountain.</VBE_CancelBringingSyrupDesc>
 	<VBE_SyrupFailurePower>The soda has spoiled due to a power failure in the soda fountain</VBE_SyrupFailurePower>
+	
+	<VBE_InsertAmbMustDesc>Must to Insert</VBE_InsertAmbMustDesc>
+	<VBE_StartInsertionAmbMust>Bring Must</VBE_StartInsertionAmbMust>
+	<VBE_StartInsertionAmbMustDesc>Bring ambrandy must to the ambrandy distillery to start fermentation</VBE_StartInsertionAmbMustDesc>
+	<VBE_CancelBringingAmbMust>Cancel Bringing Must</VBE_CancelBringingAmbMust>
+	<VBE_CancelBringingAmbMustDesc>Cancel bringing ambrandy must to the ambrandy distillery.</VBE_CancelBringingAmbMustDesc>
+	<VBE_AmbrandyFailurePower>The ambrandy has spoiled due to a power failure in the ambrandy distillery</VBE_AmbrandyFailurePower>
+	<VBE_RemoveAmbrandy>Remove Ambrandy ({0})</VBE_RemoveAmbrandy>
+	<VBE_RemoveAmbrandyDesc>Remove ambrandy from the ambrandy distillery. The ambrandy will be acquired at the present quality level ({0})</VBE_RemoveAmbrandyDesc>
+	
+	<VBE_InsertMustOrWhiskeyDesc>Mash or Whiskey to Insert</VBE_InsertMustOrWhiskeyDesc>
+	<VBE_StartInsertionMustOrWhiskey>Bring Mash or Whiskey</VBE_StartInsertionMustOrWhiskey>
+	<VBE_StartInsertionMustOrWhiskeyDesc>Bring mash to the whiskey cask to start fermentation or whiskey to start double-aging process</VBE_StartInsertionMustOrWhiskeyDesc>
+	<VBE_CancelBringingMustOrWhiskey>Cancel Bringing Mash or Whiskey</VBE_CancelBringingMustOrWhiskey>
+	<VBE_CancelBringingAmbMustDesc>Cancel bringing mash or whiskey must to the whiskey cask.</VBE_CancelBringingAmbMustDesc>
+	
+	
+	<VBE_MushRipening>Mush ripening</VBE_MushRipening>
+	<VBE_MushCurrentlyFrozen>This mush is frozen and will not rippen into ambrandy must</VBE_MushCurrentlyFrozen>
+	<VBE_MushCurrentlyRefrigerated>This mush is refrigerated and will not rippen into ambrandy must as fast as it could (rippens in {0})</VBE_MushCurrentlyRefrigerated>
+	<VBE_MushDryingCorrectly>This mush is rippening into ambrandy must correctly (rippens in {0})</VBE_MushDryingCorrectly>
 
 </LanguageData>
