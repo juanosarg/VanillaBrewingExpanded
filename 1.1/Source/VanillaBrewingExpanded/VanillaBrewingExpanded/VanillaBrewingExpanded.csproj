@@ -294,17 +294,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Comps\CompProperties_StackByQuality.cs" />
-    <Compile Include="Comps\CompProperties_StackByIngredients.cs" />
-    <Compile Include="Comps\CompProperties_TempTransforms.cs" />
-    <Compile Include="Comps\CompStackByQuality.cs" />
-    <Compile Include="Comps\CompStackByIngredients.cs" />
-    <Compile Include="Comps\CompTempTransforms.cs" />
-    <Compile Include="Hediffs\HediffCompProperties_WhileHavingThoughts.cs" />
-    <Compile Include="Hediffs\HediffComp_WhileHavingThoughts.cs" />
+    <Compile Include="Comps\CompMushToMust.cs" />
+    <Compile Include="Comps\CompProperties_MushToMust.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Thoughts\Thought_Hediff.cs" />
-    <Compile Include="Extensions\Thought_Hediff_Extension.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
