@@ -6,13 +6,13 @@ using RimWorld;
 
 namespace VanillaBrewingExpanded
 {
-    public class CompMushToMust : ThingComp
+    public class CompMaturingAlcohol : ThingComp
     {
-        public CompProperties_MushToMust PropsRot
+        public CompProperties_MaturingAlcohol PropsRot
         {
             get
             {
-                return (CompProperties_MushToMust)this.props;
+                return (CompProperties_MaturingAlcohol)this.props;
             }
         }
 
@@ -118,7 +118,7 @@ namespace VanillaBrewingExpanded
                 if (this.parent.Map != null)
                 {
                     int stackCount = this.parent.stackCount;
-                    ThingDef newThingDef = ThingDef.Named("VBE_AmbrandyMust");
+                    ThingDef newThingDef = ThingDef.Named(PropsRot.thingToTransformTo);
                     Thing newThing = GenSpawn.Spawn(newThingDef, this.parent.Position, this.parent.Map, WipeMode.Vanish);
                     newThing.stackCount = stackCount;
                     this.parent.Destroy(DestroyMode.Vanish);
@@ -153,13 +153,13 @@ namespace VanillaBrewingExpanded
         public override void PreAbsorbStack(Thing otherStack, int count)
         {
             float t = (float)count / (float)(this.parent.stackCount + count);
-            float rotProgress = ((ThingWithComps)otherStack).GetComp<CompMushToMust>().RotProgress;
+            float rotProgress = ((ThingWithComps)otherStack).GetComp<CompMaturingAlcohol>().RotProgress;
             this.RotProgress = Mathf.Lerp(this.RotProgress, rotProgress, t);
         }
 
         public override void PostSplitOff(Thing piece)
         {
-            ((ThingWithComps)piece).GetComp<CompMushToMust>().RotProgress = this.RotProgress;
+            ((ThingWithComps)piece).GetComp<CompMaturingAlcohol>().RotProgress = this.RotProgress;
         }
 
         public override void PostIngested(Pawn ingester)
@@ -180,7 +180,7 @@ namespace VanillaBrewingExpanded
             switch (this.Stage)
             {
                 case RotStage.Fresh:
-                    stringBuilder.Append("VBE_MushRipening".Translate() + ".");
+                    stringBuilder.Append(PropsRot.maturingString.Translate() + ".");
                     break;
 
 
@@ -192,15 +192,15 @@ namespace VanillaBrewingExpanded
                 stringBuilder.AppendLine();
                 if (num < 0.001f)
                 {
-                    stringBuilder.Append("VBE_MushCurrentlyFrozen".Translate() + ".");
+                    stringBuilder.Append(PropsRot.maturingStopped.Translate() + ".");
                 }
                 else if (num < 0.999f)
                 {
-                    stringBuilder.Append("VBE_MushCurrentlyRefrigerated".Translate(ticksUntilRotAtCurrentTemp.ToStringTicksToPeriod(true, false, true, true)) + ".");
+                    stringBuilder.Append(PropsRot.maturingSlowly.Translate(ticksUntilRotAtCurrentTemp.ToStringTicksToPeriod(true, false, true, true)) + ".");
                 }
                 else
                 {
-                    stringBuilder.Append("VBE_MushDryingCorrectly".Translate(ticksUntilRotAtCurrentTemp.ToStringTicksToPeriod(true, false, true, true)) + ".");
+                    stringBuilder.Append(PropsRot.maturingProperly.Translate(ticksUntilRotAtCurrentTemp.ToStringTicksToPeriod(true, false, true, true)) + ".");
                 }
             }
             return stringBuilder.ToString();

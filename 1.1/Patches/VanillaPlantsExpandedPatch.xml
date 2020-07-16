@@ -11,7 +11,7 @@
 			<operations>
 
 
-				
+
 
 				<!-- Adding Fruits to Juice Recipe -->
 
@@ -20,9 +20,9 @@
 					<xpath>/Defs/RecipeDef[@Name = "VBE_MixJuiceBase"]/fixedIngredientFilter/categories</xpath>
 					<value>
 
-						
+
 						<li>VCE_Fruit</li>
-						
+
 
 					</value>
 				</li>
@@ -30,13 +30,13 @@
 					<xpath>/Defs/RecipeDef[@Name = "VBE_MixJuiceBase"]/defaultIngredientFilter/categories</xpath>
 					<value>
 
-					
-							<li>VCE_Fruit</li>
-						
+
+						<li>VCE_Fruit</li>
+
 
 					</value>
 				</li>
-				
+
 				<li Class="PatchOperationAdd"> 
 					<xpath>/Defs/RecipeDef[defName = "VBE_MixJuice"]/ingredients/li/filter</xpath>
 					<value>
@@ -47,72 +47,273 @@
 
 					</value>
 				</li>
-				
+
 
 				<!-- Adding Prickly Pear to Tequila Recipe -->
-				
+
 				<li Class="PatchOperationAdd"> 
 					<xpath>/Defs/RecipeDef[defName = "VBE_MakeTequilaMust"]/ingredients/li/filter/thingDefs</xpath>
 					<value>
 
-						
-							<li>VCE_RawPricklyPear</li>
-						
+
+						<li>VCE_RawPricklyPear</li>
+
 					</value>
 				</li>
-				
+
 				<li Class="PatchOperationAdd"> 
 					<xpath>/Defs/RecipeDef[defName = "VBE_MakeTequilaMust"]/fixedIngredientFilter/thingDefs</xpath>
 					<value>
 
-						
-							<li>VCE_RawPricklyPear</li>
-						
+
+						<li>VCE_RawPricklyPear</li>
+
 					</value>
 				</li>
-				
+
 				<li Class="PatchOperationAdd"> 
 					<xpath>/Defs/RecipeDef[defName = "VBE_MakeTequilaMust"]/defaultIngredientFilter/thingDefs</xpath>
 					<value>
 
-						
-							<li>VCE_RawPricklyPear</li>
-						
+
+						<li>VCE_RawPricklyPear</li>
+
 					</value>
 				</li>
-				
+
 				<!-- Adding Bearberries to Gin Recipe -->
-				
+
 				<li Class="PatchOperationAdd"> 
 					<xpath>/Defs/RecipeDef[defName = "VBE_MakeGinMush"]/ingredients/li/filter/thingDefs</xpath>
 					<value>
 
-						
-							<li>VCE_Bearberry</li>
-						
+
+						<li>VCE_Bearberry</li>
+
 					</value>
 				</li>
-				
+
 				<li Class="PatchOperationAdd"> 
 					<xpath>/Defs/RecipeDef[defName = "VBE_MakeGinMush"]/fixedIngredientFilter/thingDefs</xpath>
 					<value>
 
-						
-							<li>VCE_Bearberry</li>
-						
+
+						<li>VCE_Bearberry</li>
+
 					</value>
 				</li>
-				
+
 				<li Class="PatchOperationAdd"> 
 					<xpath>/Defs/RecipeDef[defName = "VBE_MakeGinMush"]/defaultIngredientFilter/thingDefs</xpath>
 					<value>
 
-						
-							<li>VCE_Bearberry</li>
-						
+
+						<li>VCE_Bearberry</li>
+
 					</value>
 				</li>
-				
+
+				<!-- Adding cider, since it can only be made with Fruits -->
+
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs</xpath>
+					<value>
+
+
+						<RecipeDef>
+							<defName>VBE_MakeUnfermentedCider</defName>
+							<label>make unfermented cider</label>
+							<description>Make unfermented cider with a starter in an air-tight bottle. If left alone to develop the proper bacteria the end result will be a weak alcoholic beverage.</description>
+							<jobString>Making unfermented cider.</jobString>
+							<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+							<workSkill>Cooking</workSkill>
+							<effectWorking>Cook</effectWorking>
+							<workAmount>1000</workAmount>
+							<soundWorking>Recipe_Brewing</soundWorking>
+							<allowMixingIngredients>true</allowMixingIngredients>
+							<recipeUsers>
+								<li>Brewery</li>	
+								<li>VBE_Bar</li>			
+							</recipeUsers>
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>VCE_RawApple</li>
+											<li>VCE_RawPeach</li>
+											<li>VCE_RawCherry</li>
+											<li>VCE_RawPlum</li>
+											<li>VCE_RawPear</li>
+											<li>VCE_RawBanana</li>
+											<li>VCE_RawOrange</li>
+
+										</thingDefs>
+									</filter>
+									<count>25</count>
+								</li>
+
+							</ingredients>
+							<fixedIngredientFilter>			
+								<thingDefs>
+									<li>VCE_RawApple</li>
+									<li>VCE_RawPeach</li>
+									<li>VCE_RawCherry</li>
+									<li>VCE_RawPlum</li>
+									<li>VCE_RawPear</li>
+									<li>VCE_RawBanana</li>
+									<li>VCE_RawOrange</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<defaultIngredientFilter>			
+								<thingDefs>
+									<li>VCE_RawApple</li>
+									<li>VCE_RawPeach</li>
+									<li>VCE_RawCherry</li>
+									<li>VCE_RawPlum</li>
+									<li>VCE_RawPear</li>
+									<li>VCE_RawBanana</li>
+									<li>VCE_RawOrange</li>
+								</thingDefs>
+							</defaultIngredientFilter>
+							<products>
+								<VBE_UnfermentedCider>5</VBE_UnfermentedCider>
+							</products>
+
+							<researchPrerequisite>VBE_MixologyResearch</researchPrerequisite>
+						</RecipeDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs</xpath>
+					<value>
+						<ThingDef ParentName="ResourceBase">
+							<defName>VBE_UnfermentedCider</defName>
+							<label>unfermented cider</label>
+							<description>Unfermented cider with a starter in an air-tight bottle. If left alone to develop the proper bacteria the end result will be a weak alcoholic beverage.</description>
+							<graphicData>
+								<texPath>Things/Items/Drinks/VBE_RawCider</texPath>
+								<graphicClass>Graphic_StackCount</graphicClass>
+							</graphicData>
+							<healthAffectsPrice>false</healthAffectsPrice>
+							<rotatable>false</rotatable>
+							<stackLimit>25</stackLimit>
+							<thingCategories>
+								<li>VBE_Musts</li>
+							</thingCategories>
+							<statBases>
+								<DeteriorationRate>1.0</DeteriorationRate>
+								<MarketValue>2.5</MarketValue>
+								<Mass>0.8</Mass>
+								<Flammability>0.2</Flammability>
+								<MaxHitPoints>60</MaxHitPoints>
+							</statBases>
+
+							<comps>
+								<li Class="VanillaBrewingExpanded.CompProperties_MaturingAlcohol">
+									<daysToRotStart>5</daysToRotStart>
+									<rotDestroys>true</rotDestroys>
+									<maturingString>VBE_CiderMaturing</maturingString>
+									<maturingProperly>VBE_CiderMaturingCorrectly</maturingProperly>
+									<maturingSlowly>VBE_CiderCurrentlyRefrigerated</maturingSlowly>
+									<maturingStopped>VBE_CiderCurrentlyFrozen</maturingStopped>
+									<thingToTransformTo>VBE_Cider</thingToTransformTo>
+								</li>
+								<li Class="CompProperties_Ingredients" />
+							</comps>
+						</ThingDef>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs</xpath>
+					<value>
+						<ThingDef ParentName="DrugBase">
+							<defName>VBE_Cider</defName>
+							<label>cider</label>
+							<description>A barely alcoholic beverage meant to be refreshing and fruity. Try as anybody might it is pointless trying to get inebriated by cider alone, thus it is popular among those with prior addiction or who are generally averse to booze.</description>  
+							<graphicData>
+								<texPath>Things/Items/Drinks/VBE_Cider</texPath>
+								<graphicClass>Graphic_StackCount</graphicClass>
+							</graphicData>
+							<thingCategories>
+								<li>VBE_DrinksAlcoholic</li>
+							</thingCategories>
+							<equippedAngleOffset>-150</equippedAngleOffset>
+							<rotatable>false</rotatable>
+							<stackLimit>25</stackLimit>
+							<statBases>
+								<DeteriorationRate>0.5</DeteriorationRate>
+								<MarketValue>12</MarketValue>
+								<Mass>0.3</Mass>
+								<Flammability>0.5</Flammability>
+								<Nutrition>0.08</Nutrition>
+							</statBases>
+							<ingestible>
+								<foodType>Fluid, Processed, Liquor</foodType>
+								<joyKind>Chemical</joyKind>
+								<joy>0.17</joy>
+								<nurseable>true</nurseable>
+								<drugCategory>Social</drugCategory>
+								<ingestSound>Ingest_Beer</ingestSound>
+								<ingestHoldOffsetStanding>
+									<northDefault>
+										<offset>(0.18,0,0)</offset>
+									</northDefault>
+								</ingestHoldOffsetStanding>
+								<ingestCommandString>Drink {0}</ingestCommandString>
+								<ingestReportString>Drinking {0}.</ingestReportString>
+								<chairSearchRadius>25</chairSearchRadius>
+								<outcomeDoers>
+									<li Class="IngestionOutcomeDoer_GiveHediff">
+										<hediffDef>AlcoholHigh</hediffDef>
+										<severity>0.15</severity>
+										<toleranceChemical>Alcohol</toleranceChemical>
+									</li>
+									<li Class="IngestionOutcomeDoer_GiveHediff">
+										<hediffDef>AlcoholTolerance</hediffDef>
+										<severity>0.016</severity>
+										<divideByBodySize>true</divideByBodySize>
+									</li>
+								</outcomeDoers>
+							</ingestible>
+							<equipmentType>Primary</equipmentType>
+							<techLevel>Neolithic</techLevel>
+							<comps>
+								<li Class="CompProperties_Drug">
+									<chemical>Alcohol</chemical>
+									<addictiveness>0.010</addictiveness>
+									<minToleranceToAddict>0.25</minToleranceToAddict>
+									<existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
+									<needLevelOffset>0.9</needLevelOffset>
+									<listOrder>10</listOrder>
+								</li>
+								<li>
+									<compClass>CompEquippable</compClass>
+								</li>
+							</comps>
+							<tools>
+								<li>
+									<label>bottle</label>
+									<capacities>
+										<li>Blunt</li>
+									</capacities>
+									<power>9</power>
+									<cooldownTime>2</cooldownTime>
+								</li>
+								<li>
+									<label>neck</label>
+									<capacities>
+										<li>Poke</li>
+									</capacities>
+									<power>9</power>
+									<cooldownTime>2</cooldownTime>
+								</li>
+							</tools>
+						</ThingDef>
+					</value>
+				</li>
 
 			</operations>
 		</match>

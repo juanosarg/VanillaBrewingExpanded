@@ -432,4 +432,88 @@
 		<minifiedDef>MinifiedThing</minifiedDef>
 	</ThingDef>
 
+	<ThingDef ParentName="BuildingBase">
+		<defName>VBE_GinStill</defName>
+		<label>gin still</label>
+		<description>A fully metal industrial distilling device, meant to purify and ferment gin into a drinkable form. The metallic design means aging is possible in a wide range of temperatures and conditions.</description>
+		<thingClass>ItemProcessor.Building_ItemProcessor</thingClass>
+		<graphicData>
+			<texPath>Things/Buildings/VBE_GinStill</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1.5,1.5)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<thingCategories>
+			<li>BuildingsProduction</li>
+		</thingCategories>
+		<costList>
+			
+			<Steel>40</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+
+		</costList>
+		<altitudeLayer>Building</altitudeLayer>
+		<rotatable>true</rotatable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<uiIconScale>0.8</uiIconScale>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<Mass>10</Mass>
+			<WorkToBuild>450</WorkToBuild>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>0.2</Flammability>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<size>(1,1)</size>
+		<designationCategory>Production</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<researchPrerequisites>
+			<li>VBE_MixologyResearch</li>
+		</researchPrerequisites>
+		<comps>
+			
+			<li Class="ItemProcessor.CompProperties_ItemProcessor">
+				<buildingOnGraphic>Things/Buildings/VBE_GinStill</buildingOnGraphic>
+				<numberOfInputs>1</numberOfInputs>
+				<acceptsNoneAsInput>false</acceptsNoneAsInput>
+				<InsertFirstItemDesc>VBE_InsertGinMushDesc</InsertFirstItemDesc>
+				<ignoresIngredientLists>true</ignoresIngredientLists>
+				<showProgressBar>true</showProgressBar>
+				<isSemiAutomaticMachine>true</isSemiAutomaticMachine>
+				<resetSemiautomaticIcon>UI/VBE_ResetGinMush</resetSemiautomaticIcon>
+				
+				<chooseIngredientsIcon>UI/VBE_EmptySyrupIcon</chooseIngredientsIcon>
+
+				<bringIngredientsText>VBE_StartInsertionGinMush</bringIngredientsText>
+				<bringIngredientsDesc>VBE_StartInsertionGinMushDesc</bringIngredientsDesc>
+				<bringIngredientsIcon>UI/VBE_InsertGinMush</bringIngredientsIcon >
+
+				<cancelIngredientsText>VBE_CancelBringingGinMush</cancelIngredientsText> 
+				<cancelIngredientsDesc>VBE_CancelBringingGinMushDesc</cancelIngredientsDesc>
+				<cancelIngredientsIcon>UI/VBE_CancelGinMush</cancelIngredientsIcon> 
+				
+				<isTemperatureDependingMachine>true</isTemperatureDependingMachine>
+				<minTemp>6</minTemp>
+				<maxTemp>20</maxTemp>
+				
+				<destroyIngredientsAtStartOfProcess>true</destroyIngredientsAtStartOfProcess>
+				
+			</li>
+
+		</comps>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<minifiedDef>MinifiedThing</minifiedDef>
+	</ThingDef>
+
 </Defs>

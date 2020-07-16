@@ -47,4 +47,13 @@
 			<li>VBE_VodkaMash</li>						
 		</items>							
 	</ItemProcessor.ItemAcceptedDef>
+	
+	<ItemProcessor.ItemAcceptedDef>
+		<defName>IP_GinStillFirstItem</defName>
+		<building>VBE_GinStill</building>
+		<slot>1</slot>
+		<items>			
+			<li>VBE_GinMush</li>						
+		</items>							
+	</ItemProcessor.ItemAcceptedDef>
 </Defs>

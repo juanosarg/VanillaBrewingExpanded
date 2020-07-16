@@ -23,7 +23,7 @@
 			<Nutrition>0.05</Nutrition>
 		</statBases>
 		<thingCategories>
-			<li>VBE_Drinks</li>
+			<li>VBE_DrinksNonAlcoholic</li>
 		</thingCategories>
 		<rotatable>false</rotatable>
 		<ingestible>

@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef Name="VBE_CookCocktailMealBase" Abstract="True">
+		<fixedIngredientFilter>
+			<categories>
+				<li>VBE_DrinksAlcoholic</li>	
+				<li>VBE_DrinksNonAlcoholic</li>					
+			</categories>
+			<thingDefs>
+				<li>Milk</li>		
+				<li>Beer</li>								
+			</thingDefs>
+
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>VBE_DrinksAlcoholic</li>	
+				<li>VBE_DrinksNonAlcoholic</li>					
+			</categories>	
+			<thingDefs>
+				<li>Milk</li>		
+				<li>Beer</li>								
+			</thingDefs>			
+		</defaultIngredientFilter>
+		<workSkill>Cooking</workSkill>
+	</RecipeDef>
+
+	<RecipeDef Name="VBE_CookGourmetCocktailMealBase" Abstract="True">
+		<fixedIngredientFilter>
+			<categories>
+				<li>VBE_DrinksAlcoholic</li>	
+				<li>VBE_DrinksNonAlcoholic</li>			
+				<li>VCE_Condiments</li>				
+			</categories>
+			<thingDefs>
+				<li>Milk</li>		
+				<li>Beer</li>								
+			</thingDefs>
+
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>VBE_DrinksAlcoholic</li>	
+				<li>VBE_DrinksNonAlcoholic</li>			
+				<li>VCE_Condiments</li>				
+			</categories>	
+			<thingDefs>
+				<li>Milk</li>		
+				<li>Beer</li>								
+			</thingDefs>			
+		</defaultIngredientFilter>
+
+		<workSkill>Cooking</workSkill>
+	</RecipeDef>
+
+
+
+	<RecipeDef ParentName="VBE_CookCocktailMealBase">
+		<defName>VBE_MakeCocktailSimple</defName>
+		<label>make simple cocktail</label>
+		<description>Make a simple cocktail quickly mixed from a duo of ingredients.</description>
+		<jobString>Making simple cocktail.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<workSkill>Cooking</workSkill>
+		<effectWorking>Cook</effectWorking>
+		<workAmount>1000</workAmount>
+		<soundWorking>Recipe_Brewing</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			
+			<li>VBE_Bar</li>			
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>VBE_DrinksAlcoholic</li>
+					</categories>
+					<thingDefs>
+						<li>Beer</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>VBE_DrinksNonAlcoholic</li>
+					</categories>
+					<thingDefs>
+						<li>Milk</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		
+		<products>
+			<VBE_SimpleCocktail>1</VBE_SimpleCocktail>
+		</products>
+		
+		<researchPrerequisite>VBE_MixologyResearch</researchPrerequisite>
+	</RecipeDef>
+
+
+
+
+
+</Defs>

@@ -56,9 +56,14 @@
 		</statBases>
 		
 		<comps>
-			<li Class="VanillaBrewingExpanded.CompProperties_MushToMust">
+			<li Class="VanillaBrewingExpanded.CompProperties_MaturingAlcohol">
 				<daysToRotStart>6</daysToRotStart>
 				<rotDestroys>true</rotDestroys>
+				<maturingString>VBE_MushRipening</maturingString>
+				<maturingProperly>VBE_MushDryingCorrectly</maturingProperly>
+				<maturingSlowly>VBE_MushCurrentlyRefrigerated</maturingSlowly>
+				<maturingStopped>VBE_MushCurrentlyFrozen</maturingStopped>
+				<thingToTransformTo>VBE_AmbrandyMust</thingToTransformTo>
 			</li>
 			<li Class="CompProperties_Ingredients" />
 		</comps>

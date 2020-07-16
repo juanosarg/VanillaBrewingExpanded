@@ -2,12 +2,11 @@
 <Defs>
 
 	<ThingDef ParentName="DrugBase">
-		<defName>VBE_Ambrandy</defName>
-		<label>ambrandy</label>
-		<description>Also known as “liquid sunshine” ambrandy is a double-fermented, distilled liquor of the highest calibre. Glitterworld aristocrats are known to send entire private militias to assist in shipping singular bottles. Inexplicably, this liquor is galaxy renowned to never cause the traditional negative effects of inebriation. The bottle itself is a beauty to behold, when hit with even the tiniest amount of light golden flecks are seen dancing in the liquid within, like sparks rising from a campfire.</description>
-
+		<defName>VBE_Gin</defName>
+		<label>gin</label>
+		<description>A particularly mild and colorless spirit, aromatically speaking this bottle has a pine-tree like scent as well as subtle fruity notes. This liquor has a reputation for causing what is known as  “gin drunkenness”, during which one feels increased empathy and understanding.</description>  
 		<graphicData>
-			<texPath>Things/Items/Drinks/VBE_Ambrandy</texPath>
+			<texPath>Things/Items/Drinks/VBE_Gin</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<thingCategories>

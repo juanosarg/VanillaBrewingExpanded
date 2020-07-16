@@ -35,10 +35,21 @@
 	<VBE_CancelBringingVodkaMust>Cancel Bringing Mash</VBE_CancelBringingVodkaMust>
 	<VBE_CancelBringingVodkaMustDesc>Cancel bringing vodka mash to the vodka drum.</VBE_CancelBringingVodkaMustDesc>
 	
+	<VBE_InsertGinMushDesc>Mush to Insert</VBE_InsertGinMushDesc>
+	<VBE_StartInsertionGinMush>Bring Mush</VBE_StartInsertionGinMush>
+	<VBE_StartInsertionGinMushDesc>Bring gin mush to the gin still to start fermentation process</VBE_StartInsertionGinMushDesc>
+	<VBE_CancelBringingGinMush>Cancel Bringing Mush</VBE_CancelBringingGinMush>
+	<VBE_CancelBringingGinMushDesc>Cancel bringing gin mush to the gin still.</VBE_CancelBringingGinMushDesc>
+	
 	
 	<VBE_MushRipening>Mush ripening</VBE_MushRipening>
 	<VBE_MushCurrentlyFrozen>This mush is frozen and will not rippen into ambrandy must</VBE_MushCurrentlyFrozen>
 	<VBE_MushCurrentlyRefrigerated>This mush is refrigerated and will not rippen into ambrandy must as fast as it could (rippens in {0})</VBE_MushCurrentlyRefrigerated>
 	<VBE_MushDryingCorrectly>This mush is rippening into ambrandy must correctly (rippens in {0})</VBE_MushDryingCorrectly>
+	
+	<VBE_CiderMaturing>Cider maturing</VBE_CiderMaturing>
+	<VBE_CiderCurrentlyFrozen>This unfermented cider is frozen and will not mature into cider</VBE_CiderCurrentlyFrozen>
+	<VBE_CiderCurrentlyRefrigerated>This unfermented cider is refrigerated and will not mature into cider as fast as it could (matures in {0})</VBE_CiderCurrentlyRefrigerated>
+	<VBE_CiderMaturingCorrectly>This unfermented cider is maturing into cider correctly (matures in {0})</VBE_CiderMaturingCorrectly>
 
 </LanguageData>

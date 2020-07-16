@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="DrugBase">
+		<defName>VBE_Cigarettes</defName>
+		<label>cigarette</label>
+		<description>A small, rolled paper tube stuffed loosely with tobacco leaves. Offers a brief euphoria as well as mental stimulation, and is very addictive. The pungent odor is generally disliked at first, but becomes much more pleasurable as the smoker becomes more addicted. Can be crafted without equipment, at a crafting spot.</description>
+
+		<graphicData>
+			<texPath>Things/Items/Smokes/VBE_Cigarette</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<statBases>
+			<WorkToMake>450</WorkToMake>
+			<MarketValue>11</MarketValue>
+			<Mass>0.05</Mass>
+			<DeteriorationRate>6</DeteriorationRate>
+			<Flammability>1.3</Flammability>
+		</statBases>
+		<techLevel>Neolithic</techLevel>
+		<ingestible>
+			<foodType>Plant, Processed</foodType>
+			<joyKind>Chemical</joyKind>
+			<joy>0.80</joy>
+			<baseIngestTicks>720</baseIngestTicks>
+			<nurseable>true</nurseable>
+			<drugCategory>Social</drugCategory>
+			<ingestSound>Ingest_Smoke</ingestSound>
+			<ingestEffect>Smoke_Joint</ingestEffect>
+			<ingestEffectEat>EatVegetarian</ingestEffectEat>
+			<ingestHoldOffsetStanding>
+				<northDefault>
+					<offset>(0.27,0,0.08)</offset>
+					<behind>true</behind>
+				</northDefault>
+				<east>
+					<offset>(0.45,0,0.08)</offset>
+				</east>
+				<south>
+					<offset>(0.27,0,0.08)</offset>
+				</south>
+				<west>
+					<offset>(-0.50,0,0.08)</offset>
+					<flip>true</flip>
+				</west>
+			</ingestHoldOffsetStanding>
+			<ingestHoldUsesTable>false</ingestHoldUsesTable>
+			<ingestCommandString>Smoke {0}</ingestCommandString>
+			<ingestReportString>Smoking {0}.</ingestReportString>
+			<ingestReportStringEat>Consuming {0}.</ingestReportStringEat>
+			<useEatingSpeedStat>false</useEatingSpeedStat>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>SmokeleafHigh</hediffDef>
+					<severity>0.5</severity>
+					<toleranceChemical>Smokeleaf</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_OffsetNeed">
+					<need>Rest</need>
+					<offset>-0.1</offset>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>SmokeleafTolerance</hediffDef>
+					<severity>0.030</severity>
+					<divideByBodySize>true</divideByBodySize>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>Smokeleaf</chemical>
+				<addictiveness>0.020</addictiveness>
+				<minToleranceToAddict>0.15</minToleranceToAddict>
+				<existingAddictionSeverityOffset>0.06</existingAddictionSeverityOffset>
+				<needLevelOffset>0.9</needLevelOffset>
+				<listOrder>20</listOrder>
+			</li>
+		</comps>
+	</ThingDef>
+
+
+
+
+
+	<ThingDef ParentName="DrugBase">
+		<defName>VBE_Cigars</defName>
+		<label>cigars</label>
+		<description>A fat, dried tobacco leaf stuffed to the brim with more tobacco leaves and a gold foil wrap around it. Cigars have a historically posh presentation and are usually only affordable by those who mingle with glitterworld elite regularly. Cigars are often flavored with citrus or vanilla to make their flavor and odor less acrid.</description>
+		<graphicData>
+			<texPath>Things/Items/Smokes/VBE_SmokeCigar</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<statBases>
+			<WorkToMake>450</WorkToMake>
+			<MarketValue>11</MarketValue>
+			<Mass>0.05</Mass>
+			<DeteriorationRate>6</DeteriorationRate>
+			<Flammability>1.3</Flammability>
+		</statBases>
+		<techLevel>Neolithic</techLevel>
+		<ingestible>
+			<foodType>Plant, Processed</foodType>
+			<joyKind>Chemical</joyKind>
+			<joy>0.80</joy>
+			<baseIngestTicks>720</baseIngestTicks>
+			<nurseable>true</nurseable>
+			<drugCategory>Social</drugCategory>
+			<ingestSound>Ingest_Smoke</ingestSound>
+			<ingestEffect>Smoke_Joint</ingestEffect>
+			<ingestEffectEat>EatVegetarian</ingestEffectEat>
+			<ingestHoldOffsetStanding>
+				<northDefault>
+					<offset>(0.27,0,0.08)</offset>
+					<behind>true</behind>
+				</northDefault>
+				<east>
+					<offset>(0.45,0,0.08)</offset>
+				</east>
+				<south>
+					<offset>(0.27,0,0.08)</offset>
+				</south>
+				<west>
+					<offset>(-0.50,0,0.08)</offset>
+					<flip>true</flip>
+				</west>
+			</ingestHoldOffsetStanding>
+			<ingestHoldUsesTable>false</ingestHoldUsesTable>
+			<ingestCommandString>Smoke {0}</ingestCommandString>
+			<ingestReportString>Smoking {0}.</ingestReportString>
+			<ingestReportStringEat>Consuming {0}.</ingestReportStringEat>
+			<useEatingSpeedStat>false</useEatingSpeedStat>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>SmokeleafHigh</hediffDef>
+					<severity>0.5</severity>
+					<toleranceChemical>Smokeleaf</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_OffsetNeed">
+					<need>Rest</need>
+					<offset>-0.1</offset>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>SmokeleafTolerance</hediffDef>
+					<severity>0.030</severity>
+					<divideByBodySize>true</divideByBodySize>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>Smokeleaf</chemical>
+				<addictiveness>0.020</addictiveness>
+				<minToleranceToAddict>0.15</minToleranceToAddict>
+				<existingAddictionSeverityOffset>0.06</existingAddictionSeverityOffset>
+				<needLevelOffset>0.9</needLevelOffset>
+				<listOrder>20</listOrder>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>

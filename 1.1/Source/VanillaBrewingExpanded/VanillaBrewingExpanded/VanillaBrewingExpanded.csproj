@@ -294,8 +294,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Comps\CompMushToMust.cs" />
-    <Compile Include="Comps\CompProperties_MushToMust.cs" />
+    <Compile Include="Comps\CompMaturingAlcohol.cs" />
+    <Compile Include="Comps\CompProperties_MaturingAlcohol.cs" />
+    <Compile Include="Comps\CompProperties_TempTransforms.cs" />
+    <Compile Include="Comps\CompTempTransforms.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

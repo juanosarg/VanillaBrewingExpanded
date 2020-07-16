@@ -6,7 +6,7 @@ using RimWorld;
 
 namespace VanillaBrewingExpanded
 {
-    public class CompProperties_MushToMust : CompProperties
+    public class CompProperties_MaturingAlcohol : CompProperties
     {
         public int TicksToRotStart
         {
@@ -24,12 +24,12 @@ namespace VanillaBrewingExpanded
             }
         }
 
-        public CompProperties_MushToMust()
+        public CompProperties_MaturingAlcohol()
         {
-            this.compClass = typeof(CompMushToMust);
+            this.compClass = typeof(CompMaturingAlcohol);
         }
 
-        public CompProperties_MushToMust(float daysToRotStart)
+        public CompProperties_MaturingAlcohol(float daysToRotStart)
         {
             this.daysToRotStart = daysToRotStart;
         }
@@ -47,5 +47,16 @@ namespace VanillaBrewingExpanded
         public float dessicatedDamagePerDay;
 
         public bool disableIfHatcher;
+
+        public string maturingString;
+
+        public string maturingProperly;
+
+        public string maturingSlowly;
+
+        public string maturingStopped;
+
+        public string thingToTransformTo;
+
     }
 }

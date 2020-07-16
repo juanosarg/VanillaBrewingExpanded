@@ -98,4 +98,19 @@
 		<useQualityIncreasing>false</useQualityIncreasing>
 		<singleTimeIfNotQualityIncreasing>3</singleTimeIfNotQualityIncreasing>
 	</ItemProcessor.CombinationDef>
+	
+	<ItemProcessor.CombinationDef>
+		<defName>VBE_GinMushToGin</defName>
+		<building>VBE_GinStill</building>
+		<items>
+			<li>VBE_GinMush</li>
+		</items>	
+		<amount>
+			<li>25</li>
+		</amount>
+		<result>VBE_Gin</result>	
+		<yield>25</yield>
+		<useQualityIncreasing>false</useQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>15</singleTimeIfNotQualityIncreasing>
+	</ItemProcessor.CombinationDef>
 </Defs>
