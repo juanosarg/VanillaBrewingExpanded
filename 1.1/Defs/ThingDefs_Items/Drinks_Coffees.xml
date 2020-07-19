@@ -179,6 +179,105 @@
 		</tools>
 	</ThingDef>
 
+	<!-- Caffeine Addiction -->
+
+	<ChemicalDef>
+		<defName>VBE_Caffeine</defName>
+		<label>caffeine</label>
+		<addictionHediff>VBE_CaffeineAddiction</addictionHediff>
+		<toleranceHediff>VBE_CaffeineTolerance</toleranceHediff>
+		<onGeneratedAddictedToleranceChance>0.8</onGeneratedAddictedToleranceChance>
+
+	</ChemicalDef>
+
+	<NeedDef ParentName="DrugAddictionNeedBase">
+		<defName>VBE_Chemical_Caffeine</defName>
+		<needClass>Need_Chemical</needClass>
+		<label>caffeine</label>
+		<description>Because of a caffeine addiction, this person needs to regularly consume caffeine to avoid withdrawal symptoms.</description>
+		<listPriority>35</listPriority>
+	</NeedDef>
+
+	<HediffDef ParentName="DrugToleranceBase">
+		<defName>VBE_CaffeineTolerance</defName>
+		<label>caffeine tolerance</label>
+		<description>A built-up tolerance to caffeine. The more severe this tolerance is, the more caffeine it takes to get the same effect.</description>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.016</severityPerDay>
+			</li>
+			<li Class="HediffCompProperties_DrugEffectFactor">
+				<chemical>VBE_Caffeine</chemical>
+			</li>
+		</comps>
+		<hediffGivers>
+
+			<li Class="HediffGiver_RandomDrugEffect">
+				<hediff>ToxicBuildup</hediff>
+				<minSeverity>0.15</minSeverity>
+				<baseMtbDays>360</baseMtbDays>
+				<partsToAffect>
+					<li>Kidney</li>
+				</partsToAffect>
+			</li>
+		</hediffGivers>
+	</HediffDef>
+
+	<HediffDef ParentName="AddictionBase">
+		<defName>VBE_CaffeineAddiction</defName>
+		<label>caffeine addiction</label>
+		<description>A chemical addiction to caffeine. Long-term presence of caffeine has caused neurological adaptations at the cellular level, so the brain can no longer function properly without the drug.
+\nWithout regular doses of caffeine, withdrawal symptoms will begin. However, extended abstinence will force the brain to adapt back to its normal state, resolving the addiction.</description>
+		<hediffClass>Hediff_Addiction</hediffClass>
+		<causesNeed>VBE_Chemical_Caffeine</causesNeed>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.0333</severityPerDay>
+				<showDaysToRecover>true</showDaysToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+			</li>
+			<li>
+				<label>withdrawal</label>
+				<restFallFactorOffset>0.3</restFallFactorOffset>
+				<socialFightChanceFactor>5.0</socialFightChanceFactor>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.10</offset>
+					</li>
+					
+					
+				</capMods>
+				<mentalStateGivers>
+					<li>
+						<mentalState>Binging_DrugMajor</mentalState>
+						<mtbDays>80</mtbDays>
+					</li>
+				</mentalStateGivers>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<ThoughtDef>
+		<defName>VBE_CaffeineWithdrawal</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>VBE_CaffeineAddiction</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<visible>false</visible>
+			</li>
+			<li>
+				<label>caffeine withdrawal</label>
+				<description>God I'm tired. Everything's so annoying, my hands are shaking and my head is pounding.</description>
+				<baseMoodEffect>-10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
 
 
 </Defs>
