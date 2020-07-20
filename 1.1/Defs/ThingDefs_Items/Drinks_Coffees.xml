@@ -13,20 +13,21 @@
 		<thingCategories>
 			<li>VBE_DrinksNonAlcoholic</li>
 		</thingCategories>
-		<equippedAngleOffset>-150</equippedAngleOffset>
+		<tickerType>Rare</tickerType>
+		
 		<rotatable>false</rotatable>
 		<stackLimit>25</stackLimit>
 		<statBases>
 			<DeteriorationRate>0.5</DeteriorationRate>
-			<MarketValue>12</MarketValue>
+			<MarketValue>8</MarketValue>
 			<Mass>0.3</Mass>
 			<Flammability>0.5</Flammability>
-			<Nutrition>0.08</Nutrition>
+			<Nutrition>0.07</Nutrition>
 		</statBases>
 		<ingestible>
 			<foodType>Fluid, Processed, Liquor</foodType>
 			<joyKind>Chemical</joyKind>
-			<joy>0.17</joy>
+			<joy>0.12</joy>
 			<nurseable>true</nurseable>
 			<drugCategory>Social</drugCategory>
 			<ingestSound>Ingest_Beer</ingestSound>
@@ -40,31 +41,29 @@
 			<chairSearchRadius>25</chairSearchRadius>
 			<outcomeDoers>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
-					<hediffDef>AlcoholHigh</hediffDef>
-					<severity>0.15</severity>
-					<toleranceChemical>Alcohol</toleranceChemical>
+					<hediffDef>VBE_HotCoffeeHigh</hediffDef>
+					<severity>1</severity>
+					<toleranceChemical>VBE_Caffeine</toleranceChemical>
 				</li>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
-					<hediffDef>AlcoholTolerance</hediffDef>
+					<hediffDef>VBE_CaffeineTolerance</hediffDef>
 					<severity>0.016</severity>
 					<divideByBodySize>true</divideByBodySize>
-				</li>
+				</li> 
 			</outcomeDoers>
 		</ingestible>
-		<equipmentType>Primary</equipmentType>
+		
 		<techLevel>Neolithic</techLevel>
 		<comps>
 			<li Class="CompProperties_Drug">
-				<chemical>Alcohol</chemical>
-				<addictiveness>0.010</addictiveness>
+				<chemical>VBE_Caffeine</chemical>
+				<addictiveness>0.005</addictiveness>
 				<minToleranceToAddict>0.25</minToleranceToAddict>
 				<existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
 				<needLevelOffset>0.9</needLevelOffset>
 				<listOrder>10</listOrder>
 			</li>
-			<li>
-				<compClass>CompEquippable</compClass>
-			</li>
+			
 			<li Class="CompProperties_Ingredients" />
 			<li Class="VanillaBrewingExpanded.CompProperties_TempTransforms">
 				<minSafeTemperature>0</minSafeTemperature>
@@ -73,25 +72,11 @@
 				<thingToTransformInto>VBE_IceCoffee</thingToTransformInto>
 			</li>
 		</comps>
-		<tools>
-			<li>
-				<label>bottle</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-			<li>
-				<label>neck</label>
-				<capacities>
-					<li>Poke</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-		</tools>
+		
+		
 	</ThingDef>
+
+
 
 
 	<ThingDef ParentName="DrugBase">
@@ -105,7 +90,7 @@
 		<thingCategories>
 			<li>VBE_DrinksNonAlcoholic</li>
 		</thingCategories>
-		<equippedAngleOffset>-150</equippedAngleOffset>
+		
 		<rotatable>false</rotatable>
 		<stackLimit>25</stackLimit>
 		<statBases>
@@ -132,52 +117,126 @@
 			<chairSearchRadius>25</chairSearchRadius>
 			<outcomeDoers>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
-					<hediffDef>AlcoholHigh</hediffDef>
-					<severity>0.15</severity>
-					<toleranceChemical>Alcohol</toleranceChemical>
+					<hediffDef>VBE_IcedCoffeeHigh</hediffDef>
+					<severity>1</severity>
+					<toleranceChemical>VBE_Caffeine</toleranceChemical>
 				</li>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
-					<hediffDef>AlcoholTolerance</hediffDef>
+					<hediffDef>VBE_CaffeineTolerance</hediffDef>
 					<severity>0.016</severity>
 					<divideByBodySize>true</divideByBodySize>
 				</li>
 			</outcomeDoers>
 		</ingestible>
-		<equipmentType>Primary</equipmentType>
+		
 		<techLevel>Neolithic</techLevel>
 		<comps>
 			<li Class="CompProperties_Drug">
-				<chemical>Alcohol</chemical>
+				<chemical>VBE_Caffeine</chemical>
 				<addictiveness>0.010</addictiveness>
 				<minToleranceToAddict>0.25</minToleranceToAddict>
 				<existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
 				<needLevelOffset>0.9</needLevelOffset>
 				<listOrder>10</listOrder>
 			</li>
-			<li>
-				<compClass>CompEquippable</compClass>
-			</li>
+			
 			<li Class="CompProperties_Ingredients" />
 		</comps>
-		<tools>
-			<li>
-				<label>bottle</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-			<li>
-				<label>neck</label>
-				<capacities>
-					<li>Poke</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-		</tools>
+		
 	</ThingDef>
+
+	<HediffDef>
+		<defName>VBE_HotCoffeeHigh</defName>
+		<label>hot coffee high</label>
+		<labelNoun>a coffee high</labelNoun>
+		<description>Consumed a nice coffee. Increases learning speed by a 15% amount and 15% reduction in rest fall rate. Hot coffee reduces hypothermia, cold reduces heatstroke.</description>
+		<hediffClass>VanillaBrewingExpanded.Hediff_HotCoffee</hediffClass>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_Effecter">
+				<stateEffecter>Drunk</stateEffecter>
+				<severityIndices>3~5</severityIndices>
+			</li>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-4.8</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+
+			<li>
+			<restFallFactor>0.85</restFallFactor>
+				<statOffsets>
+					<GlobalLearningFactor>1.15</GlobalLearningFactor>
+					
+				</statOffsets>				
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>VBE_IcedCoffeeHigh</defName>
+		<label>iced coffee high</label>
+		<labelNoun>a coffee high</labelNoun>
+		<description>Consumed a nice coffee. Increases learning speed by a 15% amount and 15% reduction in rest fall rate. Hot coffee reduces hypothermia, cold reduces heatstroke.</description>
+		<hediffClass>VanillaBrewingExpanded.Hediff_IcedCoffee</hediffClass>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_Effecter">
+				<stateEffecter>Drunk</stateEffecter>
+				<severityIndices>3~5</severityIndices>
+			</li>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-4.8</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+
+			<li>
+			<restFallFactor>0.85</restFallFactor>
+				<statOffsets>
+					<GlobalLearningFactor>1.15</GlobalLearningFactor>
+					
+				</statOffsets>				
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<ThoughtDef>
+		<defName>VBE_HotCoffeeHigh</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>VBE_HotCoffeeHigh</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>Brewed awakening.</label>
+				<description>That coffee hit the spot, now let’s get some work done.</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>VBE_IcedCoffeeHigh</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>VBE_IcedCoffeeHigh</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>Icy awakening.</label>
+				<description>Nothing better than iced coffee to refresh yourself.</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+
+		</stages>
+	</ThoughtDef>
+
 
 	<!-- Caffeine Addiction -->
 
@@ -232,7 +291,7 @@
 		<causesNeed>VBE_Chemical_Caffeine</causesNeed>
 		<comps>
 			<li Class="HediffCompProperties_SeverityPerDay">
-				<severityPerDay>-0.0333</severityPerDay>
+				<severityPerDay>-0.047</severityPerDay>
 				<showDaysToRecover>true</showDaysToRecover>
 			</li>
 		</comps>
@@ -248,8 +307,8 @@
 						<capacity>Consciousness</capacity>
 						<offset>-0.10</offset>
 					</li>
-					
-					
+
+
 				</capMods>
 				<mentalStateGivers>
 					<li>

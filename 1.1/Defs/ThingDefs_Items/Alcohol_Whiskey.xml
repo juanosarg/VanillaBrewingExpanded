@@ -17,7 +17,7 @@
 		<stackLimit>25</stackLimit>
 		<statBases>
 			<DeteriorationRate>0.5</DeteriorationRate>
-			<MarketValue>12</MarketValue>
+			<MarketValue>30</MarketValue>
 			<Mass>0.3</Mass>
 			<Flammability>0.5</Flammability>
 			<Nutrition>0.08</Nutrition>
@@ -25,7 +25,7 @@
 		<ingestible>
 			<foodType>Fluid, Processed, Liquor</foodType>
 			<joyKind>Chemical</joyKind>
-			<joy>0.17</joy>
+			<joy>0.19</joy>
 			<nurseable>true</nurseable>
 			<drugCategory>Social</drugCategory>
 			<ingestSound>Ingest_Beer</ingestSound>
@@ -40,12 +40,12 @@
 			<outcomeDoers>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
 					<hediffDef>AlcoholHigh</hediffDef>
-					<severity>0.15</severity>
+					<severity>0.2</severity>
 					<toleranceChemical>Alcohol</toleranceChemical>
 				</li>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
 					<hediffDef>AlcoholTolerance</hediffDef>
-					<severity>0.016</severity>
+					<severity>0.02</severity>
 					<divideByBodySize>true</divideByBodySize>
 				</li>
 			</outcomeDoers>
@@ -55,10 +55,10 @@
 		<comps>
 			<li Class="CompProperties_Drug">
 				<chemical>Alcohol</chemical>
-				<addictiveness>0.010</addictiveness>
+				<addictiveness>0.025</addictiveness>
 				<minToleranceToAddict>0.25</minToleranceToAddict>
 				<existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
-				<needLevelOffset>0.9</needLevelOffset>
+				<needLevelOffset>1</needLevelOffset>
 				<listOrder>10</listOrder>
 			</li>
 			<li>
@@ -101,7 +101,7 @@
 		<stackLimit>25</stackLimit>
 		<statBases>
 			<DeteriorationRate>0.5</DeteriorationRate>
-			<MarketValue>12</MarketValue>
+			<MarketValue>60</MarketValue>
 			<Mass>0.3</Mass>
 			<Flammability>0.5</Flammability>
 			<Nutrition>0.08</Nutrition>
@@ -109,7 +109,7 @@
 		<ingestible>
 			<foodType>Fluid, Processed, Liquor</foodType>
 			<joyKind>Chemical</joyKind>
-			<joy>0.17</joy>
+			<joy>0.25</joy>
 			<nurseable>true</nurseable>
 			<drugCategory>Social</drugCategory>
 			<ingestSound>Ingest_Beer</ingestSound>
@@ -124,12 +124,12 @@
 			<outcomeDoers>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
 					<hediffDef>AlcoholHigh</hediffDef>
-					<severity>0.15</severity>
+					<severity>0.35</severity>
 					<toleranceChemical>Alcohol</toleranceChemical>
 				</li>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
 					<hediffDef>AlcoholTolerance</hediffDef>
-					<severity>0.016</severity>
+					<severity>0.03</severity>
 					<divideByBodySize>true</divideByBodySize>
 				</li>
 			</outcomeDoers>
@@ -139,10 +139,10 @@
 		<comps>
 			<li Class="CompProperties_Drug">
 				<chemical>Alcohol</chemical>
-				<addictiveness>0.010</addictiveness>
+				<addictiveness>0.03</addictiveness>
 				<minToleranceToAddict>0.25</minToleranceToAddict>
 				<existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
-				<needLevelOffset>0.9</needLevelOffset>
+				<needLevelOffset>1</needLevelOffset>
 				<listOrder>10</listOrder>
 			</li>
 			<li>

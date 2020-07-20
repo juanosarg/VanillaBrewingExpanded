@@ -9,7 +9,7 @@
 		<description>This colonist drank a sweet, fizzy soda, a small but welcomed luxury. Provides a 5% manipulation buff for 5 hours.</description>
 		<tendable>false</tendable>
 		<isBad>false</isBad>
-		<defaultLabelColor>(92,62,198)</defaultLabelColor>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
 		<hediffClass>HediffWithComps</hediffClass>
 		<initialSeverity>1.0</initialSeverity>
 		<maxSeverity>1.0</maxSeverity>
@@ -32,7 +32,34 @@
 		</stages>
 	</HediffDef>
 
+	<HediffDef>
+		<defName>VBE_DrankTea</defName>
+		<label>drank tea</label>
+		<makesSickThought>false</makesSickThought>
+		<description>This colonist drank a delightfully simple cup of tea. It really brightens the day. This buff increases immunity gain speed by 15% and provides 10% reduction in rest fall rate for 5 hours.</description>
+		<tendable>false</tendable>
+		<isBad>false</isBad>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1.0</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<comps>
+			<li Class="VanillaCookingExpanded.HediffCompProperties_WhileHavingThoughts">
+				<thoughtDefs>
+					<li>VBE_DrankTea</li>
+				</thoughtDefs>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<restFallFactor>0.90</restFallFactor>
+				<statOffsets>
+					<ImmunityGainSpeedFactor>1.15</ImmunityGainSpeedFactor>
 
+				</statOffsets>				
+			</li>
+		</stages>
+	</HediffDef>
 
 
 

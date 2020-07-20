@@ -11,15 +11,28 @@
 		<durationDays>0.2</durationDays>
 		<stages>
 			<li>
-				<label>sugar rushed</label>
-				<description>I drank a sweet, fizzy soda, a small but welcomed luxury</description>
+				<label>Sugar rushed</label>
+				<description>I drank a sweet, fizzy soda, a small but welcomed luxury.</description>
 				<baseMoodEffect>4</baseMoodEffect>
 			</li>
 		</stages>	
 		
 	</ThoughtDef>
 
-	
+	<ThoughtDef>	
+		<defName>VBE_DrankTea</defName>
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+		<hediff>VBE_DrankTea</hediff>
+		<durationDays>0.2</durationDays>
+		<stages>
+			<li>
+				<label>Fancied a cuppa</label>
+				<description>A delightfully simple cup of tea really brightens the day.</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+		</stages>	
+		
+	</ThoughtDef>
 
 
 

@@ -40,8 +40,8 @@
 			<outcomeDoers>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
 					<hediffDef>ToxicBuildup</hediffDef>
-					<severity>0.05</severity>
-					<toleranceChemical>Alcohol</toleranceChemical>
+					<severity>0.03</severity>
+					<toleranceChemical>VBE_Caffeine</toleranceChemical>
 				</li>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
 					<hediffDef>VBE_EnergyDrinkHigh</hediffDef>
@@ -111,10 +111,12 @@
 		<description>An unpleasant delayed after-effect of energy drink consumption.</description>
 		<hediffClass>VanillaBrewingExpanded.Hediff_EnergyDrinkHangover</hediffClass>
 		<initialSeverity>1</initialSeverity>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
 		<scenarioCanAdd>true</scenarioCanAdd>
 		<comps>
 			<li Class="HediffCompProperties_SeverityPerDay">
 				<severityPerDay>-12</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
 			</li>
 		</comps>
 		<stages>
