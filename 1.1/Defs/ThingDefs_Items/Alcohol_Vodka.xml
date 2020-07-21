@@ -17,7 +17,7 @@
 		<stackLimit>25</stackLimit>
 		<statBases>
 			<DeteriorationRate>0.5</DeteriorationRate>
-			<MarketValue>12</MarketValue>
+			<MarketValue>8</MarketValue>
 			<Mass>0.3</Mass>
 			<Flammability>0.5</Flammability>
 			<Nutrition>0.08</Nutrition>
@@ -40,12 +40,17 @@
 			<outcomeDoers>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
 					<hediffDef>AlcoholHigh</hediffDef>
-					<severity>0.15</severity>
+					<severity>0.2</severity>
 					<toleranceChemical>Alcohol</toleranceChemical>
 				</li>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>VBE_VodkaHigh</hediffDef>
+					<severity>0.2</severity>
+
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
 					<hediffDef>AlcoholTolerance</hediffDef>
-					<severity>0.016</severity>
+					<severity>0.02</severity>
 					<divideByBodySize>true</divideByBodySize>
 				</li>
 			</outcomeDoers>
@@ -55,7 +60,7 @@
 		<comps>
 			<li Class="CompProperties_Drug">
 				<chemical>Alcohol</chemical>
-				<addictiveness>0.010</addictiveness>
+				<addictiveness>0.015</addictiveness>
 				<minToleranceToAddict>0.25</minToleranceToAddict>
 				<existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
 				<needLevelOffset>0.9</needLevelOffset>
@@ -85,7 +90,55 @@
 		</tools>
 	</ThingDef>
 
+	<HediffDef>
+		<defName>VBE_VodkaHigh</defName>
+		<label>vodka high</label>
+		<labelNoun>a vodka high</labelNoun>
+		<description>Drank some vodka. Provides a scaling pain resistance buff, scaling with drunkeness.</description>
+		<hediffClass>Hediff_Alcohol</hediffClass>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<isBad>false</isBad>
+		<comps>
+			
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.75</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>warm</label>
+				
 
+			</li>
+			<li>
+				<minSeverity>0.25</minSeverity>
+				<label>tipsy</label>
+				
+
+			</li>
+			<li>
+				<minSeverity>0.4</minSeverity>
+				<label>drunk</label>
+				
+
+			</li>
+			<li>
+				<minSeverity>0.7</minSeverity>
+				<label>hammered</label>
+				
+
+			</li>
+			<li>
+				<minSeverity>0.9</minSeverity>
+				<label>blackout</label>
+				
+			</li>
+		</stages>
+	</HediffDef>
+
+	
 
 
 

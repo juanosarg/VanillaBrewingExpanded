@@ -2,8 +2,8 @@
 <Defs>
 
 	<ThingDef ParentName="DrugBase" Abstract="true" Name="VBE_AmbrandyBase">
-		
-		<description>Also known as “liquid sunshine” ambrandy is a double-fermented, distilled liquor of the highest calibre. Glitterworld aristocrats are known to send entire private militias to assist in shipping singular bottles. Inexplicably, this liquor is galaxy renowned to never cause the traditional negative effects of inebriation, usually know as "hangovers". The bottle itself is a beauty to behold, when hit with even the tiniest amount of light golden flecks are seen dancing in the liquid within, like sparks rising from a campfire.</description>
+
+		<description>Also known as “liquid sunshine” ambrandy is a twice-fermented, distilled liquor of the highest calibre. Glitterworld aristocrats are known to send entire private militias to assist in shipping singular bottles. Beyond being flavorful enough to bring one to tears, studies have found this drink causes increased stimulation in the section of the human brain known for artistic creativity and expression. Even the bottle itself is a beauty to behold, when hit with even the tiniest amount of light golden flecks are seen dancing in the liquid within, like embers rising from a campfire.\n\nWhile Ambrandy can be mixed into cocktails, those few who have had the privilege to drink it say it is best on its own.</description>
 		<graphicData>
 			<texPath>Things/Items/Drinks/VBE_Ambrandy</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -38,7 +38,7 @@
 			<chairSearchRadius>25</chairSearchRadius>
 			<outcomeDoers>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
-					<hediffDef>VBE_AmbrandyHigh</hediffDef>
+					<hediffDef>AlcoholHigh</hediffDef>
 					<severity>0.7</severity>
 					<toleranceChemical>Alcohol</toleranceChemical>
 				</li>
@@ -101,22 +101,38 @@
 			</li>
 		</tools>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="VBE_AmbrandyBase">
 		<defName>VBE_AmbrandyAwful</defName>
 		<label>ambrandy (awful)</label>
+		<statBases>
+			<MarketValue>300</MarketValue>
+			<Beauty>100</Beauty>
+		</statBases>
 	</ThingDef>	
 	<ThingDef ParentName="VBE_AmbrandyBase">
 		<defName>VBE_AmbrandyPoor</defName>
 		<label>ambrandy (poor)</label>
+		<statBases>
+			<MarketValue>500</MarketValue>
+			<Beauty>200</Beauty>
+		</statBases>
 	</ThingDef>
 	<ThingDef ParentName="VBE_AmbrandyBase">
 		<defName>VBE_AmbrandyNormal</defName>
 		<label>ambrandy (normal)</label>
+		<statBases>
+			<MarketValue>800</MarketValue>
+			<Beauty>350</Beauty>
+		</statBases>
 	</ThingDef>
 	<ThingDef ParentName="VBE_AmbrandyBase">
 		<defName>VBE_AmbrandyGood</defName>
 		<label>ambrandy (good)</label>
+		<statBases>
+			<MarketValue>500</MarketValue>
+			<Beauty>200</Beauty>
+		</statBases>
 	</ThingDef>
 	<ThingDef ParentName="VBE_AmbrandyBase">
 		<defName>VBE_AmbrandyExcellent</defName>
@@ -131,140 +147,6 @@
 		<label>ambrandy (legendary)</label>
 	</ThingDef>
 
-<HediffDef>
-    <defName>VBE_AmbrandyHigh</defName>
-    <label>ambrandy high</label>
-    <labelNoun>ambrandy drunkenness</labelNoun>
-    <description>Ambrandy in the bloodstream. It makes people happy, but reduces capacities.</description>
-      <hediffClass>HediffWithComps</hediffClass>
 
-    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
-    <scenarioCanAdd>true</scenarioCanAdd>
-    <isBad>false</isBad>
-    <comps>
-      <li Class="HediffCompProperties_Effecter">
-        <stateEffecter>Drunk</stateEffecter>
-        <severityIndices>3~5</severityIndices>
-      </li>
-      <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-0.75</severityPerDay>
-        <showHoursToRecover>true</showHoursToRecover>
-      </li>
-    </comps>
-      <stages>
-        <li>
-          <label>warm</label>
-          <painFactor>0.9</painFactor>
-          <socialFightChanceFactor>1.5</socialFightChanceFactor>
-            <capMods>
-              <li>
-                <capacity>Manipulation</capacity>
-                <offset>-0.02</offset>
-              </li>
-            </capMods>
-        </li>
-        <li>
-          <minSeverity>0.25</minSeverity>
-          <label>tipsy</label>
-          <painFactor>0.8</painFactor>
-          <socialFightChanceFactor>2.5</socialFightChanceFactor>
-            <capMods>
-              <li>
-                <capacity>Consciousness</capacity>
-                <postFactor>0.9</postFactor>
-              </li>
-              <li>
-                <capacity>Moving</capacity>
-                <offset>-0.05</offset>
-              </li>
-            </capMods>
-        </li>
-        <li>
-          <minSeverity>0.4</minSeverity>
-          <label>drunk</label>
-          <painFactor>0.5</painFactor>
-          <socialFightChanceFactor>4.0</socialFightChanceFactor>
-          <vomitMtbDays>0.75</vomitMtbDays>
-          <tale>Drunk</tale>
-            <capMods>
-              <li>
-                <capacity>Consciousness</capacity>
-                <postFactor>0.65</postFactor>
-              </li>
-              <li>
-                <capacity>Moving</capacity>
-                <offset>-0.10</offset>
-              </li>
-            </capMods>
-        </li>
-        <li>
-          <minSeverity>0.7</minSeverity>
-          <label>hammered</label>
-          <painFactor>0.3</painFactor>
-          <socialFightChanceFactor>5.0</socialFightChanceFactor>
-          <vomitMtbDays>0.2</vomitMtbDays>
-          <painOffset>0.05</painOffset>
-            <capMods>
-              <li>
-                <capacity>Consciousness</capacity>
-                <postFactor>0.5</postFactor>
-              </li>
-              <li>
-                <capacity>Moving</capacity>
-                <offset>-0.10</offset>
-              </li>
-            </capMods>
-        </li>
-        <li>
-          <minSeverity>0.9</minSeverity>
-          <label>blackout</label>
-          <painFactor>0.1</painFactor>
-          <capMods>
-            <li>
-              <capacity>Consciousness</capacity>
-              <setMax>0.1</setMax>
-            </li>
-          </capMods>
-          <hediffGivers>
-            <li Class="HediffGiver_Random">
-              <hediff>ChemicalDamageModerate</hediff>
-              <mtbDays>10</mtbDays>
-              <partsToAffect>
-                <li>Brain</li>
-              </partsToAffect>
-            </li>
-          </hediffGivers>
-        </li>
-      </stages>
-  </HediffDef>
-
-  <ThoughtDef>
-    <defName>VBE_AmbrandyHigh</defName>
-    <workerClass>ThoughtWorker_Hediff</workerClass>
-    <hediff>VBE_AmbrandyHigh</hediff>
-    <validWhileDespawned>true</validWhileDespawned>
-    <stages>
-      <li>
-        <label>alcohol warmth</label>
-        <description>I just feel a bit more relaxed after that drink. That's good.</description>
-        <baseMoodEffect>10</baseMoodEffect>
-      </li>
-      <li>
-        <label>quite inebriated</label>
-        <description>I'm a bit wobbly! And this is quite enjoyable.</description>
-        <baseMoodEffect>14</baseMoodEffect>
-      </li>     
-      <li>
-        <label>drunk</label>
-        <description>I feel so uninhibited and unafraid! This is a great time!</description>
-        <baseMoodEffect>20</baseMoodEffect>
-      </li>
-      <li>
-        <label>hammered</label>
-        <description>Wooo! What's going on?</description>
-        <baseMoodEffect>26</baseMoodEffect>
-      </li>   
-    </stages>
-  </ThoughtDef>
 
 </Defs>

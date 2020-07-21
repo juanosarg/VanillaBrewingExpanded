@@ -39,13 +39,18 @@
 			<chairSearchRadius>25</chairSearchRadius>
 			<outcomeDoers>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>VBE_GinHigh</hediffDef>
+					<severity>0.22</severity>
+					
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
 					<hediffDef>AlcoholHigh</hediffDef>
-					<severity>0.15</severity>
+					<severity>0.22</severity>
 					<toleranceChemical>Alcohol</toleranceChemical>
 				</li>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
 					<hediffDef>AlcoholTolerance</hediffDef>
-					<severity>0.016</severity>
+					<severity>0.025</severity>
 					<divideByBodySize>true</divideByBodySize>
 				</li>
 			</outcomeDoers>
@@ -55,10 +60,10 @@
 		<comps>
 			<li Class="CompProperties_Drug">
 				<chemical>Alcohol</chemical>
-				<addictiveness>0.010</addictiveness>
+				<addictiveness>0.015</addictiveness>
 				<minToleranceToAddict>0.25</minToleranceToAddict>
 				<existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
-				<needLevelOffset>0.9</needLevelOffset>
+				<needLevelOffset>1</needLevelOffset>
 				<listOrder>10</listOrder>
 			</li>
 			<li>
@@ -85,6 +90,66 @@
 		</tools>
 	</ThingDef>
 
+
+	<HediffDef>
+		<defName>VBE_GinHigh</defName>
+		<label>gin high</label>
+		<labelNoun>a gin high</labelNoun>
+		<description>Drank some gin. Increases social skill scaling with drunkenness.</description>
+		<hediffClass>Hediff_Alcohol</hediffClass>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<isBad>false</isBad>
+		<comps>
+
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.75</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>warm</label>
+
+				<statOffsets>
+					<SocialImpact>0.10</SocialImpact>
+
+				</statOffsets>		
+			</li>
+			<li>
+				<minSeverity>0.25</minSeverity>
+				<label>tipsy</label>
+
+				<statOffsets>
+					<SocialImpact>0.20</SocialImpact>
+
+				</statOffsets>	
+			</li>
+			<li>
+				<minSeverity>0.4</minSeverity>
+				<label>drunk</label>
+
+				<statOffsets>
+					<SocialImpact>0.3</SocialImpact>
+
+				</statOffsets>	
+			</li>
+			<li>
+				<minSeverity>0.7</minSeverity>
+				<label>hammered</label>
+
+				<statOffsets>
+					<SocialImpact>0.5</SocialImpact>
+
+				</statOffsets>	
+			</li>
+			<li>
+				<minSeverity>0.9</minSeverity>
+				<label>blackout</label>
+
+			</li>
+		</stages>
+	</HediffDef>
 
 
 

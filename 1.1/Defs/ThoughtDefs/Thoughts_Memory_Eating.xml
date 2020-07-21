@@ -34,7 +34,20 @@
 		
 	</ThoughtDef>
 
-
+	<ThoughtDef>	
+		<defName>VBE_TequilaAsIngredient</defName>
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+		<hediff>VBE_TequilaAsIngredient</hediff>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>Drank tequila-based cocktail</label>
+				<description>Yummy.</description>
+				<baseMoodEffect>0</baseMoodEffect>
+			</li>
+		</stages>	
+		
+	</ThoughtDef>
 
 
 </Defs>
