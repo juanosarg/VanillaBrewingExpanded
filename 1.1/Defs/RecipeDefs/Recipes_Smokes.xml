@@ -119,7 +119,9 @@
 		<products>
 			<VBE_Cigars>5</VBE_Cigars>
 		</products>
-		
+		<skillRequirements>
+			<Crafting>7</Crafting>
+		</skillRequirements>
 	</RecipeDef>
 
 

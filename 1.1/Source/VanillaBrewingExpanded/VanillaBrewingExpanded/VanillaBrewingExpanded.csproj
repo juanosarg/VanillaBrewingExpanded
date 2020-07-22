@@ -298,6 +298,8 @@
     <Compile Include="Comps\CompProperties_MaturingAlcohol.cs" />
     <Compile Include="Comps\CompProperties_TempTransforms.cs" />
     <Compile Include="Comps\CompTempTransforms.cs" />
+    <Compile Include="Hediffs\Hediff_AmbrandyInspiration.cs" />
+    <Compile Include="Hediffs\Hediff_CiderRemoveToxic.cs" />
     <Compile Include="Hediffs\Hediff_ConsumedCocktail.cs" />
     <Compile Include="Hediffs\Hediff_EnergyDrink.cs" />
     <Compile Include="Hediffs\Hediff_EnergyDrinkHangover.cs" />

@@ -4,13 +4,13 @@
 	<ThingDef ParentName="DrugBase">
 		<defName>VBE_Gin</defName>
 		<label>gin</label>
-		<description>A particularly mild and colorless spirit, aromatically speaking this bottle has a pine-tree like scent as well as subtle fruity notes. This liquor has a reputation for causing what is known as  “gin drunkenness”, during which one feels increased empathy and understanding.</description>  
+		<description>A particularly mild and colorless spirit, aromatically speaking this bottle has a pine-tree like scent as well as subtle fruity notes. This liquor has a reputation for being light-hearted and fun to drink and for causing what is known as  “gin drunkenness”, during which one feels increased empathy and understanding.</description>  
 		<graphicData>
 			<texPath>Things/Items/Drinks/VBE_Gin</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<thingCategories>
-			<li>VBE_DrinksAlcoholic</li>
+			<li>VBE_DrinksLuxurySpirits</li>
 		</thingCategories>
 		<equippedAngleOffset>-150</equippedAngleOffset>
 		<rotatable>false</rotatable>
@@ -23,9 +23,10 @@
 			<Nutrition>0.08</Nutrition>
 		</statBases>
 		<ingestible>
+		<specialThoughtAsIngredient>VBE_GinAsIngredient</specialThoughtAsIngredient>
 			<foodType>Fluid, Processed, Liquor</foodType>
 			<joyKind>Chemical</joyKind>
-			<joy>0.17</joy>
+			<joy>0.40</joy>
 			<nurseable>true</nurseable>
 			<drugCategory>Social</drugCategory>
 			<ingestSound>Ingest_Beer</ingestSound>
@@ -38,11 +39,7 @@
 			<ingestReportString>Drinking {0}.</ingestReportString>
 			<chairSearchRadius>25</chairSearchRadius>
 			<outcomeDoers>
-				<li Class="IngestionOutcomeDoer_GiveHediff">
-					<hediffDef>VBE_GinHigh</hediffDef>
-					<severity>0.22</severity>
-					
-				</li>
+				
 				<li Class="IngestionOutcomeDoer_GiveHediff">
 					<hediffDef>AlcoholHigh</hediffDef>
 					<severity>0.22</severity>
@@ -91,65 +88,7 @@
 	</ThingDef>
 
 
-	<HediffDef>
-		<defName>VBE_GinHigh</defName>
-		<label>gin high</label>
-		<labelNoun>a gin high</labelNoun>
-		<description>Drank some gin. Increases social skill scaling with drunkenness.</description>
-		<hediffClass>Hediff_Alcohol</hediffClass>
-		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
-		<scenarioCanAdd>true</scenarioCanAdd>
-		<isBad>false</isBad>
-		<comps>
 
-			<li Class="HediffCompProperties_SeverityPerDay">
-				<severityPerDay>-0.75</severityPerDay>
-				<showHoursToRecover>true</showHoursToRecover>
-			</li>
-		</comps>
-		<stages>
-			<li>
-				<label>warm</label>
-
-				<statOffsets>
-					<SocialImpact>0.10</SocialImpact>
-
-				</statOffsets>		
-			</li>
-			<li>
-				<minSeverity>0.25</minSeverity>
-				<label>tipsy</label>
-
-				<statOffsets>
-					<SocialImpact>0.20</SocialImpact>
-
-				</statOffsets>	
-			</li>
-			<li>
-				<minSeverity>0.4</minSeverity>
-				<label>drunk</label>
-
-				<statOffsets>
-					<SocialImpact>0.3</SocialImpact>
-
-				</statOffsets>	
-			</li>
-			<li>
-				<minSeverity>0.7</minSeverity>
-				<label>hammered</label>
-
-				<statOffsets>
-					<SocialImpact>0.5</SocialImpact>
-
-				</statOffsets>	
-			</li>
-			<li>
-				<minSeverity>0.9</minSeverity>
-				<label>blackout</label>
-
-			</li>
-		</stages>
-	</HediffDef>
 
 
 

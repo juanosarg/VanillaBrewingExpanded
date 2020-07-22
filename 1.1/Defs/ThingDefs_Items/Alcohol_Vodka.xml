@@ -4,13 +4,13 @@
 	<ThingDef ParentName="DrugBase">
 		<defName>VBE_Vodka</defName>
 		<label>vodka</label>
-		<description>A clear and mostly flavorless alcohol made from fermented potatoes. While vodka is entirely drinkable alone it is mostly known for being a perfect mixing agent or for drowning one's pains - Both mental and physical.</description>  
+		<description>A clear and mostly flavorless alcohol made from fermented potatoes. While vodka is drinkable alone it is mostly known for being a perfect mixing agent and for causing foolishly high levels of boldness in those who choose to drink it.</description>  
 		<graphicData>
 			<texPath>Things/Items/Drinks/VBE_Vodka</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<thingCategories>
-			<li>VBE_DrinksAlcoholic</li>
+			<li>VBE_DrinksSimpleSpirits</li>
 		</thingCategories>
 		<equippedAngleOffset>-150</equippedAngleOffset>
 		<rotatable>false</rotatable>
@@ -23,6 +23,7 @@
 			<Nutrition>0.08</Nutrition>
 		</statBases>
 		<ingestible>
+		<specialThoughtAsIngredient>VBE_VodkaAsIngredient</specialThoughtAsIngredient>
 			<foodType>Fluid, Processed, Liquor</foodType>
 			<joyKind>Chemical</joyKind>
 			<joy>0.17</joy>
@@ -94,7 +95,7 @@
 		<defName>VBE_VodkaHigh</defName>
 		<label>vodka high</label>
 		<labelNoun>a vodka high</labelNoun>
-		<description>Drank some vodka. Provides a scaling pain resistance buff, scaling with drunkeness.</description>
+		<description>Drank some vodka. Provides a melee accuracy buff that scales with drunkeness.</description>
 		<hediffClass>Hediff_Alcohol</hediffClass>
 		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
 		<scenarioCanAdd>true</scenarioCanAdd>
@@ -109,25 +110,37 @@
 		<stages>
 			<li>
 				<label>warm</label>
-				
+				<statOffsets>
+					<MeleeHitChance>0.05</MeleeHitChance>
+
+				</statOffsets>		
 
 			</li>
 			<li>
 				<minSeverity>0.25</minSeverity>
 				<label>tipsy</label>
-				
+				<statOffsets>
+					<MeleeHitChance>0.10</MeleeHitChance>
+
+				</statOffsets>	
 
 			</li>
 			<li>
 				<minSeverity>0.4</minSeverity>
 				<label>drunk</label>
 				
+				<statOffsets>
+					<MeleeHitChance>0.20</MeleeHitChance>
 
+				</statOffsets>	
 			</li>
 			<li>
 				<minSeverity>0.7</minSeverity>
 				<label>hammered</label>
-				
+				<statOffsets>
+					<MeleeHitChance>0.35</MeleeHitChance>
+
+				</statOffsets>	
 
 			</li>
 			<li>

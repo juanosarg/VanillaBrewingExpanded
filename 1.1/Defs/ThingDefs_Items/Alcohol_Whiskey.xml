@@ -4,13 +4,13 @@
 	<ThingDef ParentName="DrugBase">
 		<defName>VBE_Whiskey</defName>
 		<label>whiskey</label>
-		<description>A potent liquor distilled from fermented grain. The flavors of the aging barrel tend to permeate this spirit more than others. A woody, almost smokey flavor is pronounced throughout.</description>  
+		<description>A potent liquor distilled from fermented grain. The flavors of the aging barrel tend to permeate this spirit more than others. A woody, almost smokey flavor is pronounced throughout. Simple whiskeys are stereotypically associated with rough manual laborers and hard workers, a common sight in steamworlds across the galaxy.</description>  
 		<graphicData>
 			<texPath>Things/Items/Drinks/VBE_Whisky</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<thingCategories>
-			<li>VBE_DrinksAlcoholic</li>
+			<li>VBE_DrinksSimpleSpirits</li>
 		</thingCategories>
 		<equippedAngleOffset>-150</equippedAngleOffset>
 		<rotatable>false</rotatable>
@@ -23,6 +23,7 @@
 			<Nutrition>0.08</Nutrition>
 		</statBases>
 		<ingestible>
+			<specialThoughtAsIngredient>VBE_WhiskeyAsIngredient</specialThoughtAsIngredient>
 			<foodType>Fluid, Processed, Liquor</foodType>
 			<joyKind>Chemical</joyKind>
 			<joy>0.19</joy>
@@ -42,6 +43,11 @@
 					<hediffDef>AlcoholHigh</hediffDef>
 					<severity>0.2</severity>
 					<toleranceChemical>Alcohol</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>VBE_WhiskeyHigh</hediffDef>
+					<severity>0.2</severity>
+					
 				</li>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
 					<hediffDef>AlcoholTolerance</hediffDef>
@@ -84,17 +90,43 @@
 			</li>
 		</tools>
 	</ThingDef>
+	
+	<HediffDef>
+		<defName>VBE_WhiskeyHigh</defName>
+		<label>whiskey high</label>
+		<labelNoun>a whiskey high</labelNoun>
+		<description>Drank some whiskey. Increases global work speed by 15%.</description>
+		<hediffClass>Hediff_Alcohol</hediffClass>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<isBad>false</isBad>
+		<comps>
+
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.75</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statOffsets>
+					<WorkSpeedGlobal>0.15</WorkSpeedGlobal>
+				</statOffsets>		
+			</li>
+			
+		</stages>
+	</HediffDef>
 
 	<ThingDef ParentName="DrugBase">
 		<defName>VBE_DoubleWhiskey</defName>
 		<label>double-aged whiskey</label>
-		<description>The result of whiskey being aged once more in an unused or lightly used secondary barrel. Flavor profiles are notably stronger and the afterburn in one's throat notably reduced.</description>  
+		<description>The result of whiskey being aged once more in an unused or lightly used secondary barrel. Flavor profiles are stronger and the afterburn in one's throat notably reduced. The increased aging time for fine whiskey generally portrays a sense of mercantilism and class among its consumers.</description>  
 		<graphicData>
 			<texPath>Things/Items/Drinks/VBE_DoubleAgedWhisky</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<thingCategories>
-			<li>VBE_DrinksAlcoholic</li>
+			<li>VBE_DrinksLuxurySpirits</li>
 		</thingCategories>
 		<equippedAngleOffset>-150</equippedAngleOffset>
 		<rotatable>false</rotatable>
@@ -107,6 +139,8 @@
 			<Nutrition>0.08</Nutrition>
 		</statBases>
 		<ingestible>
+				<specialThoughtAsIngredient>VBE_WhiskeyAsIngredient</specialThoughtAsIngredient>
+
 			<foodType>Fluid, Processed, Liquor</foodType>
 			<joyKind>Chemical</joyKind>
 			<joy>0.25</joy>
@@ -126,6 +160,11 @@
 					<hediffDef>AlcoholHigh</hediffDef>
 					<severity>0.35</severity>
 					<toleranceChemical>Alcohol</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>VBE_DoubleWhiskeyHigh</hediffDef>
+					<severity>0.35</severity>
+					
 				</li>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
 					<hediffDef>AlcoholTolerance</hediffDef>
@@ -169,7 +208,32 @@
 		</tools>
 	</ThingDef>
 
+	<HediffDef>
+		<defName>VBE_DoubleWhiskeyHigh</defName>
+		<label>double whiskey high</label>
+		<labelNoun>a double whiskey high</labelNoun>
+		<description>Drank some double whiskey. Increases global work speed by 20% and trade pricing by 20%.</description>
+		<hediffClass>Hediff_Alcohol</hediffClass>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<isBad>false</isBad>
+		<comps>
 
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.75</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<statOffsets>
+					<WorkSpeedGlobal>0.2</WorkSpeedGlobal>
+					<TradePriceImprovement>0.2</TradePriceImprovement>
+				</statOffsets>		
+			</li>
+			
+		</stages>
+	</HediffDef>
 
 
 

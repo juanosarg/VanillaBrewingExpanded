@@ -4,7 +4,7 @@
 
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>Vanilla Factions Expanded - Medieval</li>
+			<li>Vanilla Factions Expanded - Settlers</li>
 		</mods>
 
 		<match Class="PatchOperationSequence">
@@ -13,102 +13,65 @@
 
 
 
-				<!-- Adding Fruits to Juice Recipe -->
+				
 
-
-				<li Class="PatchOperationAdd"> 
-					<xpath>/Defs/RecipeDef[@Name = "VBE_MixJuiceBase"]/fixedIngredientFilter/thingDefs</xpath>
-					<value>
-
-
-						<li>VFEM_RawGrapes</li>
-
-
-					</value>
-				</li>
-				<li Class="PatchOperationAdd"> 
-					<xpath>/Defs/RecipeDef[@Name = "VBE_MixJuiceBase"]/defaultIngredientFilter/thingDefs</xpath>
-					<value>
-
-
-						<li>VFEM_RawGrapes</li>
-
-
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd"> 
-					<xpath>/Defs/RecipeDef[defName = "VBE_MixJuice"]/ingredients/li/filter/thingDefs</xpath>
-					<value>
-
-
-						<li>VFEM_RawGrapes</li>
-
-
-					</value>
-				</li>
-
-				<!-- Adding Wine to Cocktail Recipes -->
+				<!-- Adding Chemshine to Cocktail Recipes -->
 
 				<li Class="PatchOperationAdd"> 
 					<xpath>/Defs/RecipeDef[@Name = "VBE_CookCocktailMealBase"]/fixedIngredientFilter/thingDefs</xpath>
 					<value>
-						<li>VFEM_Wine</li>
+						<li>Chemshine</li>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd"> 
 					<xpath>/Defs/RecipeDef[@Name = "VBE_CookCocktailMealBase"]/defaultIngredientFilter/thingDefs</xpath>
 					<value>
-						<li>VFEM_Wine</li>
+						<li>Chemshine</li>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd"> 
 					<xpath>/Defs/RecipeDef[@Name = "VBE_CookCocktailFineMealBase"]/fixedIngredientFilter/thingDefs</xpath>
 					<value>
-						<li>VFEM_Wine</li>
+						<li>Chemshine</li>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd"> 
 					<xpath>/Defs/RecipeDef[@Name = "VBE_CookCocktailFineMealBase"]/defaultIngredientFilter/thingDefs</xpath>
 					<value>
-						<li>VFEM_Wine</li>
+						<li>Chemshine</li>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd"> 
 					<xpath>/Defs/RecipeDef[@Name = "VBE_CookGourmetCocktailMealBase"]/fixedIngredientFilter/thingDefs</xpath>
 					<value>
-						<li>VFEM_Wine</li>
+						<li>Chemshine</li>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd"> 
 					<xpath>/Defs/RecipeDef[@Name = "VBE_CookGourmetCocktailMealBase"]/defaultIngredientFilter/thingDefs</xpath>
 					<value>
-						<li>VFEM_Wine</li>
+						<li>Chemshine</li>
 					</value>
 				</li>
 
 				<li Class="PatchOperationAdd"> 
-					<xpath>/Defs/RecipeDef[defName = "VBE_MakeCocktailFine"]/ingredients/li/filter/thingDefs</xpath>
+					<xpath>/Defs/RecipeDef[defName = "VBE_MakeCocktailSimple"]/ingredients/li/filter/thingDefs</xpath>
 					<value>
-						<li>VFEM_Wine</li>
+						<li>Chemshine</li>
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName = "VBE_MakeCocktailFine"]/ingredients/li[1]/filter</xpath>
+					<value>
+						<li>Chemshine</li>
 					</value>
 				</li>
 
 				<li Class="PatchOperationAdd"> 
 					<xpath>/Defs/RecipeDef[defName = "VBE_MakeCocktailLavish"]/ingredients/li[1]/filter</xpath>
 					<value>
-						<thingDefs>
-							<li>VFEM_Wine</li>
-						</thingDefs>
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd"> 
-					<xpath>/Defs/RecipeDef[defName = "VBE_MakeCocktailGourmet"]/ingredients/li[1]/filter</xpath>
-					<value>
-						<thingDefs>
-							<li>VFEM_Wine</li>
-						</thingDefs>
+						<li>Chemshine</li>
 					</value>
 				</li>
 

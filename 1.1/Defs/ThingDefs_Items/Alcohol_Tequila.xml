@@ -4,13 +4,13 @@
 	<ThingDef ParentName="DrugBase">
 		<defName>VBE_Tequila</defName>
 		<label>tequila</label>
-		<description>A fermented liquor made from agave sap, a favorite of banditos and muffalo wranglers alike. Includes a high-protein snack at the bottom of the bottle believed to bring good luck. Imbibers are known to excel at extended combat.</description>  
+		<description>A fermented liquor made from agave sap, a favorite of wild, rowdy banditos and muffalo wranglers alike. Includes a high-protein snack at the bottom of the bottle believed to bring good luck. Imbibers are known to excel at extended combat.</description>  
 		<graphicData>
 			<texPath>Things/Items/Drinks/VBE_Tequila</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<thingCategories>
-			<li>VBE_DrinksAlcoholic</li>
+			<li>VBE_DrinksLuxurySpirits</li>
 		</thingCategories>
 		<equippedAngleOffset>-150</equippedAngleOffset>
 		<rotatable>false</rotatable>
@@ -112,7 +112,7 @@
 				<label>warm</label>
 
 				<statOffsets>
-					<ShootingAccuracyPawn>5</ShootingAccuracyPawn>
+					<AimingDelayFactor>-0.1</AimingDelayFactor>
 
 				</statOffsets>			
 			</li>
@@ -121,7 +121,7 @@
 				<label>tipsy</label>
 
 				<statOffsets>
-					<ShootingAccuracyPawn>10</ShootingAccuracyPawn>
+					<AimingDelayFactor>-0.15</AimingDelayFactor>
 
 				</statOffsets>		
 			</li>
@@ -130,7 +130,7 @@
 				<label>drunk</label>
 
 				<statOffsets>
-					<ShootingAccuracyPawn>15</ShootingAccuracyPawn>
+					<AimingDelayFactor>-0.2</AimingDelayFactor>
 
 				</statOffsets>		
 			</li>
@@ -139,7 +139,7 @@
 				<label>hammered</label>
 
 				<statOffsets>
-					<ShootingAccuracyPawn>20</ShootingAccuracyPawn>
+					<AimingDelayFactor>-0.35</AimingDelayFactor>
 
 				</statOffsets>		
 			</li>

@@ -78,7 +78,7 @@
 		<defName>VBE_EnergyDrinkHigh</defName>
 		<label>energy drink high</label>
 		<labelNoun>an energy drink high</labelNoun>
-		<description>Energy drinks restore rest immediately, and increase work speed, but at the cost of a later crash.</description>
+		<description>Energy drinks restore rest immediately, and increase moving speed, but at the cost of a later crash.</description>
 		<hediffClass>VanillaBrewingExpanded.Hediff_EnergyDrink</hediffClass>
 		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
 		<scenarioCanAdd>true</scenarioCanAdd>
@@ -96,10 +96,14 @@
 		<stages>
 
 			<li>
-				<statOffsets>
-					<WorkSpeedGlobal>0.35</WorkSpeedGlobal>
+				<capMods>
 
-				</statOffsets>				
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.25</offset>
+					</li>
+
+				</capMods>		
 			</li>
 		</stages>
 	</HediffDef>
@@ -122,10 +126,14 @@
 		<stages>
 
 			<li>
-				<statOffsets>
-					<WorkSpeedGlobal>-0.35</WorkSpeedGlobal>
+				<capMods>
 
-				</statOffsets>				
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.25</offset>
+					</li>
+
+				</capMods>					
 			</li>
 		</stages>
 	</HediffDef>

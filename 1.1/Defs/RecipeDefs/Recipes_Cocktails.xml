@@ -4,7 +4,7 @@
 	<RecipeDef Name="VBE_CookCocktailMealBase" Abstract="True">
 		<fixedIngredientFilter>
 			<categories>
-				<li>VBE_DrinksAlcoholic</li>	
+				<li>VBE_DrinksSimpleSpirits</li>	
 				<li>VBE_DrinksNonAlcoholic</li>					
 			</categories>
 			<thingDefs>
@@ -15,8 +15,35 @@
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
 			<categories>
-				<li>VBE_DrinksAlcoholic</li>	
+				<li>VBE_DrinksSimpleSpirits</li>	
 				<li>VBE_DrinksNonAlcoholic</li>					
+			</categories>	
+			<thingDefs>
+				<li>Milk</li>		
+				<li>Beer</li>								
+			</thingDefs>			
+		</defaultIngredientFilter>
+		<workSkill>Cooking</workSkill>
+	</RecipeDef>
+	
+		<RecipeDef Name="VBE_CookCocktailFineMealBase" Abstract="True">
+		<fixedIngredientFilter>
+			<categories>
+				<li>VBE_DrinksSimpleSpirits</li>	
+				<li>VBE_DrinksNonAlcoholic</li>		
+				<li>VBE_DrinksLuxurySpirits</li>
+			</categories>
+			<thingDefs>
+				<li>Milk</li>		
+				<li>Beer</li>								
+			</thingDefs>
+
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>VBE_DrinksSimpleSpirits</li>	
+				<li>VBE_DrinksNonAlcoholic</li>		
+				<li>VBE_DrinksLuxurySpirits</li>				
 			</categories>	
 			<thingDefs>
 				<li>Milk</li>		
@@ -29,8 +56,9 @@
 	<RecipeDef Name="VBE_CookGourmetCocktailMealBase" Abstract="True">
 		<fixedIngredientFilter>
 			<categories>
-				<li>VBE_DrinksAlcoholic</li>	
-				<li>VBE_DrinksNonAlcoholic</li>			
+				<li>VBE_DrinksSimpleSpirits</li>	
+				<li>VBE_DrinksNonAlcoholic</li>		
+				<li>VBE_DrinksLuxurySpirits</li>
 				<li>VCE_Condiments</li>				
 			</categories>
 			<thingDefs>
@@ -41,8 +69,9 @@
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
 			<categories>
-				<li>VBE_DrinksAlcoholic</li>	
-				<li>VBE_DrinksNonAlcoholic</li>			
+				<li>VBE_DrinksSimpleSpirits</li>	
+				<li>VBE_DrinksNonAlcoholic</li>		
+				<li>VBE_DrinksLuxurySpirits</li>
 				<li>VCE_Condiments</li>				
 			</categories>	
 			<thingDefs>
@@ -75,7 +104,7 @@
 			<li>
 				<filter>
 					<categories>
-						<li>VBE_DrinksAlcoholic</li>
+						<li>VBE_DrinksSimpleSpirits</li>
 					</categories>
 					<thingDefs>
 						<li>Beer</li>
@@ -103,7 +132,7 @@
 		<researchPrerequisite>VBE_MixologyResearch</researchPrerequisite>
 	</RecipeDef>
 
-	<RecipeDef ParentName="VBE_CookCocktailMealBase">
+	<RecipeDef ParentName="VBE_CookCocktailFineMealBase">
 		<defName>VBE_MakeCocktailFine</defName>
 		<label>make fine cocktail</label>
 		<description>Make a fine cocktail, mixed precisely from multiple ingredients.</description>
@@ -122,7 +151,8 @@
 			<li>
 				<filter>
 					<categories>
-						<li>VBE_DrinksAlcoholic</li>
+						<li>VBE_DrinksSimpleSpirits</li>
+						<li>VBE_DrinksLuxurySpirits</li>
 					</categories>
 					<thingDefs>
 						<li>Beer</li>
@@ -139,19 +169,9 @@
 						<li>Milk</li>
 					</thingDefs>
 				</filter>
-				<count>1</count>
+				<count>2</count>
 			</li>
-			<li>
-				<filter>
-					<categories>
-						<li>VBE_DrinksNonAlcoholic</li>
-					</categories>
-					<thingDefs>
-						<li>Milk</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
+			
 		</ingredients>
 
 		<products>
@@ -163,7 +183,7 @@
 		<researchPrerequisite>VBE_MixologyResearch</researchPrerequisite>
 	</RecipeDef>
 
-	<RecipeDef ParentName="VBE_CookCocktailMealBase">
+	<RecipeDef ParentName="VBE_CookCocktailFineMealBase">
 		<defName>VBE_MakeCocktailLavish</defName>
 		<label>make lavish cocktail</label>
 		<description>Make a lavish cocktail, mixed from a wide variety of ingredients and chilled to perfection before meticulously shaken and served.</description>
@@ -182,7 +202,7 @@
 			<li>
 				<filter>
 					<categories>
-						<li>VBE_DrinksAlcoholic</li>
+						<li>VBE_DrinksSimpleSpirits</li>
 					</categories>
 					<thingDefs>
 						<li>Beer</li>
@@ -193,11 +213,9 @@
 			<li>
 				<filter>
 					<categories>
-						<li>VBE_DrinksAlcoholic</li>
+						<li>VBE_DrinksLuxurySpirits</li>
 					</categories>
-					<thingDefs>
-						<li>Beer</li>
-					</thingDefs>
+					
 				</filter>
 				<count>1</count>
 			</li>
@@ -210,19 +228,9 @@
 						<li>Milk</li>
 					</thingDefs>
 				</filter>
-				<count>1</count>
+				<count>2</count>
 			</li>
-			<li>
-				<filter>
-					<categories>
-						<li>VBE_DrinksNonAlcoholic</li>
-					</categories>
-					<thingDefs>
-						<li>Milk</li>
-					</thingDefs>
-				</filter>
-				<count>1</count>
-			</li>
+			
 		</ingredients>
 
 		<products>
@@ -253,7 +261,7 @@
 			<li>
 				<filter>
 					<categories>
-						<li>VBE_DrinksAlcoholic</li>
+						<li>VBE_DrinksSimpleSpirits</li>
 					</categories>
 					
 				</filter>
@@ -262,7 +270,7 @@
 			<li>
 				<filter>
 					<categories>
-						<li>VBE_DrinksAlcoholic</li>
+						<li>VBE_DrinksLuxurySpirits</li>
 					</categories>
 					
 				</filter>

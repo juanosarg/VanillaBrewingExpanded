@@ -48,6 +48,112 @@
 		</stages>	
 		
 	</ThoughtDef>
+	
+	<ThoughtDef>	
+		<defName>VBE_WhiskeyAsIngredient</defName>
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+		<hediff>VBE_WhiskeyAsIngredient</hediff>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>Drank whiskey-based cocktail</label>
+				<description>Yummy.</description>
+				<baseMoodEffect>0</baseMoodEffect>
+			</li>
+		</stages>	
+		
+	</ThoughtDef>
+	
+	<ThoughtDef>	
+		<defName>VBE_VodkaAsIngredient</defName>
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+		<hediff>VBE_VodkaAsIngredient</hediff>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>Drank vodka-based cocktail</label>
+				<description>Yummy.</description>
+				<baseMoodEffect>0</baseMoodEffect>
+			</li>
+		</stages>	
+		
+	</ThoughtDef>
+	
+	<ThoughtDef>	
+		<defName>VBE_GinAsIngredient</defName>
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+		<hediff>VBE_GinAsIngredient</hediff>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>Drank gin-based cocktail</label>
+				<description>Yummy.</description>
+				<baseMoodEffect>0</baseMoodEffect>
+			</li>
+		</stages>	
+		
+	</ThoughtDef>
+	
+	<ThoughtDef>	
+		<defName>VBE_AmbrandyAsIngredient</defName>
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+		<hediff>VBE_AmbrandyAsIngredient</hediff>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>Drank ambrandy-based cocktail</label>
+				<description>Yummy.</description>
+				<baseMoodEffect>0</baseMoodEffect>
+			</li>
+		</stages>	
+		
+	</ThoughtDef>
+	
+		<!-- ======= Drug condiments ========= -->
 
+	<ThoughtDef>	
+		<defName>VBE_ConsumedLuciferiumPowder</defName>
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+		<hediff>VBE_ConsumedLuciferiumPowder</hediff>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>Consumed luciferium powder</label>
+				<description>Yummy.</description>
+				<baseMoodEffect>0</baseMoodEffect>
+			</li>
+		</stages>	
+		
+	</ThoughtDef>
+	
+	<ThoughtDef>	
+		<defName>VBE_ConsumedGoStock</defName>
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+		<hediff>VBE_ConsumedGoStock</hediff>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>Consumed go-juice stock</label>
+				<description>Yummy.</description>
+				<baseMoodEffect>0</baseMoodEffect>
+			</li>
+		</stages>	
+		
+	</ThoughtDef>
+	
+	<ThoughtDef>	
+		<defName>VBE_ConsumedWakeupPowder</defName>
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+		<hediff>VBE_ConsumedWakeupPowder</hediff>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>Consumed wake-up powder</label>
+				<description>Yummy.</description>
+				<baseMoodEffect>0</baseMoodEffect>
+			</li>
+		</stages>	
+		
+	</ThoughtDef>
 
 </Defs>

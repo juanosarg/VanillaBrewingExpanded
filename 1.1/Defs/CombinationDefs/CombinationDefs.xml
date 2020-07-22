@@ -30,13 +30,13 @@
 		
 		<yield>3</yield>
 		<useQualityIncreasing>true</useQualityIncreasing>
-		<awfulQualityAgeDaysThreshold>1</awfulQualityAgeDaysThreshold>
-		<poorQualityAgeDaysThreshold>2</poorQualityAgeDaysThreshold>
-		<normalQualityAgeDaysThreshold>3</normalQualityAgeDaysThreshold>
-		<goodQualityAgeDaysThreshold>35</goodQualityAgeDaysThreshold>
-		<excellentQualityAgeDaysThreshold>40</excellentQualityAgeDaysThreshold>
-		<masterworkQualityAgeDaysThreshold>45</masterworkQualityAgeDaysThreshold>
-		<legendaryQualityAgeDaysThreshold>75</legendaryQualityAgeDaysThreshold>
+		<awfulQualityAgeDaysThreshold>15</awfulQualityAgeDaysThreshold>
+		<poorQualityAgeDaysThreshold>20</poorQualityAgeDaysThreshold>
+		<normalQualityAgeDaysThreshold>30</normalQualityAgeDaysThreshold>
+		<goodQualityAgeDaysThreshold>45</goodQualityAgeDaysThreshold>
+		<excellentQualityAgeDaysThreshold>65</excellentQualityAgeDaysThreshold>
+		<masterworkQualityAgeDaysThreshold>90</masterworkQualityAgeDaysThreshold>
+		<legendaryQualityAgeDaysThreshold>120</legendaryQualityAgeDaysThreshold>
 		<differentProductsByQuality>true</differentProductsByQuality>
 		<productsByQuality>
 			<li>VBE_AmbrandyAwful</li>

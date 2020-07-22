@@ -11,9 +11,17 @@
     </ThingCategoryDef>
 	
 	<ThingCategoryDef>
-      <defName>VBE_DrinksAlcoholic</defName>
-      <label>alcoholic drinks</label>
-      <parent>Foods</parent>
+      <defName>VBE_DrinksSimpleSpirits</defName>
+      <label>simple spirits</label>
+      <parent>VBE_Drinks</parent>
+      <resourceReadoutRoot>false</resourceReadoutRoot>
+      <iconPath>Things/Items/Drinks/VBE_Whisky/VBE_Whisky_b</iconPath>
+    </ThingCategoryDef>
+	
+	<ThingCategoryDef>
+      <defName>VBE_DrinksLuxurySpirits</defName>
+      <label>luxury spirits</label>
+      <parent>VBE_Drinks</parent>
       <resourceReadoutRoot>false</resourceReadoutRoot>
       <iconPath>Things/Items/Drinks/VBE_DoubleAgedWhisky/VBE_DoubleAgedWhisky_b</iconPath>
     </ThingCategoryDef>
@@ -21,7 +29,7 @@
 	<ThingCategoryDef>
       <defName>VBE_DrinksNonAlcoholic</defName>
       <label>non-alcoholic drinks</label>
-      <parent>Foods</parent>
+      <parent>VBE_Drinks</parent>
       <resourceReadoutRoot>false</resourceReadoutRoot>
       <iconPath>Things/Items/Drinks/VBE_Juice/VBE_Juice_b</iconPath>
     </ThingCategoryDef>
