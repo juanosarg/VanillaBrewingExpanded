@@ -4,12 +4,12 @@
 	<ResearchProjectDef>
 		<defName>VBE_MixologyResearch</defName>
 		<label>mixology</label>
-		<tab>VBE_Brewing</tab>
+		<tab>VCE_Cooking</tab>
 		<techLevel>Industrial</techLevel>
 		<description>Better understand high-tech aging methods as well as proper beverage mixing and packaging.</description>
 		<baseCost>750</baseCost>
 		<researchViewX>0</researchViewX>
-		<researchViewY>0</researchViewY>
+		<researchViewY>3</researchViewY>
 		<prerequisites>
 			<li>Electricity</li>
 			<li>Brewing</li>
