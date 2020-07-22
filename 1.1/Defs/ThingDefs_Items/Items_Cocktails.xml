@@ -25,7 +25,7 @@
 			<outcomeDoers>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
 					<hediffDef>AlcoholHigh</hediffDef>
-					<severity>0.25</severity>
+					<severity>0.3</severity>
 					<toleranceChemical>Alcohol</toleranceChemical>
 				</li>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
@@ -78,7 +78,7 @@
 			<outcomeDoers>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
 					<hediffDef>AlcoholHigh</hediffDef>
-					<severity>0.40</severity>
+					<severity>0.45</severity>
 					<toleranceChemical>Alcohol</toleranceChemical>
 				</li>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
@@ -131,7 +131,7 @@
 			<outcomeDoers>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
 					<hediffDef>AlcoholHigh</hediffDef>
-					<severity>0.70</severity>
+					<severity>0.75</severity>
 					<toleranceChemical>Alcohol</toleranceChemical>
 				</li>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
@@ -184,7 +184,7 @@
 			<outcomeDoers>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
 					<hediffDef>AlcoholHigh</hediffDef>
-					<severity>0.25</severity>
+					<severity>0.89</severity>
 					<toleranceChemical>Alcohol</toleranceChemical>
 				</li>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
