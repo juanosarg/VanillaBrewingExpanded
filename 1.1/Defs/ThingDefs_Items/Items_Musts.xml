@@ -164,7 +164,7 @@
 
 	<ThingDef ParentName="ResourceBase">
 		<defName>VBE_VodkaMash</defName>
-		<label>tequila mash</label>
+		<label>vodka mash</label>
 		<description>A thick, starchy mash of raw potatoes and a starter, ready to be fermented.</description>
 		<graphicData>
 			<texPath>Things/Items/Musts/VBE_VodkaMust</texPath>

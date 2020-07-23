@@ -6,7 +6,7 @@
 		<label>whiskey</label>
 		<description>A potent liquor distilled from fermented grain. The flavors of the aging barrel tend to permeate this spirit more than others. A woody, almost smokey flavor is pronounced throughout. Simple whiskeys are stereotypically associated with rough manual laborers and hard workers, a common sight in steamworlds across the galaxy.</description>  
 		<graphicData>
-			<texPath>Things/Items/Drinks/VBE_Whisky</texPath>
+			<texPath>Things/Items/Drinks/VBE_Whiskey</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<thingCategories>

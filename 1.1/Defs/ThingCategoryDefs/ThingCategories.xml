@@ -7,7 +7,7 @@
       <label>drinks</label>
       <parent>Foods</parent>
       <resourceReadoutRoot>false</resourceReadoutRoot>
-      <iconPath>Things/Items/Drinks/VBE_Whisky/VBE_Whisky_b</iconPath>
+      <iconPath>Things/Items/Drinks/VBE_Whiskey/VBE_Whiskey_b</iconPath>
     </ThingCategoryDef>
 	
 	<ThingCategoryDef>
@@ -15,7 +15,7 @@
       <label>simple spirits</label>
       <parent>VBE_Drinks</parent>
       <resourceReadoutRoot>false</resourceReadoutRoot>
-      <iconPath>Things/Items/Drinks/VBE_Whisky/VBE_Whisky_b</iconPath>
+      <iconPath>Things/Items/Drinks/VBE_Whiskey/VBE_Whiskey_b</iconPath>
     </ThingCategoryDef>
 	
 	<ThingCategoryDef>
