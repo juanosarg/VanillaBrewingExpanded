@@ -400,7 +400,7 @@
 		<comps>
 			
 			<li Class="ItemProcessor.CompProperties_ItemProcessor">
-				<buildingOnGraphic>Things/Buildings/VBE_VodkaDrum</buildingOnGraphic>
+				<buildingOnGraphic>Things/Buildings/VBE_VodkaFermentingBarrel</buildingOnGraphic>
 				<numberOfInputs>1</numberOfInputs>
 				<acceptsNoneAsInput>false</acceptsNoneAsInput>
 				<InsertFirstItemDesc>VBE_InsertVodkaMustDesc</InsertFirstItemDesc>
