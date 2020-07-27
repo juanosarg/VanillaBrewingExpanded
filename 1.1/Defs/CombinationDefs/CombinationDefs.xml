@@ -56,12 +56,12 @@
 			<li>VBE_WhiskeyMash</li>
 		</items>	
 		<amount>
-			<li>25</li>
+			<li>50</li>
 		</amount>
 		<result>VBE_Whiskey</result>	
-		<yield>25</yield>
+		<yield>50</yield>
 		<useQualityIncreasing>false</useQualityIncreasing>
-		<singleTimeIfNotQualityIncreasing>2</singleTimeIfNotQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>12</singleTimeIfNotQualityIncreasing>
 	</ItemProcessor.CombinationDef>
 	
 	<ItemProcessor.CombinationDef>
@@ -71,12 +71,12 @@
 			<li>VBE_Whiskey</li>
 		</items>	
 		<amount>
-			<li>25</li>
+			<li>50</li>
 		</amount>
 		<result>VBE_DoubleWhiskey</result>	
-		<yield>25</yield>
+		<yield>50</yield>
 		<useQualityIncreasing>false</useQualityIncreasing>
-		<singleTimeIfNotQualityIncreasing>2</singleTimeIfNotQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>12</singleTimeIfNotQualityIncreasing>
 	</ItemProcessor.CombinationDef>
 
 	<ItemProcessor.CombinationDef>
@@ -91,7 +91,7 @@
 		<result>VBE_Tequila</result>	
 		<yield>25</yield>
 		<useQualityIncreasing>false</useQualityIncreasing>
-		<singleTimeIfNotQualityIncreasing>8</singleTimeIfNotQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>10</singleTimeIfNotQualityIncreasing>
 	</ItemProcessor.CombinationDef>
 
 	<ItemProcessor.CombinationDef>
@@ -106,7 +106,7 @@
 		<result>VBE_Vodka</result>	
 		<yield>25</yield>
 		<useQualityIncreasing>false</useQualityIncreasing>
-		<singleTimeIfNotQualityIncreasing>3</singleTimeIfNotQualityIncreasing>
+		<singleTimeIfNotQualityIncreasing>5</singleTimeIfNotQualityIncreasing>
 	</ItemProcessor.CombinationDef>
 	
 	<ItemProcessor.CombinationDef>

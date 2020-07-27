@@ -54,7 +54,7 @@
 			<Flammability>0.2</Flammability>
 			<MaxHitPoints>60</MaxHitPoints>
 		</statBases>
-		
+		<tickerType>Rare</tickerType>
 		<comps>
 			<li Class="VanillaBrewingExpanded.CompProperties_MaturingAlcohol">
 				<daysToRotStart>6</daysToRotStart>

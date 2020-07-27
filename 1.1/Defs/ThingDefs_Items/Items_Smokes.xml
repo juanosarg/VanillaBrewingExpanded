@@ -10,6 +10,7 @@
 		<graphicData>
 			<texPath>Things/Items/Smokes/VBE_Cigarette</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>0.9</drawSize>
 		</graphicData>
 		<rotatable>false</rotatable>
 		<statBases>

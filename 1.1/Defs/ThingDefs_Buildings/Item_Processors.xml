@@ -201,8 +201,8 @@
 		</thingCategories>
 		<costList>
 			
-			<WoodLog>150</WoodLog>
-			<ComponentIndustrial>1</ComponentIndustrial>
+			<WoodLog>200</WoodLog>
+			<Steel>100</Steel>
 		</costList>
 		<altitudeLayer>Building</altitudeLayer>
 		<rotatable>true</rotatable>

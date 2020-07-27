@@ -180,7 +180,7 @@
 								<VBE_UnfermentedCider>5</VBE_UnfermentedCider>
 							</products>
 
-							<researchPrerequisite>VBE_MixologyResearch</researchPrerequisite>
+							<researchPrerequisite>Brewing</researchPrerequisite>
 						</RecipeDef>
 					</value>
 				</li>
@@ -209,6 +209,7 @@
 								<Flammability>0.2</Flammability>
 								<MaxHitPoints>60</MaxHitPoints>
 							</statBases>
+		<tickerType>Rare</tickerType>
 
 							<comps>
 								<li Class="VanillaBrewingExpanded.CompProperties_MaturingAlcohol">

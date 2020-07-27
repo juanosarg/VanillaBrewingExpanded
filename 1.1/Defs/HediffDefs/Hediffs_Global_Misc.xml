@@ -6,7 +6,7 @@
 		<defName>VBE_DrankSoda</defName>
 		<label>drank soda</label>
 		<makesSickThought>false</makesSickThought>
-		<description>This colonist drank a sweet, fizzy soda, a small but welcomed luxury. Provides a 5% manipulation buff for 5 hours.</description>
+		<description>A burst of sugar enters the bloodstream, providing some short-lived energy. Provides a 5% manipulation buff for 5 hours.</description>
 		<tendable>false</tendable>
 		<isBad>false</isBad>
 		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
@@ -36,7 +36,7 @@
 		<defName>VBE_DrankTea</defName>
 		<label>drank tea</label>
 		<makesSickThought>false</makesSickThought>
-		<description>This colonist drank a delightfully simple cup of tea. It really brightens the day. This buff increases immunity gain speed by 15% and provides 10% reduction in rest fall rate for 5 hours.</description>
+		<description>Tannins naturally found in tea once metabolised increases the stimuli in ones nervous system, suppressing ones urge to sleep, as well as boosting ones immune system. Increases immunity gain speed by 15% and provides 10% reduction in rest fall rate for 5 hours.</description>
 		<tendable>false</tendable>
 		<isBad>false</isBad>
 		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>

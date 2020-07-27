@@ -196,7 +196,7 @@
 			<VBE_WhiskeyMash>5</VBE_WhiskeyMash>
 		</products>
 		
-		<researchPrerequisite>VBE_MixologyResearch</researchPrerequisite>
+		<researchPrerequisite>VBE_LiquorBrewing</researchPrerequisite>
 	</RecipeDef>
 
 <RecipeDef>
@@ -251,7 +251,7 @@
 		<skillRequirements>
 			<Cooking>4</Cooking>
 		</skillRequirements>
-		<researchPrerequisite>VBE_MixologyResearch</researchPrerequisite>
+		<researchPrerequisite>VBE_LiquorBrewing</researchPrerequisite>
 	</RecipeDef>
 
 	<RecipeDef>
@@ -296,7 +296,7 @@
 			<VBE_VodkaMash>5</VBE_VodkaMash>
 		</products>
 		
-		<researchPrerequisite>VBE_MixologyResearch</researchPrerequisite>
+		<researchPrerequisite>VBE_LiquorBrewing</researchPrerequisite>
 	</RecipeDef>
 	
 	<RecipeDef>
@@ -341,7 +341,7 @@
 			<VBE_GinMush>5</VBE_GinMush>
 		</products>
 		
-		<researchPrerequisite>VBE_MixologyResearch</researchPrerequisite>
+		<researchPrerequisite>VBE_LiquorBrewing</researchPrerequisite>
 	</RecipeDef>
 	
 	

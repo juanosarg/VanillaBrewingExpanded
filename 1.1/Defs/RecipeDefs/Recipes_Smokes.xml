@@ -14,7 +14,7 @@
 		<workSpeedStat>DrugCookingSpeed</workSpeedStat>
 		<workAmount>1000</workAmount>
 		<effectWorking>Cook</effectWorking>
-		<soundWorking>Recipe_Brewing</soundWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
 		<allowMixingIngredients>true</allowMixingIngredients>
 		
 		<recipeUsers>
@@ -70,7 +70,7 @@
 		<workSpeedStat>DrugCookingSpeed</workSpeedStat>
 		<workAmount>3000</workAmount>
 		<effectWorking>Cook</effectWorking>
-		<soundWorking>Recipe_Brewing</soundWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
 		<allowMixingIngredients>true</allowMixingIngredients>
 		
 		<recipeUsers>

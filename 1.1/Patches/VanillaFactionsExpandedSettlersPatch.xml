@@ -62,7 +62,7 @@
 				</li>
 
 				<li Class="PatchOperationAdd"> 
-					<xpath>/Defs/RecipeDef[defName = "VBE_MakeCocktailFine"]/ingredients/li[2]/filter</xpath>
+					<xpath>/Defs/RecipeDef[defName = "VBE_MakeCocktailFine"]/ingredients/li[2]/filter/thingDefs</xpath>
 					<value>
 						<li>Chemshine</li>
 					</value>
