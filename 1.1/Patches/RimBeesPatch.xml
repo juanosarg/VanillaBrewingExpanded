@@ -4,98 +4,58 @@
 
 	<Operation Class="PatchOperationFindMod">
 		<mods>
-			<li>Vanilla Factions Expanded - Medieval</li>
+			<li>RimBees</li>
 		</mods>
 
 		<match Class="PatchOperationSequence">
 			<operations>
 
-
-
-
-				<!-- Adding Fruits to Juice Recipe -->
-
-
-				<li Class="PatchOperationAdd"> 
-					<xpath>/Defs/RecipeDef[@Name = "VBE_MixJuiceBase"]/fixedIngredientFilter/thingDefs</xpath>
-					<value>
-
-
-						<li>VFEM_RawGrapes</li>
-
-
-					</value>
-				</li>
-				<li Class="PatchOperationAdd"> 
-					<xpath>/Defs/RecipeDef[@Name = "VBE_MixJuiceBase"]/defaultIngredientFilter/thingDefs</xpath>
-					<value>
-
-
-						<li>VFEM_RawGrapes</li>
-
-
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd"> 
-					<xpath>/Defs/RecipeDef[defName = "VBE_MixJuice"]/ingredients/li/filter/thingDefs</xpath>
-					<value>
-
-
-						<li>VFEM_RawGrapes</li>
-
-
-					</value>
-				</li>
-
-				<!-- Adding Wine to Cocktail Recipes -->
+				<!-- Adding Mead to Cocktail Recipes -->
 
 				<li Class="PatchOperationAdd"> 
 					<xpath>/Defs/RecipeDef[@Name = "VBE_CookCocktailMealBase"]/fixedIngredientFilter/thingDefs</xpath>
 					<value>
-						<li>VFEM_Wine</li>
+						<li>RB_Mead</li>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd"> 
 					<xpath>/Defs/RecipeDef[@Name = "VBE_CookCocktailMealBase"]/defaultIngredientFilter/thingDefs</xpath>
 					<value>
-						<li>VFEM_Wine</li>
+						<li>RB_Mead</li>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd"> 
 					<xpath>/Defs/RecipeDef[@Name = "VBE_CookCocktailFineMealBase"]/fixedIngredientFilter/thingDefs</xpath>
 					<value>
-						<li>VFEM_Wine</li>
+						<li>RB_Mead</li>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd"> 
 					<xpath>/Defs/RecipeDef[@Name = "VBE_CookCocktailFineMealBase"]/defaultIngredientFilter/thingDefs</xpath>
 					<value>
-						<li>VFEM_Wine</li>
+						<li>RB_Mead</li>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd"> 
 					<xpath>/Defs/RecipeDef[@Name = "VBE_CookGourmetCocktailMealBase"]/fixedIngredientFilter/thingDefs</xpath>
 					<value>
-						<li>VFEM_Wine</li>
+						<li>RB_Mead</li>
 					</value>
 				</li>
 				<li Class="PatchOperationAdd"> 
 					<xpath>/Defs/RecipeDef[@Name = "VBE_CookGourmetCocktailMealBase"]/defaultIngredientFilter/thingDefs</xpath>
 					<value>
-						<li>VFEM_Wine</li>
+						<li>RB_Mead</li>
 					</value>
 				</li>
 
 				<li Class="PatchOperationAdd"> 
 					<xpath>/Defs/RecipeDef[defName = "VBE_MakeCocktailFine"]/ingredients/li/filter/thingDefs</xpath>
 					<value>
-						<li>VFEM_Wine</li>
+						<li>RB_Mead</li>
 					</value>
 				</li>
 
-				
-				
 				<li Class="PatchOperationConditional">
 					<xpath>/Defs/RecipeDef[defName = "VBE_MakeCocktailLavish"]/ingredients/li[1]/filter/thingDefs</xpath>
 					<nomatch Class="PatchOperationAdd">
@@ -103,7 +63,7 @@
 						<xpath>/Defs/RecipeDef[defName = "VBE_MakeCocktailLavish"]/ingredients/li[1]/filter</xpath>
 						<value>
 							<thingDefs>
-								<li>VFEM_Wine</li>
+								<li>RB_Mead</li>
 							</thingDefs>
 						</value>
 					</nomatch>
@@ -111,7 +71,7 @@
 					 <success>Always</success>
 						<xpath>/Defs/RecipeDef[defName = "VBE_MakeCocktailLavish"]/ingredients/li[1]/filter/thingDefs</xpath>
 						<value>
-							<li>VFEM_Wine</li>
+							<li>RB_Mead</li>
 						</value>
 					</match>
 				</li>
@@ -123,7 +83,7 @@
 						<xpath>/Defs/RecipeDef[defName = "VBE_MakeCocktailGourmet"]/ingredients/li[1]/filter</xpath>
 						<value>
 							<thingDefs>
-								<li>VFEM_Wine</li>
+								<li>RB_Mead</li>
 							</thingDefs>
 						</value>
 					</nomatch>
@@ -131,15 +91,17 @@
 					 <success>Always</success>
 						<xpath>/Defs/RecipeDef[defName = "VBE_MakeCocktailGourmet"]/ingredients/li[1]/filter/thingDefs</xpath>
 						<value>
-							<li>VFEM_Wine</li>
+							<li>RB_Mead</li>
 						</value>
 					</match>
 				</li>
+
 				
+
 				<li Class="PatchOperationAdd"> 
-					<xpath>/Defs/ThingDef[defName = "VFEM_Wine"]/ingestible</xpath>
+					<xpath>/Defs/ThingDef[defName = "RB_Mead"]/ingestible</xpath>
 					<value>
-						<specialThoughtAsIngredient>VBE_WineAsIngredient</specialThoughtAsIngredient>
+						<specialThoughtAsIngredient>VBE_RBMeadAsIngredient</specialThoughtAsIngredient>
 					</value>
 				</li>
 

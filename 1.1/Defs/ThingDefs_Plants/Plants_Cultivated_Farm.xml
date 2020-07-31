@@ -37,7 +37,7 @@
 	
 	<ThingDef ParentName="PlantBase">
 		<defName>VBE_Plant_Tea</defName>
-		<label>tea plant</label>
+		<label>tea grass</label>
 		<description>A very leafy shrub that is particularly easy to cultivate. Since early mankind it was discovered the leaves of these plants can be boiled into a variety of earthy and soothing tea. This particular genus has been selectively bred for quick maturing compared to its ancient counterpart.</description>
 		<statBases>
 			<MaxHitPoints>85</MaxHitPoints>
@@ -62,8 +62,9 @@
 				<li>Ground</li>
 				<li>Hydroponic</li>
 			</sowTags>
+			<maxMeshCount>4</maxMeshCount>
 			<topWindExposure>0.1</topWindExposure>
-			<visualSizeRange>0.3~1.0</visualSizeRange>
+			<visualSizeRange>0.3~0.8</visualSizeRange>
 			<wildOrder>2</wildOrder>
 		</plant>
 	</ThingDef>

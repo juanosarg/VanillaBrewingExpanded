@@ -198,6 +198,58 @@
 			</li>
 		</stages>
 	</HediffDef>
+	
+	<HediffDef>
+		<defName>VBE_RBMeadAsIngredient</defName>
+		<label>drank mead based cocktail</label>
+		<makesSickThought>false</makesSickThought>
+		<description>This colonist drank a cocktail that had mead as one of its ingredients.</description>
+		<tendable>false</tendable>
+		<isBad>false</isBad>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1.0</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<comps>
+			<li Class="VanillaCookingExpanded.HediffCompProperties_WhileHavingThoughts">
+				<thoughtDefs>
+					<li>VBE_RBMeadAsIngredient</li>
+				</thoughtDefs>
+			</li>
+		</comps>
+		<stages>
+			<li>   
+				<statOffsets>
+					<ToxicSensitivity>-0.2</ToxicSensitivity>
+				</statOffsets>	
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>VBE_WineAsIngredient</defName>
+		<label>drank wine based cocktail</label>
+		<makesSickThought>false</makesSickThought>
+		<description>This colonist drank a cocktail that had wine as one of its ingredients. You monster.</description>
+		<tendable>false</tendable>
+		<isBad>false</isBad>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>1.0</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<comps>
+			<li Class="VanillaCookingExpanded.HediffCompProperties_WhileHavingThoughts">
+				<thoughtDefs>
+					<li>VBE_WineAsIngredient</li>
+				</thoughtDefs>
+			</li>
+		</comps>
+		<stages>
+			<li>   
+				<vomitMtbDays>0.125</vomitMtbDays>
+			</li>
+		</stages>
+	</HediffDef>
 
 	<HediffDef>
 		<defName>VBE_ConsumedLuciferiumPowder</defName>
