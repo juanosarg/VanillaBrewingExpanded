@@ -30,8 +30,8 @@
 		
 		<yield>3</yield>
 		<useQualityIncreasing>true</useQualityIncreasing>
-		<awfulQualityAgeDaysThreshold>15</awfulQualityAgeDaysThreshold>
-		<poorQualityAgeDaysThreshold>20</poorQualityAgeDaysThreshold>
+		<awfulQualityAgeDaysThreshold>1</awfulQualityAgeDaysThreshold>
+		<poorQualityAgeDaysThreshold>2</poorQualityAgeDaysThreshold>
 		<normalQualityAgeDaysThreshold>30</normalQualityAgeDaysThreshold>
 		<goodQualityAgeDaysThreshold>45</goodQualityAgeDaysThreshold>
 		<excellentQualityAgeDaysThreshold>65</excellentQualityAgeDaysThreshold>
