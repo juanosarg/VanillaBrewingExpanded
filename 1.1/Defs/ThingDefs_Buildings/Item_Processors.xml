@@ -90,7 +90,7 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>VBE_AmbrandyDistillery</defName>
 		<label>ambrandy distillery</label>
-		<description>A gilded distillery of very delicate craftsmanship meant for aging ambrosia must into a drinkable form. Requires a small amount of power to keep perfectly environmentally controlled.</description>
+		<description>A gilded distillery of very delicate craftsmanship meant for aging ambrosia must into a drinkable form.</description>
 		<thingClass>ItemProcessor.Building_ItemProcessor</thingClass>
 		<graphicData>
 			<texPath>Things/Buildings/VBE_AmbrandyStill</texPath>
@@ -136,12 +136,7 @@
 			<li>VBE_MixologyResearch</li>
 		</researchPrerequisites>
 		<comps>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
-				<shortCircuitInRain>false</shortCircuitInRain>
-				<basePowerConsumption>150</basePowerConsumption>
-			</li>
-			<li Class="CompProperties_Flickable"/>
+			
 			<li Class="ItemProcessor.CompProperties_ItemProcessor">
 				<buildingOnGraphic>Things/Buildings/VBE_AmbrandyStill</buildingOnGraphic>
 				<numberOfInputs>1</numberOfInputs>
@@ -166,10 +161,7 @@
 				<removeProductDesc>VBE_RemoveAmbrandyDesc</removeProductDesc>
 				<removeProductIcon>UI/VBE_ExtractAmbrandy</removeProductIcon>
 
-				<noPowerDestroysProgress>true</noPowerDestroysProgress>
-				<rareTicksToDestroy>20</rareTicksToDestroy>
-				<noPowerDestroysMessage>VBE_AmbrandyFailurePower</noPowerDestroysMessage>
-
+				
 				<destroyIngredientsAtStartOfProcess>true</destroyIngredientsAtStartOfProcess>
 				
 			</li>

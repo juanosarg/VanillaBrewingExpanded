@@ -5,6 +5,7 @@
 	<supportedVersions>
 
 		<li>1.1</li>
+		<li>1.2</li>
 	</supportedVersions>
 	<packageId>VanillaExpanded.VBrewE</packageId>
 	<modDependencies>
@@ -16,9 +17,10 @@
 		</li>
 
 	</modDependencies>
-	<description>Vanilla Brewing Expanded.
-	Beta 22/07/2020
+	<description>Vanilla Brewing Expanded is an alcohol-oriented module in “Vanilla Cuisine Expanded” from the Vanilla Expanded team, notably Sarg Bjornson, Oskar Potocki and Chowder. Whilst other mods such as Vanilla Plants Expanded and Vanilla Fishing Expanded work well as standalone, due to technical limitations Vanilla Brewing Expanded requires the Core cooking mod.
 
-	Redistributing and publishing this mod is a violation of intellectual property laws.
+We made sure to keep the mechanics of this mod simple and intuitive without ruining the spirit of vanilla gameplay. All elements of this mod offer unique advantages and disadvantages, enhancing the depth of the game a thousandfold. With 7 unique, new alcohol types, you can now tailor your colonists’ drinking habits to your liking, with each alcohol having a unique production chain, buffs, downsides and uses.
+
+We strive to add unique elements for every single one of our players. A widely requested feature - tea and coffee, has also been added, allowing you to brew an immunity boosting hot tea, or whip out hot and iced coffees that help with staying awake and provide help against hypothermia and heat stroke respectively. Cigarettes and cigars also make an appearance, very addictive but incredibly helpful in stressful situations.
 	</description>
 </ModMetaData>

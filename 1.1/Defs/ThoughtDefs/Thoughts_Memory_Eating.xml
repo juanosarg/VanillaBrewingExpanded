@@ -109,6 +109,38 @@
 		
 	</ThoughtDef>
 	
+	<ThoughtDef>	
+		<defName>VBE_RBMeadAsIngredient</defName>
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+		<hediff>VBE_RBMeadAsIngredient</hediff>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>Drank mead-based cocktail</label>
+				<description>Yummy.</description>
+				<baseMoodEffect>0</baseMoodEffect>
+			</li>
+		</stages>	
+		
+	</ThoughtDef>
+	
+	
+	
+	<ThoughtDef>	
+		<defName>VBE_WineAsIngredient</defName>
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+		<hediff>VBE_WineAsIngredient</hediff>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>Drank wine-based cocktail</label>
+				<description>Yummy.</description>
+				<baseMoodEffect>0</baseMoodEffect>
+			</li>
+		</stages>	
+		
+	</ThoughtDef>
+	
 		<!-- ======= Drug condiments ========= -->
 
 	<ThoughtDef>	
