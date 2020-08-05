@@ -217,7 +217,7 @@
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<surfaceType>Item</surfaceType>
 		<researchPrerequisites>
-			<li>VBE_MixologyResearch</li>
+			<li>VBE_LiquorBrewing</li>
 		</researchPrerequisites>
 		<comps>
 			
@@ -303,7 +303,7 @@
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<surfaceType>Item</surfaceType>
 		<researchPrerequisites>
-			<li>VBE_MixologyResearch</li>
+			<li>VBE_LiquorBrewing</li>
 		</researchPrerequisites>
 		<comps>
 			
@@ -387,7 +387,7 @@
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<surfaceType>Item</surfaceType>
 		<researchPrerequisites>
-			<li>VBE_MixologyResearch</li>
+			<li>VBE_LiquorBrewing</li>
 		</researchPrerequisites>
 		<comps>
 			
@@ -471,7 +471,7 @@
 		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
 		<surfaceType>Item</surfaceType>
 		<researchPrerequisites>
-			<li>VBE_MixologyResearch</li>
+			<li>VBE_LiquorBrewing</li>
 		</researchPrerequisites>
 		<comps>
 			

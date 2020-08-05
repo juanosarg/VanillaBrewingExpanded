@@ -12,7 +12,7 @@
 		<thingCategories>
 			<li>VBE_DrinksLuxurySpirits</li>
 		</thingCategories>
-		<equippedAngleOffset>-150</equippedAngleOffset>
+		
 		<rotatable>false</rotatable>
 		<stackLimit>25</stackLimit>
 		<statBases>
@@ -42,31 +42,21 @@
 				<li Class="IngestionOutcomeDoer_GiveHediff">
 					<hediffDef>AlcoholHigh</hediffDef>
 					<severity>0.7</severity>
-					<toleranceChemical>Alcohol</toleranceChemical>
+					
 				</li>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
 					<hediffDef>AmbrosiaHigh</hediffDef>
 					<severity>0.50</severity>
-					<toleranceChemical>Ambrosia</toleranceChemical>
+					
 				</li>
-				<li Class="IngestionOutcomeDoer_GiveHediff">
-					<hediffDef>AlcoholTolerance</hediffDef>
-					<severity>0.04</severity>
-					<divideByBodySize>true</divideByBodySize>
-				</li>
-				<li Class="IngestionOutcomeDoer_GiveHediff">
-					<hediffDef>AmbrosiaTolerance</hediffDef>
-					<severity>0.032</severity>
-					<divideByBodySize>true</divideByBodySize>
-				</li>
+				
 			</outcomeDoers>
 		</ingestible>
-		<equipmentType>Primary</equipmentType>
-		<techLevel>Neolithic</techLevel>
+		
 		<comps>
 			<li Class="CompProperties_Drug">
 				<chemical>Alcohol</chemical>
-				<addictiveness>0.020</addictiveness>
+				<addictiveness>0</addictiveness>
 				<minToleranceToAddict>0.25</minToleranceToAddict>
 				<existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
 				<needLevelOffset>0.9</needLevelOffset>
@@ -74,34 +64,15 @@
 			</li>
 			<li Class="CompProperties_Drug">
 				<chemical>Ambrosia</chemical>
-				<addictiveness>0.020</addictiveness>
+				<addictiveness>0</addictiveness>
 				<minToleranceToAddict>0.15</minToleranceToAddict>
 				<existingAddictionSeverityOffset>0.1</existingAddictionSeverityOffset>
 				<needLevelOffset>0.9</needLevelOffset>
 				<listOrder>30</listOrder>
 			</li>
-			<li>
-				<compClass>CompEquippable</compClass>
-			</li>
+			
 		</comps>
-		<tools>
-			<li>
-				<label>bottle</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-			<li>
-				<label>neck</label>
-				<capacities>
-					<li>Poke</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-		</tools>
+		
 	</ThingDef>
 
 	<ThingDef ParentName="VBE_AmbrandyBase">
