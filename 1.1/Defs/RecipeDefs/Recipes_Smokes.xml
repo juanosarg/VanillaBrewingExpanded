@@ -9,7 +9,7 @@
 		<defName>VBE_MakeCigarettes</defName>
 		<label>make cigarettes</label>
 		<description>Make a small, rolled paper tube stuffed loosely with tobacco leaves.</description>
-		<jobString>Making coffee.</jobString>
+		<jobString>Making cigarettes.</jobString>
 		<workSkill>Cooking</workSkill>
 		<workSpeedStat>DrugCookingSpeed</workSpeedStat>
 		<workAmount>1000</workAmount>

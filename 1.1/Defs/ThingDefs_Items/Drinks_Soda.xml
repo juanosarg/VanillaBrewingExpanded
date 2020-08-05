@@ -37,7 +37,7 @@
 			</ingestHoldOffsetStanding>
 			<ingestCommandString>Drink {0}</ingestCommandString>
 			<ingestReportString>Drinking {0}.</ingestReportString>
-			<chairSearchRadius>25</chairSearchRadius>
+			<ingestHoldUsesTable>false</ingestHoldUsesTable>
 			<tasteThought>VBE_DrankSoda</tasteThought>
 		</ingestible>
 		<equipmentType>Primary</equipmentType>
