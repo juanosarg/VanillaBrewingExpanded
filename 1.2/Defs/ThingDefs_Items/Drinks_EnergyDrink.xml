@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="DrugBase">
+		<defName>VBE_EnergyDrink</defName>
+		<label>energy drink</label>
+		<description>A sour and fizzy drink finished off with a hint of bitterness. The combination of sugar and caffeine means a burst of energy upfront, but with a crash later. Notable aftertaste of radiation.</description>  
+		<graphicData>
+			<texPath>Things/Items/Drinks/VBE_EnergyDrink</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<thingCategories>
+			<li>VBE_DrinksNonAlcoholic</li>
+		</thingCategories>
+
+		<rotatable>false</rotatable>
+		<stackLimit>25</stackLimit>
+		<statBases>
+			<DeteriorationRate>0.5</DeteriorationRate>
+			<MarketValue>13</MarketValue>
+			<Mass>0.3</Mass>
+			<Flammability>0.5</Flammability>
+			<Nutrition>0.20</Nutrition>
+		</statBases>
+		<ingestible>
+			<foodType>Fluid, Processed, Liquor</foodType>
+			<joyKind>Chemical</joyKind>
+			<joy>0.15</joy>
+			<nurseable>true</nurseable>
+			<drugCategory>Social</drugCategory>
+			<ingestSound>Ingest_Beer</ingestSound>
+			<ingestHoldOffsetStanding>
+				<northDefault>
+					<offset>(0.18,0,0)</offset>
+				</northDefault>
+			</ingestHoldOffsetStanding>
+			<ingestCommandString>Drink {0}</ingestCommandString>
+			<ingestReportString>Drinking {0}.</ingestReportString>
+			<chairSearchRadius>25</chairSearchRadius>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>ToxicBuildup</hediffDef>
+					<severity>0.03</severity>
+					<toleranceChemical>VBE_Caffeine</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>VBE_EnergyDrinkHigh</hediffDef>
+					<severity>1</severity>
+					<toleranceChemical>VBE_Caffeine</toleranceChemical>
+				</li>
+
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>VBE_CaffeineTolerance</hediffDef>
+					<severity>0.016</severity>
+					<divideByBodySize>true</divideByBodySize>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+
+		<techLevel>Neolithic</techLevel>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>VBE_Caffeine</chemical>
+				<addictiveness>0.010</addictiveness>
+				<minToleranceToAddict>0.25</minToleranceToAddict>
+				<existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
+				<needLevelOffset>0.9</needLevelOffset>
+				<listOrder>10</listOrder>
+			</li>
+
+		</comps>
+
+	</ThingDef>
+
+
+
+	<HediffDef>
+		<defName>VBE_EnergyDrinkHigh</defName>
+		<label>energy drink high</label>
+		<labelNoun>an energy drink high</labelNoun>
+		<description>Energy drinks restore rest immediately, and increase moving speed, but at the cost of a later crash.</description>
+		<hediffClass>VanillaBrewingExpanded.Hediff_EnergyDrink</hediffClass>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_Effecter">
+				<stateEffecter>Drunk</stateEffecter>
+				<severityIndices>3~5</severityIndices>
+			</li>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-5</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+
+			<li>
+				<capMods>
+
+					<li>
+						<capacity>Moving</capacity>
+						<offset>0.25</offset>
+					</li>
+
+				</capMods>		
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>VBE_EnergyDrinkCrash</defName>
+		<label>energy drink crash</label>
+		<labelNoun>an energy drink crash</labelNoun>
+		<description>An unpleasant delayed after-effect of energy drink consumption.</description>
+		<hediffClass>VanillaBrewingExpanded.Hediff_EnergyDrinkHangover</hediffClass>
+		<initialSeverity>1</initialSeverity>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-12</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+
+			<li>
+				<capMods>
+
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.25</offset>
+					</li>
+
+				</capMods>					
+			</li>
+		</stages>
+	</HediffDef>
+
+	<ThoughtDef>
+		<defName>VBE_EnergyDrinkHigh</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>VBE_EnergyDrinkHigh</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>I feel like I’ve been given wings!</label>
+				<description>Oof, that energy drink has me bouncing off the walls!</description>
+				<baseMoodEffect>6</baseMoodEffect>
+			</li>
+
+		</stages>
+	</ThoughtDef>
+
+
+
+
+
+
+</Defs>

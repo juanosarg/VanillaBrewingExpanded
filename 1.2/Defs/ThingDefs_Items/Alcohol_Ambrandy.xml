@@ -52,7 +52,8 @@
 
 			</outcomeDoers>
 		</ingestible>
-	
+		<techLevel>Archotech</techLevel>
+
 		<comps>
 			<li Class="CompProperties_Drug">
 				<chemical>Alcohol</chemical>
@@ -72,7 +73,7 @@
 			</li>
 
 		</comps>
-
+		
 
 	</ThingDef>
 
