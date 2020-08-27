@@ -1,0 +1,414 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Cooking Expanded</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+
+
+
+				<!-- Adding Fruits to Juice Recipe -->
+
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs</xpath>
+					<value>
+
+
+						<ThingDef ParentName="RoughPlantBase">
+							<defName>VBE_LuciferiumPowder</defName>
+							<label>luciferium powder</label>
+							<description>A very finely blended powder made from luciferium. Usually put around rims of alcoholic drinks in bars frequented by the wealthy and powerful. Provides a very diluted version of the drug without risk of addictions.</description>
+							<graphicData>
+								<texPath>Things/Items/Condiments/VBE_LuciferiumPowder</texPath>
+								<graphicClass>Graphic_Single</graphicClass>
+							</graphicData>
+							<statBases>
+								<MarketValue>130</MarketValue>
+								<Nutrition>1</Nutrition>
+								<Flammability>1.3</Flammability>
+							</statBases>
+							<comps>
+								<li Class="CompProperties_Rottable">
+									<daysToRotStart>60</daysToRotStart>
+									<rotDestroys>true</rotDestroys>
+								</li>
+							</comps>
+							<thingCategories>
+								<li>VCE_Condiments</li>
+							</thingCategories>
+							<ingestible>
+								<preferability>NeverForNutrition</preferability>
+								<specialThoughtAsIngredient>VBE_ConsumedLuciferiumPowder</specialThoughtAsIngredient>
+							</ingestible>
+						</ThingDef>
+
+						<ThingDef ParentName="RoughPlantBase">
+							<defName>VBE_WakeUpPowder</defName>
+							<label>wake-up powder</label>
+							<description>A crushed and powdered form of wake-up, surprisingly sweet and sometimes used as a replacement for sugar in desserts or dissolved into a morning espresso. Provides a very diluted version of the drug without risk of addictions.</description>
+							<graphicData>
+								<texPath>Things/Items/Condiments/VBE_WakeUpPowder</texPath>
+								<graphicClass>Graphic_Single</graphicClass>
+							</graphicData>
+							<statBases>
+								<MarketValue>60</MarketValue>
+								<Nutrition>1</Nutrition>
+								<Flammability>1.3</Flammability>
+							</statBases>
+							<comps>
+								<li Class="CompProperties_Rottable">
+									<daysToRotStart>60</daysToRotStart>
+									<rotDestroys>true</rotDestroys>
+								</li>
+							</comps>
+							<thingCategories>
+								<li>VCE_Condiments</li>
+							</thingCategories>
+							<ingestible>
+								<preferability>NeverForNutrition</preferability>
+								<specialThoughtAsIngredient>VBE_ConsumedWakeupPowder</specialThoughtAsIngredient>
+							</ingestible>
+						</ThingDef>
+
+						<ThingDef ParentName="RoughPlantBase">
+							<defName>VBE_GoJuiceStock</defName>
+							<label>go-juice stock</label>
+							<description>A gelatinized cube of Go-Juice, able to be digested rather than injected. While it can be used in any meal, it is often melted into soups or used as a thickening agent in cocktails. Provides a very diluted version of the drug without risk of addictions.</description>
+							<graphicData>
+								<texPath>Things/Items/Condiments/VBE_GoStock</texPath>
+								<graphicClass>Graphic_StackCount</graphicClass>
+							</graphicData>
+							<statBases>
+								<MarketValue>90</MarketValue>
+								<Nutrition>1</Nutrition>
+								<Flammability>1.3</Flammability>
+							</statBases>
+							<comps>
+								<li Class="CompProperties_Rottable">
+									<daysToRotStart>60</daysToRotStart>
+									<rotDestroys>true</rotDestroys>
+								</li>
+							</comps>
+							<thingCategories>
+								<li>VCE_Condiments</li>
+							</thingCategories>
+							<ingestible>
+								<preferability>NeverForNutrition</preferability>
+								<specialThoughtAsIngredient>VBE_ConsumedGoStock</specialThoughtAsIngredient>
+							</ingestible>
+						</ThingDef>
+
+						<RecipeDef>
+							<defName>VBE_MakeLuciferiumPowder</defName>
+							<label>make luciferium powder</label>
+							<description>Make a very finely blended powder made from luciferium. Usually put around rims of alcoholic drinks in bars frequented by the wealthy and powerful.</description>
+							<jobString>Making luciferium powder.</jobString>
+							<workSpeedStat>CookSpeed</workSpeedStat>
+							<effectWorking>Cook</effectWorking>
+							<soundWorking>Recipe_CookMeal</soundWorking>
+							<workAmount>200</workAmount>
+							<recipeUsers>
+								<li>VCE_CondimentPrepTable</li>	  
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>Luciferium</li>
+										</thingDefs>
+									</filter>
+									<count>10</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<thingDefs>
+									<li>Luciferium</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<products>
+								<VBE_LuciferiumPowder>5</VBE_LuciferiumPowder>
+							</products>
+							<researchPrerequisite>VCE_CondimentsResearch</researchPrerequisite>
+						</RecipeDef>
+
+						<RecipeDef>
+							<defName>VBE_MakeGoJuiceStock</defName>
+							<label>make go-juice stock</label>
+							<description>Make a gelatinized cube of Go-Juice, able to be digested rather than injected. While it can be used in any meal, it is often melted into soups or used as a thickening agent in cocktails.</description>
+							<jobString>Making go-juice stock.</jobString>
+							<workSpeedStat>CookSpeed</workSpeedStat>
+							<effectWorking>Cook</effectWorking>
+							<soundWorking>Recipe_CookMeal</soundWorking>
+							<workAmount>200</workAmount>
+							<recipeUsers>
+								<li>VCE_CondimentPrepTable</li>	  
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>GoJuice</li>
+										</thingDefs>
+									</filter>
+									<count>10</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<thingDefs>
+									<li>GoJuice</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<products>
+								<VBE_GoJuiceStock>5</VBE_GoJuiceStock>
+							</products>
+							<researchPrerequisite>VCE_CondimentsResearch</researchPrerequisite>
+						</RecipeDef>
+
+						<RecipeDef>
+							<defName>VBE_MakeWakeUpPowder</defName>
+							<label>make wake-up powder</label>
+							<description>Make a crushed and powdered form of wake-up, surprisingly sweet and sometimes used as a replacement for sugar in desserts or dissolved into a morning espresso.</description>
+							<jobString>Making wake-up powder.</jobString>
+							<workSpeedStat>CookSpeed</workSpeedStat>
+							<effectWorking>Cook</effectWorking>
+							<soundWorking>Recipe_CookMeal</soundWorking>
+							<workAmount>200</workAmount>
+							<recipeUsers>
+								<li>VCE_CondimentPrepTable</li>	  
+							</recipeUsers>	
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>WakeUp</li>
+										</thingDefs>
+									</filter>
+									<count>10</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>
+								<thingDefs>
+									<li>WakeUp</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<products>
+								<VBE_WakeUpPowder>5</VBE_WakeUpPowder>
+							</products>
+							<researchPrerequisite>VCE_CondimentsResearch</researchPrerequisite>
+						</RecipeDef>
+
+
+
+						<RecipeDef>
+							<defName>VBE_MakeSodaSyrupBulk</defName>
+							<label>make soda syrup (efficient)</label>
+							<description>Make soda syrup by mixing natural fruit juice with sugar. This recipe is much more efficient.</description>
+							<jobString>Making soda syrup.</jobString>
+							<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+							<workSkill>Cooking</workSkill>
+							<effectWorking>Cook</effectWorking>
+							<workAmount>1000</workAmount>
+							<soundWorking>Recipe_Brewing</soundWorking>
+							<allowMixingIngredients>true</allowMixingIngredients>
+							<recipeUsers>
+								<li>Brewery</li>	
+								<li>VBE_Bar</li>			
+							</recipeUsers>
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>VBE_Juice</li>
+										</thingDefs>
+									</filter>
+									<count>20</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>VCE_RawSugar</li>
+										</thingDefs>
+									</filter>
+									<count>4</count>
+								</li>
+							</ingredients>
+							<fixedIngredientFilter>			
+								<thingDefs>
+									<li>VBE_Juice</li>
+									<li>VCE_RawSugar</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<defaultIngredientFilter>			
+								<thingDefs>
+									<li>VBE_Juice</li>
+									<li>VCE_RawSugar</li>
+								</thingDefs>
+							</defaultIngredientFilter>
+							<products>
+								<VBE_SodaSyrup>20</VBE_SodaSyrup>
+							</products>
+							<skillRequirements>
+								<Cooking>4</Cooking>
+							</skillRequirements>
+							<researchPrerequisite>VBE_MixologyResearch</researchPrerequisite>
+						</RecipeDef>
+
+						<RecipeDef>
+							<defName>VBE_MakeWhiskeyMash</defName>
+							<label>make whiskey mash</label>
+							<description>Make a starchy and mostly liquid mixture with pulpy chunks strewn throughout. Ready To be aged.</description>
+							<jobString>Making whiskey mash.</jobString>
+							<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+							<workSkill>Cooking</workSkill>
+							<effectWorking>Cook</effectWorking>
+							<workAmount>1000</workAmount>
+							<soundWorking>Recipe_Brewing</soundWorking>
+							<allowMixingIngredients>true</allowMixingIngredients>
+							<recipeUsers>
+								<li>Brewery</li>	
+								<li>VBE_Bar</li>			
+							</recipeUsers>
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>RawCorn</li>
+											<li>VCE_Flour</li>
+										</thingDefs>
+									</filter>
+									<count>25</count>
+								</li>
+
+							</ingredients>
+							<fixedIngredientFilter>			
+								<thingDefs>
+									<li>RawCorn</li>
+									<li>VCE_Flour</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<defaultIngredientFilter>			
+								<thingDefs>
+									<li>RawCorn</li>
+									<li>VCE_Flour</li>
+								</thingDefs>
+							</defaultIngredientFilter>
+							<products>
+								<VBE_WhiskeyMash>5</VBE_WhiskeyMash>
+							</products>
+
+							<researchPrerequisite>VBE_LiquorBrewing</researchPrerequisite>
+						</RecipeDef>
+
+						<RecipeDef Name="VBE_CookGourmetCocktailMealBase" Abstract="True">
+							<fixedIngredientFilter>
+								<categories>
+									<li>VBE_DrinksSimpleSpirits</li>	
+									<li>VBE_DrinksNonAlcoholic</li>		
+									<li>VBE_DrinksLuxurySpirits</li>
+									<li>VCE_Condiments</li>				
+								</categories>
+								<thingDefs>
+									<li>Milk</li>		
+
+								</thingDefs>
+
+							</fixedIngredientFilter>
+							<defaultIngredientFilter>
+								<categories>
+									<li>VBE_DrinksSimpleSpirits</li>	
+									<li>VBE_DrinksNonAlcoholic</li>		
+									<li>VBE_DrinksLuxurySpirits</li>
+									<li>VCE_Condiments</li>				
+								</categories>	
+								<thingDefs>
+									<li>Milk</li>		
+
+								</thingDefs>			
+							</defaultIngredientFilter>
+
+							<workSkill>Cooking</workSkill>
+						</RecipeDef>
+
+
+						<RecipeDef ParentName="VBE_CookGourmetCocktailMealBase">
+							<defName>VBE_MakeCocktailGourmet</defName>
+							<label>make gourmet cocktail</label>
+							<description>Make a gourmet cocktail, where every factor from temperature of glass, choice of stirring instrument and type of garnish has been precisely calculated for the maximum flavor and body possible.</description>
+							<jobString>Making gourmet cocktail.</jobString>
+							<workSpeedStat>CookSpeed</workSpeedStat>
+							<workSkill>Cooking</workSkill>
+							<effectWorking>Cook</effectWorking>
+
+							<soundWorking>Recipe_Brewing</soundWorking>
+							<allowMixingIngredients>true</allowMixingIngredients>
+							<recipeUsers>
+
+								<li>VBE_Bar</li>			
+							</recipeUsers>
+							<ingredients>
+								<li>
+									<filter>
+										<categories>
+											<li>VBE_DrinksSimpleSpirits</li>
+										</categories>
+
+									</filter>
+									<count>1</count>
+								</li>
+								<li>
+									<filter>
+										<categories>
+											<li>VBE_DrinksLuxurySpirits</li>
+										</categories>
+
+									</filter>
+									<count>1</count>
+								</li>
+								<li>
+									<filter>
+										<categories>
+											<li>VBE_DrinksNonAlcoholic</li>
+										</categories>
+										<thingDefs>
+											<li>Milk</li>
+										</thingDefs>
+									</filter>
+									<count>1</count>
+								</li>
+								<li>
+									<filter>
+										<categories>
+											<li>VCE_Condiments</li>
+										</categories>
+									</filter>
+									<count>1</count>
+								</li>
+
+							</ingredients>
+
+							<products>
+								<VBE_GourmetCocktail>1</VBE_GourmetCocktail>
+							</products>
+							<skillRequirements>
+								<Cooking>10</Cooking>
+							</skillRequirements>
+							<researchPrerequisite>VBE_MixologyResearch</researchPrerequisite>
+						</RecipeDef>
+
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+

@@ -2,3 +2,7 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\VanillaBrewingExpand
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\VanillaBrewingExpanded\1.1\Source\VanillaBrewingExpanded\VanillaBrewingExpanded\obj\Debug\VanillaBrewingExpanded.csprojAssemblyReference.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\VanillaBrewingExpanded\1.1\Source\VanillaBrewingExpanded\VanillaBrewingExpanded\obj\Debug\VanillaBrewingExpanded.csproj.CoreCompileInputs.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\VanillaBrewingExpanded\1.1\Source\VanillaBrewingExpanded\VanillaBrewingExpanded\obj\Debug\VanillaBrewingExpanded.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\VanillaBrewingExpanded\1.2\Assemblies\VanillaBrewingExpanded.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\VanillaBrewingExpanded\1.2\Source\VanillaBrewingExpanded\VanillaBrewingExpanded\obj\Debug\VanillaBrewingExpanded.csprojAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\VanillaBrewingExpanded\1.2\Source\VanillaBrewingExpanded\VanillaBrewingExpanded\obj\Debug\VanillaBrewingExpanded.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\VanillaBrewingExpanded\1.2\Source\VanillaBrewingExpanded\VanillaBrewingExpanded\obj\Debug\VanillaBrewingExpanded.dll

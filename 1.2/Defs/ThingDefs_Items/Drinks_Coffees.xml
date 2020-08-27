@@ -67,7 +67,7 @@
 			</li>
 			
 			<li Class="CompProperties_Ingredients" />
-			<li Class="VanillaBrewingExpanded.CompProperties_TempTransforms">
+			<li Class="VanillaCookingExpanded.CompProperties_TempTransforms">
 				<minSafeTemperature>0</minSafeTemperature>
 				<maxSafeTemperature>400</maxSafeTemperature>
 				<progressPerDegreePerTick>0.00003</progressPerDegreePerTick>

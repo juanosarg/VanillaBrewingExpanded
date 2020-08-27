@@ -56,7 +56,7 @@
 		</statBases>
 		<tickerType>Rare</tickerType>
 		<comps>
-			<li Class="VanillaBrewingExpanded.CompProperties_MaturingAlcohol">
+			<li Class="VanillaCookingExpanded.CompProperties_MaturingAlcohol">
 				<daysToRotStart>6</daysToRotStart>
 				<rotDestroys>true</rotDestroys>
 				<maturingString>VBE_MushRipening</maturingString>
