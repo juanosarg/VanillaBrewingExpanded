@@ -41,18 +41,7 @@
 						<li>Chemshine</li>
 					</value>
 				</li>
-				<li Class="PatchOperationAdd"> 
-					<xpath>/Defs/RecipeDef[@Name = "VBE_CookGourmetCocktailMealBase"]/fixedIngredientFilter/thingDefs</xpath>
-					<value>
-						<li>Chemshine</li>
-					</value>
-				</li>
-				<li Class="PatchOperationAdd"> 
-					<xpath>/Defs/RecipeDef[@Name = "VBE_CookGourmetCocktailMealBase"]/defaultIngredientFilter/thingDefs</xpath>
-					<value>
-						<li>Chemshine</li>
-					</value>
-				</li>
+				
 
 				<li Class="PatchOperationAdd"> 
 					<xpath>/Defs/RecipeDef[defName = "VBE_MakeCocktailSimple"]/ingredients/li/filter/thingDefs</xpath>

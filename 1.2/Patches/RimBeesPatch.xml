@@ -36,18 +36,7 @@
 						<li>RB_Mead</li>
 					</value>
 				</li>
-				<li Class="PatchOperationAdd"> 
-					<xpath>/Defs/RecipeDef[@Name = "VBE_CookGourmetCocktailMealBase"]/fixedIngredientFilter/thingDefs</xpath>
-					<value>
-						<li>RB_Mead</li>
-					</value>
-				</li>
-				<li Class="PatchOperationAdd"> 
-					<xpath>/Defs/RecipeDef[@Name = "VBE_CookGourmetCocktailMealBase"]/defaultIngredientFilter/thingDefs</xpath>
-					<value>
-						<li>RB_Mead</li>
-					</value>
-				</li>
+			
 
 				<li Class="PatchOperationAdd"> 
 					<xpath>/Defs/RecipeDef[defName = "VBE_MakeCocktailFine"]/ingredients/li/filter/thingDefs</xpath>
@@ -76,25 +65,7 @@
 					</match>
 				</li>
 
-				<li Class="PatchOperationConditional">
-					<xpath>/Defs/RecipeDef[defName = "VBE_MakeCocktailGourmet"]/ingredients/li[1]/filter/thingDefs</xpath>
-					<nomatch Class="PatchOperationAdd">
-					 <success>Always</success>
-						<xpath>/Defs/RecipeDef[defName = "VBE_MakeCocktailGourmet"]/ingredients/li[1]/filter</xpath>
-						<value>
-							<thingDefs>
-								<li>RB_Mead</li>
-							</thingDefs>
-						</value>
-					</nomatch>
-					<match Class="PatchOperationAdd">
-					 <success>Always</success>
-						<xpath>/Defs/RecipeDef[defName = "VBE_MakeCocktailGourmet"]/ingredients/li[1]/filter/thingDefs</xpath>
-						<value>
-							<li>RB_Mead</li>
-						</value>
-					</match>
-				</li>
+			
 
 				
 
