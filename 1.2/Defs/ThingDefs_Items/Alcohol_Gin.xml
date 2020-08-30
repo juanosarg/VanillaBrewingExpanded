@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="DrugBase">
+	<ThingDef ParentName="VBE_DrugToolBase">
 		<defName>VBE_Gin</defName>
 		<label>gin</label>
 		<description>A particularly mild and colorless spirit, aromatically speaking this bottle has a pine-tree like scent as well as subtle fruity notes. This liquor has a reputation for being light-hearted and fun to drink and for causing what is known as  “gin drunkenness”, during which one feels increased empathy and understanding.</description>  
@@ -46,6 +46,11 @@
 					<toleranceChemical>Alcohol</toleranceChemical>
 				</li>
 				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>VBE_GinHigh</hediffDef>
+					<severity>0.22</severity>
+
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
 					<hediffDef>AlcoholTolerance</hediffDef>
 					<severity>0.025</severity>
 					<divideByBodySize>true</divideByBodySize>
@@ -67,25 +72,68 @@
 				<compClass>CompEquippable</compClass>
 			</li>
 		</comps>
-		<tools>
-			<li>
-				<label>bottle</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-			<li>
-				<label>neck</label>
-				<capacities>
-					<li>Poke</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-		</tools>
+		
 	</ThingDef>
+	
+	<HediffDef>
+		<defName>VBE_GinHigh</defName>
+		<label>gin high</label>
+		<labelNoun>a gin high</labelNoun>
+		<description>Drank some gin. Increases social impact.</description>
+		<hediffClass>Hediff_Alcohol</hediffClass>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<isBad>false</isBad>
+		<comps>
+			
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.75</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>warm</label>
+				<statOffsets>
+					<SocialImpact>0.02</SocialImpact>
+
+				</statOffsets>		
+
+			</li>
+			<li>
+				<minSeverity>0.25</minSeverity>
+				<label>tipsy</label>
+				<statOffsets>
+					<SocialImpact>0.05</SocialImpact>
+
+				</statOffsets>	
+
+			</li>
+			<li>
+				<minSeverity>0.4</minSeverity>
+				<label>drunk</label>
+				
+				<statOffsets>
+					<SocialImpact>0.1</SocialImpact>
+
+				</statOffsets>	
+			</li>
+			<li>
+				<minSeverity>0.7</minSeverity>
+				<label>hammered</label>
+				<statOffsets>
+					<SocialImpact>0.15</SocialImpact>
+
+				</statOffsets>	
+
+			</li>
+			<li>
+				<minSeverity>0.9</minSeverity>
+				<label>blackout</label>
+				
+			</li>
+		</stages>
+	</HediffDef>
 
 
 

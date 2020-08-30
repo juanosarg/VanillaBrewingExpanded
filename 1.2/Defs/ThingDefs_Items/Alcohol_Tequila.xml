@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="DrugBase">
+	<ThingDef ParentName="VBE_DrugToolBase">
 		<defName>VBE_Tequila</defName>
 		<label>tequila</label>
 		<description>A fermented liquor made from agave sap, a favorite of wild, rowdy banditos and muffalo wranglers alike. Includes a high-protein snack at the bottom of the bottle believed to bring good luck. Imbibers are known to excel at extended combat.</description>  
@@ -71,24 +71,7 @@
 				<compClass>CompEquippable</compClass>
 			</li>
 		</comps>
-		<tools>
-			<li>
-				<label>bottle</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-			<li>
-				<label>neck</label>
-				<capacities>
-					<li>Poke</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-		</tools>
+		
 	</ThingDef>
 
 	<HediffDef>

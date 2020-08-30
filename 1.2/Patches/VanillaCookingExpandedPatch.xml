@@ -262,7 +262,7 @@
 
 						<RecipeDef>
 							<defName>VBE_MakeWhiskeyMash</defName>
-							<label>make whiskey mash</label>
+							<label>make whiskey mash from flour</label>
 							<description>Make a starchy and mostly liquid mixture with pulpy chunks strewn throughout. Ready To be aged.</description>
 							<jobString>Making whiskey mash.</jobString>
 							<workSpeedStat>DrugCookingSpeed</workSpeedStat>
@@ -279,7 +279,7 @@
 								<li>
 									<filter>
 										<thingDefs>
-											<li>RawCorn</li>
+											
 											<li>VCE_Flour</li>
 										</thingDefs>
 									</filter>
@@ -289,13 +289,13 @@
 							</ingredients>
 							<fixedIngredientFilter>			
 								<thingDefs>
-									<li>RawCorn</li>
+									
 									<li>VCE_Flour</li>
 								</thingDefs>
 							</fixedIngredientFilter>
 							<defaultIngredientFilter>			
 								<thingDefs>
-									<li>RawCorn</li>
+									
 									<li>VCE_Flour</li>
 								</thingDefs>
 							</defaultIngredientFilter>

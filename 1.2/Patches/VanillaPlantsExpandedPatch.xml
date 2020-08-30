@@ -230,7 +230,7 @@
 				<li Class="PatchOperationAdd"> 
 					<xpath>/Defs</xpath>
 					<value>
-						<ThingDef ParentName="DrugBase">
+						<ThingDef ParentName="VBE_DrugToolBase">
 							<defName>VBE_Cider</defName>
 							<label>cider</label>
 							<description>A barely alcoholic beverage meant to be refreshing and fruity. Try as anybody might it is pointless trying to get inebriated by cider alone, thus it is popular among those with prior addiction. Anecdotally, many praise it for supposed antioxidant properties.</description>  
@@ -291,24 +291,7 @@
 									<compClass>CompEquippable</compClass>
 								</li>
 							</comps>
-							<tools>
-								<li>
-									<label>bottle</label>
-									<capacities>
-										<li>Blunt</li>
-									</capacities>
-									<power>9</power>
-									<cooldownTime>2</cooldownTime>
-								</li>
-								<li>
-									<label>neck</label>
-									<capacities>
-										<li>Poke</li>
-									</capacities>
-									<power>9</power>
-									<cooldownTime>2</cooldownTime>
-								</li>
-							</tools>
+							
 						</ThingDef>
 					</value>
 				</li>

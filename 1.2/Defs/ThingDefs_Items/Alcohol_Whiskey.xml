@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="DrugBase">
+	<ThingDef ParentName="VBE_DrugToolBase">
 		<defName>VBE_Whiskey</defName>
 		<label>whiskey</label>
 		<description>A potent liquor distilled from fermented grain. The flavors of the aging barrel tend to permeate this spirit more than others. A woody, almost smokey flavor is pronounced throughout. Simple whiskeys are stereotypically associated with rough manual laborers and hard workers, a common sight in steamworlds across the galaxy.</description>  
@@ -71,24 +71,7 @@
 				<compClass>CompEquippable</compClass>
 			</li>
 		</comps>
-		<tools>
-			<li>
-				<label>bottle</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-			<li>
-				<label>neck</label>
-				<capacities>
-					<li>Poke</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-		</tools>
+	
 	</ThingDef>
 	
 	<HediffDef>
@@ -117,7 +100,7 @@
 		</stages>
 	</HediffDef>
 
-	<ThingDef ParentName="DrugBase">
+	<ThingDef ParentName="VBE_DrugToolBase">
 		<defName>VBE_DoubleWhiskey</defName>
 		<label>double-aged whiskey</label>
 		<description>The result of whiskey being aged once more in an unused or lightly used secondary barrel. Flavor profiles are stronger and the afterburn in one's throat notably reduced. The increased aging time for fine whiskey generally portrays a sense of mercantilism and class among its consumers.</description>  
@@ -188,24 +171,7 @@
 				<compClass>CompEquippable</compClass>
 			</li>
 		</comps>
-		<tools>
-			<li>
-				<label>bottle</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-			<li>
-				<label>neck</label>
-				<capacities>
-					<li>Poke</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-		</tools>
+		
 	</ThingDef>
 
 	<HediffDef>

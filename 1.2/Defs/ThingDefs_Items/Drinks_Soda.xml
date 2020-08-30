@@ -2,7 +2,7 @@
 <Defs>
 
 
-	<ThingDef ParentName="DrugBase">
+	<ThingDef ParentName="VBE_DrugToolBase">
 		<defName>VBE_Soda</defName>
 		<label>soda</label>
 		<description>A very sweet and semi-citrusy beverage best enjoyed chilled. Whilst not exactly nutritious the sugar rush is welcomed and the effervescence is quite refreshing.</description>
@@ -51,16 +51,7 @@
 				<overdoseSeverityOffset>0</overdoseSeverityOffset>
 			</li>
 		</comps>
-		<tools>
-			<li>
-				<label>soda bottle</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>     
-		</tools>
+		
 	</ThingDef>
 
 

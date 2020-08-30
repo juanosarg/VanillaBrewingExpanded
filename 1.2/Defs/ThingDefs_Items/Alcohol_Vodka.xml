@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<ThingDef ParentName="DrugBase">
+	<ThingDef ParentName="VBE_DrugToolBase">
 		<defName>VBE_Vodka</defName>
 		<label>vodka</label>
 		<description>A clear and mostly flavorless alcohol made from fermented potatoes. While vodka is drinkable alone it is mostly known for being a perfect mixing agent and for causing foolishly high levels of boldness in those who choose to drink it.</description>  
@@ -71,24 +71,7 @@
 				<compClass>CompEquippable</compClass>
 			</li>
 		</comps>
-		<tools>
-			<li>
-				<label>bottle</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-			<li>
-				<label>neck</label>
-				<capacities>
-					<li>Poke</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2</cooldownTime>
-			</li>
-		</tools>
+		
 	</ThingDef>
 
 	<HediffDef>
