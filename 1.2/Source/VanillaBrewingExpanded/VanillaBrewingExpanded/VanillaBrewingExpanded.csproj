@@ -294,17 +294,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Comps\CompMaturingAlcohol.cs" />
-    <Compile Include="Comps\CompProperties_MaturingAlcohol.cs" />
-    <Compile Include="Comps\CompProperties_TempTransforms.cs" />
-    <Compile Include="Comps\CompTempTransforms.cs" />
     <Compile Include="Hediffs\Hediff_AmbrandyInspiration.cs" />
     <Compile Include="Hediffs\Hediff_CiderRemoveToxic.cs" />
     <Compile Include="Hediffs\Hediff_ConsumedCocktail.cs" />
     <Compile Include="Hediffs\Hediff_EnergyDrink.cs" />
     <Compile Include="Hediffs\Hediff_EnergyDrinkHangover.cs" />
+    <Compile Include="Hediffs\Hediff_HotCoffeeAntiGutWorms.cs" />
     <Compile Include="Hediffs\Hediff_HotCoffee.cs" />
     <Compile Include="Hediffs\Hediff_IcedCoffee.cs" />
+    <Compile Include="Plants\Plant_AutoProduce.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -97,10 +97,10 @@
 		<stackLimit>25</stackLimit>
 		<statBases>
 			<DeteriorationRate>0.5</DeteriorationRate>
-			<MarketValue>12</MarketValue>
+			<MarketValue>9</MarketValue>
 			<Mass>0.3</Mass>
 			<Flammability>0.5</Flammability>
-			<Nutrition>0.08</Nutrition>
+			<Nutrition>0.07</Nutrition>
 		</statBases>
 		<ingestible>
 			<foodType>Fluid, Processed, Liquor</foodType>
@@ -153,7 +153,7 @@
 		<defName>VBE_HotCoffeeHigh</defName>
 		<label>hot coffee high</label>
 		<labelNoun>a coffee high</labelNoun>
-		<description>Caffeine naturally found in coffee once metabolised increases the stimuli in ones nervous system, suppressing ones urge to sleep, as well as clearing ones mind. Increases learning speed by a 15% amount and 15% reduction in rest fall rate. Hot coffee reduces hypothermia, cold reduces heatstroke.</description>
+		<description>Caffeine naturally found in coffee once metabolised increases the stimuli in one's nervous system, suppressing ones urge to sleep, as well as clearing ones mind. Increases learning speed by a 15% amount and 15% reduction in rest fall rate. Hot coffee reduces hypothermia, cold reduces heatstroke.</description>
 		<hediffClass>VanillaBrewingExpanded.Hediff_HotCoffee</hediffClass>
 		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
 		<scenarioCanAdd>true</scenarioCanAdd>
