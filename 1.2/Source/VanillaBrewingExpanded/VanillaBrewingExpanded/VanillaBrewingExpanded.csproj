@@ -299,6 +299,7 @@
     <Compile Include="Hediffs\Hediff_ConsumedCocktail.cs" />
     <Compile Include="Hediffs\Hediff_EnergyDrink.cs" />
     <Compile Include="Hediffs\Hediff_EnergyDrinkHangover.cs" />
+    <Compile Include="Hediffs\Hediff_TeaAntiGutWorms.cs" />
     <Compile Include="Hediffs\Hediff_HotCoffeeAntiGutWorms.cs" />
     <Compile Include="Hediffs\Hediff_HotCoffee.cs" />
     <Compile Include="Hediffs\Hediff_IcedCoffee.cs" />
