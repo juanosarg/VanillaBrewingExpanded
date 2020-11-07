@@ -11,11 +11,23 @@ namespace VanillaBrewingExpanded
 {
     public class Plant_AutoProduce : Plant
     {
+        public int counter = 0;
 
-        public override void Tick()
+        public override void ExposeData()
         {
-            base.Tick();
-            if (this.IsHashIntervalTick(120000) && this.Growth>0.7) {
+            base.ExposeData();
+      
+            Scribe_Values.Look<int>(ref this.counter, "counter", 0, false);
+
+        }
+
+        public override void TickLong()
+        {
+            base.TickLong();
+            counter++;
+           // Log.Message(counter.ToString());
+            if (counter>60 && this.Growth>0.7) {
+                counter = 0;
                 System.Random random = new System.Random();
                 if (random.NextDouble() > 0.4) {
                     Thing thing = ThingMaker.MakeThing(this.def.plant.harvestedThingDef, null);
@@ -32,5 +44,7 @@ namespace VanillaBrewingExpanded
 
             }
         }
+
+      
     }
 }
