@@ -261,7 +261,7 @@
 						</RecipeDef>
 
 						<RecipeDef>
-							<defName>VBE_MakeWhiskeyMash</defName>
+							<defName>VBE_MakeWhiskeyMashFromFlour</defName>
 							<label>make whiskey mash from flour</label>
 							<description>Make a starchy and mostly liquid mixture with pulpy chunks strewn throughout. Ready To be aged.</description>
 							<jobString>Making whiskey mash.</jobString>
@@ -283,7 +283,7 @@
 											<li>VCE_Flour</li>
 										</thingDefs>
 									</filter>
-									<count>25</count>
+									<count>20</count>
 								</li>
 
 							</ingredients>

@@ -9,7 +9,7 @@
 			<texPath>Things/Items/Drinks/VBE_CocktailSimple</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
-
+		<rotatable>false</rotatable>
 		<statBases>
 			<MarketValue>15</MarketValue>
 			<WorkToMake>300</WorkToMake>
@@ -62,7 +62,7 @@
 			<texPath>Things/Items/Drinks/VBE_CocktailFine</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
-
+		<rotatable>false</rotatable>
 		<statBases>
 			<MarketValue>20</MarketValue>
 			<WorkToMake>450</WorkToMake>
@@ -115,7 +115,7 @@
 			<texPath>Things/Items/Drinks/VBE_CocktailLavish</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
-
+		<rotatable>false</rotatable>
 		<statBases>
 			<MarketValue>40</MarketValue>
 			<WorkToMake>800</WorkToMake>
@@ -168,7 +168,7 @@
 			<texPath>Things/Items/Drinks/VBE_CocktailGourmet</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
-
+		<rotatable>false</rotatable>
 		<statBases>
 			<MarketValue>75</MarketValue>
 			<WorkToMake>800</WorkToMake>

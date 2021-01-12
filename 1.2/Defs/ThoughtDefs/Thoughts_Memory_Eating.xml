@@ -13,7 +13,7 @@
 			<li>
 				<label>Sugar rushed</label>
 				<description>I drank a sweet, fizzy soda, a small but welcomed luxury.</description>
-				<baseMoodEffect>4</baseMoodEffect>
+				<baseMoodEffect>6</baseMoodEffect>
 			</li>
 		</stages>	
 		
