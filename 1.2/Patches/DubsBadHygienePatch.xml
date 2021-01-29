@@ -12,241 +12,241 @@
 
 
 
-				<li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAddModExtension"> 
 					<xpath>/Defs/ThingDef[@Name = "VBE_AmbrandyBase"]</xpath>
 					<value>
 
-						<modExtensions>
+						
 							<li Class="DubsBadHygiene.WaterExt">
 								<water>0.2</water>
 								<UseForWashing>false</UseForWashing>
 							</li>
-						</modExtensions>
+						
 
 
 					</value>
 				</li>
 
-				<li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAddModExtension"> 
 					<xpath>/Defs/ThingDef[defName = "VBE_Gin"]</xpath>
 					<value>
 
-						<modExtensions>
+						
 							<li Class="DubsBadHygiene.WaterExt">
 								<water>0.2</water>
 								<UseForWashing>false</UseForWashing>
 							</li>
-						</modExtensions>
+						
 
 
 					</value>
 				</li>
 
-				<li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAddModExtension"> 
 					<xpath>/Defs/ThingDef[defName = "VBE_Tequila"]</xpath>
 					<value>
 
-						<modExtensions>
+						
 							<li Class="DubsBadHygiene.WaterExt">
 								<water>0.2</water>
 								<UseForWashing>false</UseForWashing>
 							</li>
-						</modExtensions>
+						
 
 
 					</value>
 				</li>
 
-				<li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAddModExtension"> 
 					<xpath>/Defs/ThingDef[defName = "VBE_Vodka"]</xpath>
 					<value>
 
-						<modExtensions>
+						
 							<li Class="DubsBadHygiene.WaterExt">
 								<water>0.2</water>
 								<UseForWashing>false</UseForWashing>
 							</li>
-						</modExtensions>
+						
 
 
 					</value>
 				</li>
 
-				<li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAddModExtension"> 
 					<xpath>/Defs/ThingDef[defName = "VBE_Whiskey"]</xpath>
 					<value>
 
-						<modExtensions>
+						
 							<li Class="DubsBadHygiene.WaterExt">
 								<water>0.2</water>
 								<UseForWashing>false</UseForWashing>
 							</li>
-						</modExtensions>
+						
 
 
 					</value>
 				</li>
 
-				<li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAddModExtension"> 
 					<xpath>/Defs/ThingDef[defName = "VBE_DoubleWhiskey"]</xpath>
 					<value>
 
-						<modExtensions>
+						
 							<li Class="DubsBadHygiene.WaterExt">
 								<water>0.2</water>
 								<UseForWashing>false</UseForWashing>
 							</li>
-						</modExtensions>
+						
 
 
 					</value>
 				</li>
 
-				<li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAddModExtension"> 
 					<xpath>/Defs/ThingDef[defName = "VBE_HotCoffee"]</xpath>
 					<value>
 
-						<modExtensions>
+						
 							<li Class="DubsBadHygiene.WaterExt">
 								<water>0.85</water>
 								<UseForWashing>false</UseForWashing>
 							</li>
-						</modExtensions>
+						
 
 
 					</value>
 				</li>
 
-				<li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAddModExtension"> 
 					<xpath>/Defs/ThingDef[defName = "VBE_IceCoffee"]</xpath>
 					<value>
 
-						<modExtensions>
+						
 							<li Class="DubsBadHygiene.WaterExt">
 								<water>0.85</water>
 								<UseForWashing>false</UseForWashing>
 							</li>
-						</modExtensions>
+						
 
 
 					</value>
 				</li>
 
-				<li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAddModExtension"> 
 					<xpath>/Defs/ThingDef[defName = "VBE_EnergyDrink"]</xpath>
 					<value>
 
-						<modExtensions>
+						
 							<li Class="DubsBadHygiene.WaterExt">
 								<water>0.85</water>
 								<UseForWashing>false</UseForWashing>
 							</li>
-						</modExtensions>
+						
 
 
 					</value>
 				</li>
 
-				<li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAddModExtension"> 
 					<xpath>/Defs/ThingDef[defName = "VBE_Juice"]</xpath>
 					<value>
 
-						<modExtensions>
+						
 							<li Class="DubsBadHygiene.WaterExt">
 								<water>0.85</water>
 								<UseForWashing>false</UseForWashing>
 							</li>
-						</modExtensions>
+						
 
 
 					</value>
 				</li>
 
-				<li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAddModExtension"> 
 					<xpath>/Defs/ThingDef[defName = "VBE_Soda"]</xpath>
 					<value>
 
-						<modExtensions>
+						
 							<li Class="DubsBadHygiene.WaterExt">
 								<water>0.85</water>
 								<UseForWashing>false</UseForWashing>
 							</li>
-						</modExtensions>
+						
 
 
 					</value>
 				</li>
 
-				<li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAddModExtension"> 
 					<xpath>/Defs/ThingDef[defName = "VBE_Tea"]</xpath>
 					<value>
 
-						<modExtensions>
+						
 							<li Class="DubsBadHygiene.WaterExt">
 								<water>0.85</water>
 								<UseForWashing>false</UseForWashing>
 							</li>
-						</modExtensions>
+						
 
 
 					</value>
 				</li>
 
-				<li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAddModExtension"> 
 					<xpath>/Defs/ThingDef[defName = "VBE_SimpleCocktail"]</xpath>
 					<value>
 
-						<modExtensions>
+						
 							<li Class="DubsBadHygiene.WaterExt">
 								<water>0.65</water>
 								<UseForWashing>false</UseForWashing>
 							</li>
-						</modExtensions>
+						
 
 
 					</value>
 				</li>
 
-				<li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAddModExtension"> 
 					<xpath>/Defs/ThingDef[defName = "VBE_FineCocktail"]</xpath>
 					<value>
 
-						<modExtensions>
+						
 							<li Class="DubsBadHygiene.WaterExt">
 								<water>0.65</water>
 								<UseForWashing>false</UseForWashing>
 							</li>
-						</modExtensions>
+						
 
 
 					</value>
 				</li>
 
-				<li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAddModExtension"> 
 					<xpath>/Defs/ThingDef[defName = "VBE_LavishCocktail"]</xpath>
 					<value>
 
-						<modExtensions>
+						
 							<li Class="DubsBadHygiene.WaterExt">
 								<water>0.65</water>
 								<UseForWashing>false</UseForWashing>
 							</li>
-						</modExtensions>
+						
 
 
 					</value>
 				</li>
 
-				<li Class="PatchOperationAdd"> 
+				<li Class="PatchOperationAddModExtension"> 
 					<xpath>/Defs/ThingDef[defName = "VBE_GourmetCocktail"]</xpath>
 					<value>
 
-						<modExtensions>
+						
 							<li Class="DubsBadHygiene.WaterExt">
 								<water>0.65</water>
 								<UseForWashing>false</UseForWashing>
 							</li>
-						</modExtensions>
+						
 
 
 					</value>

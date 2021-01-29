@@ -114,7 +114,7 @@
 		<effectWorking>Cook</effectWorking>
 		<workAmount>1000</workAmount>
 		<soundWorking>Recipe_Brewing</soundWorking>
-		<allowMixingIngredients>true</allowMixingIngredients>
+		
 		<recipeUsers>
 			<li>Brewery</li>	
 			<li>VBE_Bar</li>			
