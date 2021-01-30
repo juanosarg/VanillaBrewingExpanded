@@ -106,8 +106,8 @@
 
 <RecipeDef>
 		<defName>VBE_MakeTequilaMust</defName>
-		<label>make tequila must</label>
-		<description>Make a thin mixture of juiced agave sap or prickly cactus pear and insect meat starter, ready to be cut and fermented in a barrel.</description>
+		<label>make tequila must from agave</label>
+		<description>Make a thin mixture of juiced agave sap and insect meat starter, ready to be cut and fermented in a barrel.</description>
 		<jobString>Making tequila must.</jobString>
 		<workSpeedStat>DrugCookingSpeed</workSpeedStat>
 		<workSkill>Cooking</workSkill>

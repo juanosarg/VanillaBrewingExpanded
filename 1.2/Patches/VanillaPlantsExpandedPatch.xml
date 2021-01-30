@@ -49,37 +49,70 @@
 				</li>
 
 
-				<!-- Adding Prickly Pear to Tequila Recipe -->
+				<!-- Adding Prickly Pear Tequila Must Recipe -->
+
 
 				<li Class="PatchOperationAdd"> 
-					<xpath>/Defs/RecipeDef[defName = "VBE_MakeTequilaMust"]/ingredients/li/filter/thingDefs</xpath>
+					<xpath>/Defs</xpath>
 					<value>
+						<RecipeDef>
+							<defName>VBE_MakeTequilaMustFromPears</defName>
+							<label>make tequila must from prickly pear</label>
+							<description>Make a thin mixture of prickly cactus pear and insect meat starter, ready to be cut and fermented in a barrel.</description>
+							<jobString>Making tequila must.</jobString>
+							<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+							<workSkill>Cooking</workSkill>
+							<effectWorking>Cook</effectWorking>
+							<workAmount>1000</workAmount>
+							<soundWorking>Recipe_Brewing</soundWorking>
 
+							<recipeUsers>
+								<li>Brewery</li>	
+								<li>VBE_Bar</li>			
+							</recipeUsers>
+							<ingredients>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>VCE_RawPricklyPear</li>
+										</thingDefs>
+									</filter>
+									<count>25</count>
+								</li>
+								<li>
+									<filter>
+										<thingDefs>
+											<li>Meat_Megaspider</li>
+										</thingDefs>
+									</filter>
+									<count>25</count>
+								</li>
 
-						<li>VCE_RawPricklyPear</li>
+							</ingredients>
+							<fixedIngredientFilter>			
+								<thingDefs>
+									<li>VCE_RawPricklyPear</li>
+									<li>Meat_Megaspider</li>
+								</thingDefs>
+							</fixedIngredientFilter>
+							<defaultIngredientFilter>			
+								<thingDefs>
+									<li>VCE_RawPricklyPear</li>
+									<li>Meat_Megaspider</li>
+								</thingDefs>
+							</defaultIngredientFilter>
+							<products>
+								<VBE_TequilaMust>5</VBE_TequilaMust>
+							</products>
+							<skillRequirements>
+								<Cooking>4</Cooking>
+							</skillRequirements>
+							<researchPrerequisite>VBE_LiquorBrewing</researchPrerequisite>
+						</RecipeDef>
 
 					</value>
 				</li>
-
-				<li Class="PatchOperationAdd"> 
-					<xpath>/Defs/RecipeDef[defName = "VBE_MakeTequilaMust"]/fixedIngredientFilter/thingDefs</xpath>
-					<value>
-
-
-						<li>VCE_RawPricklyPear</li>
-
-					</value>
-				</li>
-
-				<li Class="PatchOperationAdd"> 
-					<xpath>/Defs/RecipeDef[defName = "VBE_MakeTequilaMust"]/defaultIngredientFilter/thingDefs</xpath>
-					<value>
-
-
-						<li>VCE_RawPricklyPear</li>
-
-					</value>
-				</li>
+				
 
 				<!-- Adding Bearberries to Gin Recipe -->
 
@@ -209,7 +242,7 @@
 								<Flammability>0.2</Flammability>
 								<MaxHitPoints>60</MaxHitPoints>
 							</statBases>
-		<tickerType>Rare</tickerType>
+							<tickerType>Rare</tickerType>
 
 							<comps>
 								<li Class="VanillaCookingExpanded.CompProperties_MaturingAlcohol">
@@ -291,7 +324,7 @@
 									<compClass>CompEquippable</compClass>
 								</li>
 							</comps>
-							
+
 						</ThingDef>
 					</value>
 				</li>
@@ -371,7 +404,7 @@
 							<tendable>false</tendable>
 							<isBad>false</isBad>
 							<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
-							
+
 							<initialSeverity>1.0</initialSeverity>
 							<maxSeverity>1.0</maxSeverity>
 							<comps>
