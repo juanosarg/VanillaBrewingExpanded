@@ -19,8 +19,8 @@
 		
 		<recipeUsers>
 			<li>Campfire</li>
-			<li>Brewery</li>	
-			<li>VBE_Bar</li>			
+			<li>ElectricStove</li>	
+			<li>FueledStove</li>				
 		</recipeUsers>
 
 		<ingredients>
