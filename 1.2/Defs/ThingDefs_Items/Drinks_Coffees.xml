@@ -173,7 +173,7 @@
 			<li>
 			<restFallFactor>0.85</restFallFactor>
 				<statOffsets>
-					<GlobalLearningFactor>1.15</GlobalLearningFactor>
+					<GlobalLearningFactor>0.15</GlobalLearningFactor>
 					
 				</statOffsets>				
 			</li>
@@ -204,7 +204,7 @@
 			<li>
 			<restFallFactor>0.85</restFallFactor>
 				<statOffsets>
-					<GlobalLearningFactor>1.15</GlobalLearningFactor>
+					<GlobalLearningFactor>0.15</GlobalLearningFactor>
 					
 				</statOffsets>				
 			</li>
