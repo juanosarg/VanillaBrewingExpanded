@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Dubs Bad Hygiene</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+
+
+				<li Class="PatchOperationAddModExtension"> 
+					<xpath>/Defs/ThingDef[@Name = "VBE_AmbrandyBase"]</xpath>
+					<value>
+
+						
+							<li Class="DubsBadHygiene.WaterExt">
+								<water>0.2</water>
+								<UseForWashing>false</UseForWashing>
+							</li>
+						
+
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension"> 
+					<xpath>/Defs/ThingDef[defName = "VBE_Gin"]</xpath>
+					<value>
+
+						
+							<li Class="DubsBadHygiene.WaterExt">
+								<water>0.2</water>
+								<UseForWashing>false</UseForWashing>
+							</li>
+						
+
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension"> 
+					<xpath>/Defs/ThingDef[defName = "VBE_Tequila"]</xpath>
+					<value>
+
+						
+							<li Class="DubsBadHygiene.WaterExt">
+								<water>0.2</water>
+								<UseForWashing>false</UseForWashing>
+							</li>
+						
+
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension"> 
+					<xpath>/Defs/ThingDef[defName = "VBE_Vodka"]</xpath>
+					<value>
+
+						
+							<li Class="DubsBadHygiene.WaterExt">
+								<water>0.2</water>
+								<UseForWashing>false</UseForWashing>
+							</li>
+						
+
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension"> 
+					<xpath>/Defs/ThingDef[defName = "VBE_Whiskey"]</xpath>
+					<value>
+
+						
+							<li Class="DubsBadHygiene.WaterExt">
+								<water>0.2</water>
+								<UseForWashing>false</UseForWashing>
+							</li>
+						
+
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension"> 
+					<xpath>/Defs/ThingDef[defName = "VBE_DoubleWhiskey"]</xpath>
+					<value>
+
+						
+							<li Class="DubsBadHygiene.WaterExt">
+								<water>0.2</water>
+								<UseForWashing>false</UseForWashing>
+							</li>
+						
+
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension"> 
+					<xpath>/Defs/ThingDef[defName = "VBE_HotCoffee"]</xpath>
+					<value>
+
+						
+							<li Class="DubsBadHygiene.WaterExt">
+								<water>0.85</water>
+								<UseForWashing>false</UseForWashing>
+							</li>
+						
+
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension"> 
+					<xpath>/Defs/ThingDef[defName = "VBE_IceCoffee"]</xpath>
+					<value>
+
+						
+							<li Class="DubsBadHygiene.WaterExt">
+								<water>0.85</water>
+								<UseForWashing>false</UseForWashing>
+							</li>
+						
+
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension"> 
+					<xpath>/Defs/ThingDef[defName = "VBE_EnergyDrink"]</xpath>
+					<value>
+
+						
+							<li Class="DubsBadHygiene.WaterExt">
+								<water>0.85</water>
+								<UseForWashing>false</UseForWashing>
+							</li>
+						
+
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension"> 
+					<xpath>/Defs/ThingDef[defName = "VBE_Juice"]</xpath>
+					<value>
+
+						
+							<li Class="DubsBadHygiene.WaterExt">
+								<water>0.85</water>
+								<UseForWashing>false</UseForWashing>
+							</li>
+						
+
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension"> 
+					<xpath>/Defs/ThingDef[defName = "VBE_Soda"]</xpath>
+					<value>
+
+						
+							<li Class="DubsBadHygiene.WaterExt">
+								<water>0.85</water>
+								<UseForWashing>false</UseForWashing>
+							</li>
+						
+
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension"> 
+					<xpath>/Defs/ThingDef[defName = "VBE_Tea"]</xpath>
+					<value>
+
+						
+							<li Class="DubsBadHygiene.WaterExt">
+								<water>0.85</water>
+								<UseForWashing>false</UseForWashing>
+							</li>
+						
+
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension"> 
+					<xpath>/Defs/ThingDef[defName = "VBE_SimpleCocktail"]</xpath>
+					<value>
+
+						
+							<li Class="DubsBadHygiene.WaterExt">
+								<water>0.65</water>
+								<UseForWashing>false</UseForWashing>
+							</li>
+						
+
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension"> 
+					<xpath>/Defs/ThingDef[defName = "VBE_FineCocktail"]</xpath>
+					<value>
+
+						
+							<li Class="DubsBadHygiene.WaterExt">
+								<water>0.65</water>
+								<UseForWashing>false</UseForWashing>
+							</li>
+						
+
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension"> 
+					<xpath>/Defs/ThingDef[defName = "VBE_LavishCocktail"]</xpath>
+					<value>
+
+						
+							<li Class="DubsBadHygiene.WaterExt">
+								<water>0.65</water>
+								<UseForWashing>false</UseForWashing>
+							</li>
+						
+
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAddModExtension"> 
+					<xpath>/Defs/ThingDef[defName = "VBE_GourmetCocktail"]</xpath>
+					<value>
+
+						
+							<li Class="DubsBadHygiene.WaterExt">
+								<water>0.65</water>
+								<UseForWashing>false</UseForWashing>
+							</li>
+						
+
+
+					</value>
+				</li>
+
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+

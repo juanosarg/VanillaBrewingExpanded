@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+
+
+	<RecipeDef>
+		<defName>VBE_MakeEnergyDrink</defName>
+		<label>make energy drink</label>
+		<description>Make a sour and fizzy drink finished off with a hint of bitterness. The combination of sugar and caffeine means a burst of energy upfront, but with a crash later. Notable aftertaste of radiation.</description>
+		<jobString>Making energy drink.</jobString>
+		<workSkill>Cooking</workSkill>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<workAmount>1000</workAmount>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Brewing</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		
+		<recipeUsers>
+			<li>Brewery</li>	
+			<li>VBE_Bar</li>			
+		</recipeUsers>
+
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>VBE_Soda</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>VBE_RawCoffee</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Uranium</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+
+		</ingredients>
+		<fixedIngredientFilter>			
+			<thingDefs>
+				<li>VBE_Soda</li>
+				<li>VBE_RawCoffee</li>
+				<li>Uranium</li>
+			</thingDefs>
+			<categories>
+				
+			</categories>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>			
+			<thingDefs>
+				<li>VBE_Soda</li>
+				<li>VBE_RawCoffee</li>
+				<li>Uranium</li>
+			</thingDefs>
+			<categories>
+				
+			</categories>
+		</defaultIngredientFilter>
+		
+		<products>
+			<VBE_EnergyDrink>25</VBE_EnergyDrink>
+		</products>
+		<researchPrerequisite>VBE_MixologyResearch</researchPrerequisite>
+		<skillRequirements>
+			<Cooking>6</Cooking>
+		</skillRequirements>
+	</RecipeDef>
+
+	
+
+
+
+
+
+
+
+</Defs>

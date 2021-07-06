@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="ResourceBase">
+		<defName>VBE_UnfermentedCider</defName>
+		<label>unfermented cider</label>
+		<description>Unfermented cider with a starter in an air-tight bottle. If left alone to develop the proper bacteria the end result will be a weak alcoholic beverage.</description>
+		<graphicData>
+			<texPath>Things/Items/Drinks/VBE_RawCider</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<rotatable>false</rotatable>
+		<stackLimit>25</stackLimit>
+		<thingCategories>
+			<li>VBE_Musts</li>
+		</thingCategories>
+		<statBases>
+			<DeteriorationRate>1.0</DeteriorationRate>
+			<MarketValue>2.5</MarketValue>
+			<Mass>0.8</Mass>
+			<Flammability>0.2</Flammability>
+			<MaxHitPoints>60</MaxHitPoints>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<comps>
+			<li Class="VanillaCookingExpanded.CompProperties_MaturingAlcohol">
+				<daysToRotStart>5</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+				<maturingString>VBE_CiderMaturing</maturingString>
+				<maturingProperly>VBE_CiderMaturingCorrectly</maturingProperly>
+				<maturingSlowly>VBE_CiderCurrentlyRefrigerated</maturingSlowly>
+				<maturingStopped>VBE_CiderCurrentlyFrozen</maturingStopped>
+				<thingToTransformTo>VBE_Cider</thingToTransformTo>
+			</li>
+			<li Class="CompProperties_Ingredients"/>
+		</comps>
+	</ThingDef>
+	<ThingDef ParentName="VBE_DrugToolBase">
+		<defName>VBE_Cider</defName>
+		<label>cider</label>
+		<description>A barely alcoholic beverage meant to be refreshing and fruity. Try as anybody might it is pointless trying to get inebriated by cider alone, thus it is popular among those with prior addiction. Anecdotally, many praise it for supposed antioxidant properties.</description>
+		<graphicData>
+			<texPath>Things/Items/Drinks/VBE_Cider</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<thingCategories>
+			<li>VBE_DrinksSimpleSpirits</li>
+		</thingCategories>
+		<equippedAngleOffset>-150</equippedAngleOffset>
+		<rotatable>false</rotatable>
+		<stackLimit>25</stackLimit>
+		<statBases>
+			<DeteriorationRate>0.5</DeteriorationRate>
+			<MarketValue>12</MarketValue>
+			<Mass>0.3</Mass>
+			<Flammability>0.5</Flammability>
+			<Nutrition>0.08</Nutrition>
+		</statBases>
+		<ingestible>
+			<specialThoughtAsIngredient>VBE_CiderAsIngredient</specialThoughtAsIngredient>
+			<foodType>Fluid, Processed, Liquor</foodType>
+			<joyKind>Chemical</joyKind>
+			<joy>0.17</joy>
+			<nurseable>true</nurseable>
+			<drugCategory>Social</drugCategory>
+			<ingestSound>Ingest_Beer</ingestSound>
+			<ingestHoldOffsetStanding>
+				<northDefault>
+					<offset>(0.18,0,0)</offset>
+				</northDefault>
+			</ingestHoldOffsetStanding>
+			<ingestCommandString>Drink {0}</ingestCommandString>
+			<ingestReportString>Drinking {0}.</ingestReportString>
+			<chairSearchRadius>25</chairSearchRadius>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>VBE_CiderHigh</hediffDef>
+					<severity>0.15</severity>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<equipmentType>Primary</equipmentType>
+		<techLevel>Neolithic</techLevel>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>Alcohol</chemical>
+				<addictiveness>0</addictiveness>
+				<minToleranceToAddict>1</minToleranceToAddict>
+				<existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
+				<needLevelOffset>0.9</needLevelOffset>
+				<listOrder>10</listOrder>
+			</li>
+			<li>
+				<compClass>CompEquippable</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+	<HediffDef>
+		<defName>VBE_CiderHigh</defName>
+		<label>cider high</label>
+		<labelNoun>a cider high</labelNoun>
+		<description>Alcohol from cider in the bloodstream. It makes people happy, but reduces capacities. Cannot cause alcohol addiction. Cannot get past the “warm” drunken stage no matter how many are downed.</description>
+		<hediffClass>Hediff_Alcohol</hediffClass>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_Effecter">
+				<stateEffecter>Drunk</stateEffecter>
+				<severityIndices>3~5</severityIndices>
+			</li>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.75</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>warm</label>
+				<painFactor>0.9</painFactor>
+				<socialFightChanceFactor>1.5</socialFightChanceFactor>
+				<capMods>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>-0.02</offset>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+	</HediffDef>
+</Defs>

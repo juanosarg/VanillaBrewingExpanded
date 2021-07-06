@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+
+
+	<RecipeDef>
+		<defName>VBE_MakeCoffee</defName>
+		<label>make coffee</label>
+		<description>Make a warm, bitter beverage usually complemented with milk and sugar. A favorite among students and office workers across the galaxy due to high caffeine content and pleasing aroma.</description>
+		<jobString>Making coffee.</jobString>
+		<workSkill>Cooking</workSkill>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<workAmount>1000</workAmount>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Brewing</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		
+		<recipeUsers>
+			<li>Campfire</li>
+			<li>ElectricStove</li>	
+			<li>FueledStove</li>				
+		</recipeUsers>
+
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>VBE_RawCoffee</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+			
+
+		</ingredients>
+		<fixedIngredientFilter>			
+			<thingDefs>
+				<li>VBE_RawCoffee</li>
+				
+			</thingDefs>
+			<categories>
+				
+			</categories>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>			
+			<thingDefs>
+				<li>VBE_RawCoffee</li>
+				
+			</thingDefs>
+			<categories>
+				
+			</categories>
+		</defaultIngredientFilter>
+		
+		<products>
+			<VBE_HotCoffee>5</VBE_HotCoffee>
+		</products>
+		<researchPrerequisite>Brewing</researchPrerequisite>
+		
+	</RecipeDef>
+
+	
+
+
+
+
+
+
+
+</Defs>

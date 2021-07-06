@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RecipeDef>
+		<defName>VBE_MakeUnfermentedCider</defName>
+		<label>make unfermented cider</label>
+		<description>Make unfermented cider with a starter in an air-tight bottle. If left alone to develop the proper bacteria the end result will be a weak alcoholic beverage.</description>
+		<jobString>Making unfermented cider.</jobString>
+		<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+		<workSkill>Cooking</workSkill>
+		<effectWorking>Cook</effectWorking>
+		<workAmount>1000</workAmount>
+		<soundWorking>Recipe_Brewing</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>Brewery</li>
+			<li>VBE_Bar</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>VCE_RawApple</li>
+						<li>VCE_RawPeach</li>
+						<li>VCE_RawCherry</li>
+						<li>VCE_RawPlum</li>
+						<li>VCE_RawPear</li>
+						<li>VCE_RawBanana</li>
+						<li>VCE_RawOrange</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>VCE_RawApple</li>
+				<li>VCE_RawPeach</li>
+				<li>VCE_RawCherry</li>
+				<li>VCE_RawPlum</li>
+				<li>VCE_RawPear</li>
+				<li>VCE_RawBanana</li>
+				<li>VCE_RawOrange</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<thingDefs>
+				<li>VCE_RawApple</li>
+				<li>VCE_RawPeach</li>
+				<li>VCE_RawCherry</li>
+				<li>VCE_RawPlum</li>
+				<li>VCE_RawPear</li>
+				<li>VCE_RawBanana</li>
+				<li>VCE_RawOrange</li>
+			</thingDefs>
+		</defaultIngredientFilter>
+		<products>
+			<VBE_UnfermentedCider>5</VBE_UnfermentedCider>
+		</products>
+		<researchPrerequisite>Brewing</researchPrerequisite>
+	</RecipeDef>
+</Defs>

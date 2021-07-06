@@ -1,0 +1,346 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="DrugBase">
+		<defName>VBE_HotCoffee</defName>
+		<label>coffee</label>
+		<description>A warm, bitter beverage usually complemented with milk and sugar. A favorite among students and office workers across the galaxy due to high caffeine content and pleasing aroma.</description>
+
+		<graphicData>
+			<texPath>Things/Items/Drinks/VBE_Coffee</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<thingCategories>
+			<li>VBE_DrinksNonAlcoholic</li>
+		</thingCategories>
+		<tickerType>Rare</tickerType>
+		
+		<rotatable>false</rotatable>
+		<stackLimit>25</stackLimit>
+		<statBases>
+			<DeteriorationRate>0.5</DeteriorationRate>
+			<MarketValue>8</MarketValue>
+			<Mass>0.3</Mass>
+			<Flammability>0.5</Flammability>
+			<Nutrition>0.07</Nutrition>
+		</statBases>
+		<ingestible>
+			<foodType>Fluid, Processed, Liquor</foodType>
+			<joyKind>Chemical</joyKind>
+			<joy>0.12</joy>
+			<nurseable>true</nurseable>
+			<drugCategory>Social</drugCategory>
+			<ingestSound>Ingest_Drink</ingestSound>
+			<ingestHoldOffsetStanding>
+				<northDefault>
+					<offset>(0.18,0,0)</offset>
+				</northDefault>
+			</ingestHoldOffsetStanding>
+						<ingestHoldUsesTable>false</ingestHoldUsesTable>
+
+			<ingestCommandString>Drink {0}</ingestCommandString>
+			<ingestReportString>Drinking {0}.</ingestReportString>
+			
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>VBE_HotCoffeeHigh</hediffDef>
+					<severity>1</severity>
+					<toleranceChemical>VBE_Caffeine</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>VBE_CaffeineTolerance</hediffDef>
+					<severity>0.016</severity>
+					<divideByBodySize>true</divideByBodySize>
+				</li> 
+			</outcomeDoers>
+		</ingestible>
+		
+		<techLevel>Neolithic</techLevel>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>VBE_Caffeine</chemical>
+				<addictiveness>0.005</addictiveness>
+				<minToleranceToAddict>0.25</minToleranceToAddict>
+				<existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
+				<needLevelOffset>0.9</needLevelOffset>
+				<listOrder>10</listOrder>
+			</li>
+			
+			<li Class="CompProperties_Ingredients" />
+			<li Class="VanillaCookingExpanded.CompProperties_TempTransforms">
+				<minSafeTemperature>0</minSafeTemperature>
+				<maxSafeTemperature>400</maxSafeTemperature>
+				<progressPerDegreePerTick>0.00003</progressPerDegreePerTick>
+				<thingToTransformInto>VBE_IceCoffee</thingToTransformInto>
+			</li>
+		</comps>
+		
+		
+	</ThingDef>
+
+
+
+
+	<ThingDef ParentName="DrugBase">
+		<defName>VBE_IceCoffee</defName>
+		<label>iced coffee</label>
+		<description>An icy, chilled coffee. Chilling coffee is preferred by many in warmer climates, anecdotally it also smooths out bitter flavors and brings out noticeable, albeit subtle nuttiness. Just like its warm counterpart, it is ubiquitous among students and professionals alike.</description>  
+		<graphicData>
+			<texPath>Things/Items/Drinks/VBE_IceCoffee</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<thingCategories>
+			<li>VBE_DrinksNonAlcoholic</li>
+		</thingCategories>
+		
+		<rotatable>false</rotatable>
+		<stackLimit>25</stackLimit>
+		<statBases>
+			<DeteriorationRate>0.5</DeteriorationRate>
+			<MarketValue>9</MarketValue>
+			<Mass>0.3</Mass>
+			<Flammability>0.5</Flammability>
+			<Nutrition>0.07</Nutrition>
+		</statBases>
+		<ingestible>
+			<foodType>Fluid, Processed, Liquor</foodType>
+			<joyKind>Chemical</joyKind>
+			<joy>0.17</joy>
+			<nurseable>true</nurseable>
+			<drugCategory>Social</drugCategory>
+			<ingestSound>Ingest_Drink</ingestSound>
+						<ingestHoldUsesTable>false</ingestHoldUsesTable>
+
+			<ingestHoldOffsetStanding>
+				<northDefault>
+					<offset>(0.18,0,0)</offset>
+				</northDefault>
+			</ingestHoldOffsetStanding>
+			<ingestCommandString>Drink {0}</ingestCommandString>
+			<ingestReportString>Drinking {0}.</ingestReportString>
+			
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>VBE_IcedCoffeeHigh</hediffDef>
+					<severity>1</severity>
+					<toleranceChemical>VBE_Caffeine</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>VBE_CaffeineTolerance</hediffDef>
+					<severity>0.016</severity>
+					<divideByBodySize>true</divideByBodySize>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		
+		<techLevel>Neolithic</techLevel>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>VBE_Caffeine</chemical>
+				<addictiveness>0.010</addictiveness>
+				<minToleranceToAddict>0.25</minToleranceToAddict>
+				<existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
+				<needLevelOffset>0.9</needLevelOffset>
+				<listOrder>10</listOrder>
+			</li>
+			
+			<li Class="CompProperties_Ingredients" />
+		</comps>
+		
+	</ThingDef>
+
+	<HediffDef>
+		<defName>VBE_HotCoffeeHigh</defName>
+		<label>hot coffee high</label>
+		<labelNoun>a coffee high</labelNoun>
+		<description>Caffeine naturally found in coffee once metabolised increases the stimuli in one's nervous system, suppressing ones urge to sleep, as well as clearing ones mind. Increases learning speed by a 15% amount and 15% reduction in rest fall rate. Hot coffee reduces hypothermia, cold reduces heatstroke.</description>
+		<hediffClass>VanillaBrewingExpanded.Hediff_HotCoffee</hediffClass>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_Effecter">
+				<stateEffecter>Drunk</stateEffecter>
+				<severityIndices>3~5</severityIndices>
+			</li>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-4.8</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+
+			<li>
+			<restFallFactor>0.85</restFallFactor>
+				<statOffsets>
+					<GlobalLearningFactor>0.15</GlobalLearningFactor>
+					
+				</statOffsets>				
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>VBE_IcedCoffeeHigh</defName>
+		<label>iced coffee high</label>
+		<labelNoun>a coffee high</labelNoun>
+		<description>Caffeine naturally found in coffee once metabolised increases the stimuli in ones nervous system, suppressing ones urge to sleep, as well as clearing ones mind. Increases learning speed by a 15% amount and 15% reduction in rest fall rate. Hot coffee reduces hypothermia, cold reduces heatstroke.</description>
+		<hediffClass>VanillaBrewingExpanded.Hediff_IcedCoffee</hediffClass>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_Effecter">
+				<stateEffecter>Drunk</stateEffecter>
+				<severityIndices>3~5</severityIndices>
+			</li>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-4.8</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+
+			<li>
+			<restFallFactor>0.85</restFallFactor>
+				<statOffsets>
+					<GlobalLearningFactor>0.15</GlobalLearningFactor>
+					
+				</statOffsets>				
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<ThoughtDef>
+		<defName>VBE_HotCoffeeHigh</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>VBE_HotCoffeeHigh</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>Brewed awakening</label>
+				<description>That coffee hit the spot, now let’s get some work done.</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+
+		</stages>
+	</ThoughtDef>
+	
+	<ThoughtDef>
+		<defName>VBE_IcedCoffeeHigh</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>VBE_IcedCoffeeHigh</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<label>Icy awakening</label>
+				<description>Nothing better than iced coffee to refresh yourself.</description>
+				<baseMoodEffect>3</baseMoodEffect>
+			</li>
+
+		</stages>
+	</ThoughtDef>
+
+
+	<!-- Caffeine Addiction -->
+
+	<ChemicalDef>
+		<defName>VBE_Caffeine</defName>
+		<label>caffeine</label>
+		<addictionHediff>VBE_CaffeineAddiction</addictionHediff>
+		<toleranceHediff>VBE_CaffeineTolerance</toleranceHediff>
+		<onGeneratedAddictedToleranceChance>0.8</onGeneratedAddictedToleranceChance>
+
+	</ChemicalDef>
+
+	<NeedDef ParentName="DrugAddictionNeedBase">
+		<defName>VBE_Chemical_Caffeine</defName>
+		<needClass>Need_Chemical</needClass>
+		<label>caffeine</label>
+		<description>Because of a caffeine addiction, this person needs to regularly consume caffeine to avoid withdrawal symptoms.</description>
+		<listPriority>35</listPriority>
+	</NeedDef>
+
+	<HediffDef ParentName="DrugToleranceBase">
+		<defName>VBE_CaffeineTolerance</defName>
+		<label>caffeine tolerance</label>
+		<description>A built-up tolerance to caffeine. The more severe this tolerance is, the more caffeine it takes to get the same effect.</description>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.016</severityPerDay>
+			</li>
+			<li Class="HediffCompProperties_DrugEffectFactor">
+				<chemical>VBE_Caffeine</chemical>
+			</li>
+		</comps>
+		<hediffGivers>
+
+			<li Class="HediffGiver_RandomDrugEffect">
+				<hediff>ToxicBuildup</hediff>
+				<minSeverity>0.15</minSeverity>
+				<baseMtbDays>360</baseMtbDays>
+				<partsToAffect>
+					<li>Kidney</li>
+				</partsToAffect>
+			</li>
+		</hediffGivers>
+	</HediffDef>
+
+	<HediffDef ParentName="AddictionBase">
+		<defName>VBE_CaffeineAddiction</defName>
+		<label>caffeine addiction</label>
+		<description>A chemical addiction to caffeine. Long-term presence of caffeine has caused neurological adaptations at the cellular level, so the brain can no longer function properly without the drug.
+\nWithout regular doses of caffeine, withdrawal symptoms will begin. However, extended abstinence will force the brain to adapt back to its normal state, resolving the addiction.</description>
+		<hediffClass>Hediff_Addiction</hediffClass>
+		<causesNeed>VBE_Chemical_Caffeine</causesNeed>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.047</severityPerDay>
+				<showDaysToRecover>true</showDaysToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+			</li>
+			<li>
+				<label>withdrawal</label>
+				<restFallFactorOffset>0.3</restFallFactorOffset>
+				<socialFightChanceFactor>5.0</socialFightChanceFactor>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.10</offset>
+					</li>
+
+
+				</capMods>
+				<mentalStateGivers>
+					<li>
+						<mentalState>Binging_DrugMajor</mentalState>
+						<mtbDays>80</mtbDays>
+					</li>
+				</mentalStateGivers>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<ThoughtDef>
+		<defName>VBE_CaffeineWithdrawal</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>VBE_CaffeineAddiction</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<stages>
+			<li>
+				<visible>false</visible>
+			</li>
+			<li>
+				<label>caffeine withdrawal</label>
+				<description>God I'm tired. Everything's so annoying, my hands are shaking and my head is pounding.</description>
+				<baseMoodEffect>-10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+
+
+</Defs>

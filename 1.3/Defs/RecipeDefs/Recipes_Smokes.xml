@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+
+
+	<RecipeDef>
+		<defName>VBE_MakeCigarettes</defName>
+		<label>make cigarettes</label>
+		<description>Make a small, rolled paper tube stuffed loosely with tobacco leaves.</description>
+		<jobString>Making cigarettes.</jobString>
+		<workSkill>Cooking</workSkill>
+		<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+		<workAmount>1000</workAmount>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		
+		<recipeUsers>
+			<li>CraftingSpot</li>
+			<li>DrugLab</li>	
+		</recipeUsers>
+
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>VBE_RawTobacco</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+			
+
+		</ingredients>
+		<fixedIngredientFilter>			
+			<thingDefs>
+				<li>VBE_RawTobacco</li>
+				
+			</thingDefs>
+			<categories>
+				
+			</categories>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>			
+			<thingDefs>
+				<li>VBE_RawTobacco</li>
+				
+			</thingDefs>
+			<categories>
+				
+			</categories>
+		</defaultIngredientFilter>
+		
+		<products>
+			<VBE_Cigarettes>5</VBE_Cigarettes>
+		</products>
+		
+	</RecipeDef>
+
+	
+
+	<RecipeDef>
+		<defName>VBE_MakeCigars</defName>
+		<label>make cigars</label>
+		<description>Make a fat, dried tobacco leaf stuffed to the brim with more tobacco leaves and a gold foil wrap around it.</description>
+		<jobString>Making cigars.</jobString>
+		<workSkill>Cooking</workSkill>
+		<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+		<workAmount>3000</workAmount>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Cremate</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		
+		<recipeUsers>
+			
+			<li>DrugLab</li>	
+		</recipeUsers>
+
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>VBE_RawTobacco</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Gold</li>
+					</thingDefs>
+				</filter>
+				<count>0.5</count>
+			</li>
+
+		</ingredients>
+		<fixedIngredientFilter>			
+			<thingDefs>
+				<li>VBE_RawTobacco</li>
+				<li>Gold</li>
+			</thingDefs>
+			<categories>
+				
+			</categories>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>			
+			<thingDefs>
+				<li>VBE_RawTobacco</li>
+				<li>Gold</li>
+			</thingDefs>
+			<categories>
+				
+			</categories>
+		</defaultIngredientFilter>
+		
+		<products>
+			<VBE_Cigars>5</VBE_Cigars>
+		</products>
+		<skillRequirements>
+			<Crafting>7</Crafting>
+		</skillRequirements>
+	</RecipeDef>
+
+
+
+
+
+</Defs>

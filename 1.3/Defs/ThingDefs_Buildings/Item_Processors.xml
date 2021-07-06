@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs> 
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>VBE_SodaFountain</defName>
+		<label>soda fountain</label>
+		<description>An all-in-one soda manufacturing unit. Syrup is mixed with water thoroughly, carbonated and then deeply chilled before being dispensed into sterilized bottles.</description>
+		<thingClass>ItemProcessor.Building_ItemProcessor</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<texPath>Things/Buildings/VBE_SodaDispenser</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1.5,1.5)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<thingCategories>
+			<li>BuildingsProduction</li>
+		</thingCategories>
+		<costList>
+			<Steel>40</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<altitudeLayer>Building</altitudeLayer>
+		<rotatable>true</rotatable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<uiIconScale>0.8</uiIconScale>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<Mass>5</Mass>
+			<WorkToBuild>800</WorkToBuild>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<size>(1,1)</size>
+		<designationCategory>Production</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<researchPrerequisites>
+			<li>VBE_MixologyResearch</li>
+		</researchPrerequisites>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>false</shortCircuitInRain>
+				<basePowerConsumption>50</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable"/>
+			<li Class="ItemProcessor.CompProperties_ItemProcessor">
+				<buildingOnGraphic>Things/Buildings/VBE_SodaDispenser</buildingOnGraphic>
+				<numberOfInputs>1</numberOfInputs>
+				<acceptsNoneAsInput>false</acceptsNoneAsInput>
+				<InsertFirstItemDesc>VBE_InsertSyrupDesc</InsertFirstItemDesc>
+				<transfersIngredientLists>true</transfersIngredientLists>
+
+				<isSemiAutomaticMachine>true</isSemiAutomaticMachine>
+				<resetSemiautomaticIcon>UI/VBE_SyrupReset</resetSemiautomaticIcon>
+
+				<chooseIngredientsIcon>UI/VBE_EmptySyrupIcon</chooseIngredientsIcon>
+
+				<bringIngredientsText>VBE_StartInsertion</bringIngredientsText>
+				<bringIngredientsDesc>VBE_StartInsertionDesc</bringIngredientsDesc>
+				<bringIngredientsIcon>UI/VBE_InsertSyrup</bringIngredientsIcon >
+
+				<cancelIngredientsText>VBE_CancelBringingSyrup</cancelIngredientsText> 
+				<cancelIngredientsDesc>VBE_CancelBringingSyrupDesc</cancelIngredientsDesc>
+				<cancelIngredientsIcon>UI/VBE_CancelSyrup</cancelIngredientsIcon> 
+
+				<noPowerDestroysProgress>true</noPowerDestroysProgress>
+				<rareTicksToDestroy>20</rareTicksToDestroy>
+				<noPowerDestroysMessage>VBE_SyrupFailurePower</noPowerDestroysMessage>
+
+				<destroyIngredientsAtStartOfProcess>true</destroyIngredientsAtStartOfProcess>
+				<showProgressBar>true</showProgressBar>
+			</li>
+
+		</comps>
+		<minifiedDef>MinifiedThing</minifiedDef>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>VBE_AmbrandyDistillery</defName>
+		<label>ambrandy distillery</label>
+		<description>A gilded distillery of very delicate craftsmanship meant for aging ambrosia must into a drinkable form.</description>
+		<thingClass>ItemProcessor.Building_ItemProcessor</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<texPath>Things/Buildings/VBE_AmbrandyStill</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2.5,2.5)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<thingCategories>
+			<li>BuildingsProduction</li>
+		</thingCategories>
+		<costList>
+			<Steel>100</Steel>
+			<Gold>40</Gold>
+			<ComponentIndustrial>1</ComponentIndustrial>
+		</costList>
+		<altitudeLayer>Building</altitudeLayer>
+		<rotatable>true</rotatable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<uiIconScale>0.8</uiIconScale>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<Mass>45</Mass>
+			<WorkToBuild>2500</WorkToBuild>
+			<MaxHitPoints>400</MaxHitPoints>
+			<Flammability>0.75</Flammability>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<size>(2,2)</size>
+		<designationCategory>Production</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<researchPrerequisites>
+			<li>VBE_MixologyResearch</li>
+		</researchPrerequisites>
+		<comps>
+			
+			<li Class="ItemProcessor.CompProperties_ItemProcessor">
+				<buildingOnGraphic>Things/Buildings/VBE_AmbrandyStill</buildingOnGraphic>
+				<numberOfInputs>1</numberOfInputs>
+				<acceptsNoneAsInput>false</acceptsNoneAsInput>
+				<InsertFirstItemDesc>VBE_InsertAmbMustDesc</InsertFirstItemDesc>
+				<ignoresIngredientLists>true</ignoresIngredientLists>
+				<showProgressBar>true</showProgressBar>
+				<isSemiAutomaticMachine>true</isSemiAutomaticMachine>
+				<resetSemiautomaticIcon>UI/VBE_ResetAmbMust</resetSemiautomaticIcon>
+				<qualitySelector>true</qualitySelector>
+				<chooseIngredientsIcon>UI/VBE_EmptySyrupIcon</chooseIngredientsIcon>
+
+				<bringIngredientsText>VBE_StartInsertionAmbMust</bringIngredientsText>
+				<bringIngredientsDesc>VBE_StartInsertionAmbMustDesc</bringIngredientsDesc>
+				<bringIngredientsIcon>UI/VBE_InsertAmbMust</bringIngredientsIcon >
+
+				<cancelIngredientsText>VBE_CancelBringingAmbMust</cancelIngredientsText> 
+				<cancelIngredientsDesc>VBE_CancelBringingAmbMustDesc</cancelIngredientsDesc>
+				<cancelIngredientsIcon>UI/VBE_CancelAmbMust</cancelIngredientsIcon> 
+				
+				<removeProductText>VBE_RemoveAmbrandy</removeProductText>
+				<removeProductDesc>VBE_RemoveAmbrandyDesc</removeProductDesc>
+				<removeProductIcon>UI/VBE_ExtractAmbrandy</removeProductIcon>
+
+				
+				<destroyIngredientsAtStartOfProcess>true</destroyIngredientsAtStartOfProcess>
+				
+			</li>
+
+		</comps>
+		<constructionSkillPrerequisite>7</constructionSkillPrerequisite>
+		<minifiedDef>MinifiedThing</minifiedDef>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>VBE_WhiskeyCask</defName>
+		<label>whiskey cask</label>
+		<description>A huge barrel meant for aging a high volume of whiskey at once. Natural woody flavors are imparted into the mixture as the barrel itself absorbs a portion of the liquid during the fermenting process. Any sunlight hitting the barrel may slow down the fermenting process, or even ruin the whole batch.</description>
+		<thingClass>ItemProcessor.Building_ItemProcessor</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<texPath>Things/Buildings/VBE_WhiskyBarrel</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(2.5,2.5)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<thingCategories>
+			<li>BuildingsProduction</li>
+		</thingCategories>
+		<costList>
+			
+			<WoodLog>200</WoodLog>
+			<Steel>100</Steel>
+		</costList>
+		<altitudeLayer>Building</altitudeLayer>
+		<rotatable>true</rotatable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<uiIconScale>0.8</uiIconScale>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<Mass>150</Mass>
+			<WorkToBuild>1000</WorkToBuild>
+			<MaxHitPoints>200</MaxHitPoints>
+			<Flammability>1</Flammability>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<size>(2,2)</size>
+		<designationCategory>Production</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<researchPrerequisites>
+			<li>VBE_LiquorBrewing</li>
+		</researchPrerequisites>
+		<comps>
+			
+			<li Class="ItemProcessor.CompProperties_ItemProcessor">
+				<buildingOnGraphic>Things/Buildings/VBE_WhiskyBarrel</buildingOnGraphic>
+				<numberOfInputs>1</numberOfInputs>
+				<acceptsNoneAsInput>false</acceptsNoneAsInput>
+				<InsertFirstItemDesc>VBE_InsertMustOrWhiskeyDesc</InsertFirstItemDesc>
+				<ignoresIngredientLists>true</ignoresIngredientLists>
+				<showProgressBar>true</showProgressBar>
+				<isSemiAutomaticMachine>true</isSemiAutomaticMachine>
+				<resetSemiautomaticIcon>UI/VBE_ResetMustOrWhiskey</resetSemiautomaticIcon>
+				
+				<chooseIngredientsIcon>UI/VBE_EmptySyrupIcon</chooseIngredientsIcon>
+
+				<bringIngredientsText>VBE_StartInsertionMustOrWhiskey</bringIngredientsText>
+				<bringIngredientsDesc>VBE_StartInsertionMustOrWhiskeyDesc</bringIngredientsDesc>
+				<bringIngredientsIcon>UI/VBE_InsertMustOrWhiskey</bringIngredientsIcon >
+
+				<cancelIngredientsText>VBE_CancelBringingMustOrWhiskey</cancelIngredientsText> 
+				<cancelIngredientsDesc>VBE_CancelBringingMustOrWhiskeyDesc</cancelIngredientsDesc>
+				<cancelIngredientsIcon>UI/VBE_CancelMustOrWhiskey</cancelIngredientsIcon> 
+				<isLightDependingMachine>true</isLightDependingMachine>
+				<minLight>-1</minLight>
+				<maxLight>0.5</maxLight>
+				<isTemperatureDependingMachine>true</isTemperatureDependingMachine>
+				<minTemp>7</minTemp>
+				<maxTemp>25</maxTemp>
+				
+				<destroyIngredientsAtStartOfProcess>true</destroyIngredientsAtStartOfProcess>
+				
+			</li>
+
+		</comps>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+		<minifiedDef>MinifiedThing</minifiedDef>
+	</ThingDef>
+
+
+<ThingDef ParentName="BuildingBase">
+		<defName>VBE_TequilaBarrel</defName>
+		<label>tequila barrel</label>
+		<description>A small still and fermenter combo unit, perfect for storing behind the counter of a warm saloon, but doesn’t fare very well in rain.</description>
+		<thingClass>ItemProcessor.Building_ItemProcessor</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<texPath>Things/Buildings/VBE_TequilaBarrel</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1.5,1.5)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<thingCategories>
+			<li>BuildingsProduction</li>
+		</thingCategories>
+		<costList>
+			
+			<WoodLog>30</WoodLog>
+			<Steel>10</Steel>
+		</costList>
+		<altitudeLayer>Building</altitudeLayer>
+		<rotatable>true</rotatable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<uiIconScale>0.8</uiIconScale>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<Mass>7</Mass>
+			<WorkToBuild>500</WorkToBuild>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>1</Flammability>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<size>(1,1)</size>
+		<designationCategory>Production</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<researchPrerequisites>
+			<li>VBE_LiquorBrewing</li>
+		</researchPrerequisites>
+		<comps>
+			
+			<li Class="ItemProcessor.CompProperties_ItemProcessor">
+				<buildingOnGraphic>Things/Buildings/VBE_TequilaBarrel</buildingOnGraphic>
+				<numberOfInputs>1</numberOfInputs>
+				<acceptsNoneAsInput>false</acceptsNoneAsInput>
+				<InsertFirstItemDesc>VBE_InsertTequilaMustDesc</InsertFirstItemDesc>
+				<ignoresIngredientLists>true</ignoresIngredientLists>
+				<showProgressBar>true</showProgressBar>
+				<isSemiAutomaticMachine>true</isSemiAutomaticMachine>
+				<resetSemiautomaticIcon>UI/VBE_ResetTequilaMust</resetSemiautomaticIcon>
+				
+				<chooseIngredientsIcon>UI/VBE_EmptySyrupIcon</chooseIngredientsIcon>
+
+				<bringIngredientsText>VBE_StartInsertionTequilaMust</bringIngredientsText>
+				<bringIngredientsDesc>VBE_StartInsertionTequilaMustDesc</bringIngredientsDesc>
+				<bringIngredientsIcon>UI/VBE_InsertTequilaMust</bringIngredientsIcon >
+
+				<cancelIngredientsText>VBE_CancelBringingTequilaMust</cancelIngredientsText> 
+				<cancelIngredientsDesc>VBE_CancelBringingTequilaMustDesc</cancelIngredientsDesc>
+				<cancelIngredientsIcon>UI/VBE_CancelTequilaMust</cancelIngredientsIcon> 
+				<isRainDependingMachine>true</isRainDependingMachine>
+				
+				<isTemperatureDependingMachine>true</isTemperatureDependingMachine>
+				<minTemp>15</minTemp>
+				<maxTemp>41</maxTemp>
+				
+				<destroyIngredientsAtStartOfProcess>true</destroyIngredientsAtStartOfProcess>
+				
+			</li>
+
+		</comps>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+		<minifiedDef>MinifiedThing</minifiedDef>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>VBE_VodkaDrum</defName>
+		<label>vodka drum</label>
+		<description>A cheap container meant for storing water retrofitted to be air tight for short-term fermenting.</description>
+		<thingClass>ItemProcessor.Building_ItemProcessor</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<texPath>Things/Buildings/VBE_VodkaFermentingBarrel</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1.5,1.5)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<thingCategories>
+			<li>BuildingsProduction</li>
+		</thingCategories>
+		<costList>
+			
+			<WoodLog>40</WoodLog>
+
+		</costList>
+		<altitudeLayer>Building</altitudeLayer>
+		<rotatable>true</rotatable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<uiIconScale>0.8</uiIconScale>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<Mass>2</Mass>
+			<WorkToBuild>250</WorkToBuild>
+			<MaxHitPoints>30</MaxHitPoints>
+			<Flammability>1</Flammability>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<size>(1,1)</size>
+		<designationCategory>Production</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<researchPrerequisites>
+			<li>VBE_LiquorBrewing</li>
+		</researchPrerequisites>
+		<comps>
+			
+			<li Class="ItemProcessor.CompProperties_ItemProcessor">
+				<buildingOnGraphic>Things/Buildings/VBE_VodkaFermentingBarrel</buildingOnGraphic>
+				<numberOfInputs>1</numberOfInputs>
+				<acceptsNoneAsInput>false</acceptsNoneAsInput>
+				<InsertFirstItemDesc>VBE_InsertVodkaMustDesc</InsertFirstItemDesc>
+				<ignoresIngredientLists>true</ignoresIngredientLists>
+				<showProgressBar>true</showProgressBar>
+				<isSemiAutomaticMachine>true</isSemiAutomaticMachine>
+				<resetSemiautomaticIcon>UI/VBE_ResetVodkaMash</resetSemiautomaticIcon>
+				
+				<chooseIngredientsIcon>UI/VBE_EmptySyrupIcon</chooseIngredientsIcon>
+
+				<bringIngredientsText>VBE_StartInsertionVodkaMust</bringIngredientsText>
+				<bringIngredientsDesc>VBE_StartInsertionVodkaMustDesc</bringIngredientsDesc>
+				<bringIngredientsIcon>UI/VBE_InsertVodkaMash</bringIngredientsIcon >
+
+				<cancelIngredientsText>VBE_CancelBringingVodkaMust</cancelIngredientsText> 
+				<cancelIngredientsDesc>VBE_CancelBringingVodkaMustDesc</cancelIngredientsDesc>
+				<cancelIngredientsIcon>UI/VBE_CancelVodkaMash</cancelIngredientsIcon> 
+				
+				<isTemperatureDependingMachine>true</isTemperatureDependingMachine>
+				<minTemp>3</minTemp>
+				<maxTemp>20</maxTemp>
+				
+				<destroyIngredientsAtStartOfProcess>true</destroyIngredientsAtStartOfProcess>
+				
+			</li>
+
+		</comps>
+		<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+		<minifiedDef>MinifiedThing</minifiedDef>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>VBE_GinStill</defName>
+		<label>gin still</label>
+		<description>A fully metal industrial distilling device, meant to purify and ferment gin into a drinkable form. The metallic design means aging is possible in a wide range of temperatures and conditions.</description>
+		<thingClass>ItemProcessor.Building_ItemProcessor</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<texPath>Things/Buildings/VBE_GinStill</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1.5,1.5)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+		<thingCategories>
+			<li>BuildingsProduction</li>
+		</thingCategories>
+		<costList>
+			
+			<Steel>40</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+
+		</costList>
+		<altitudeLayer>Building</altitudeLayer>
+		<rotatable>true</rotatable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<uiIconScale>0.8</uiIconScale>
+		<fillPercent>0.5</fillPercent>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<Mass>10</Mass>
+			<WorkToBuild>450</WorkToBuild>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>0.2</Flammability>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<size>(1,1)</size>
+		<designationCategory>Production</designationCategory>
+		<passability>PassThroughOnly</passability>
+		<pathCost>70</pathCost>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<surfaceType>Item</surfaceType>
+		<researchPrerequisites>
+			<li>VBE_LiquorBrewing</li>
+		</researchPrerequisites>
+		<comps>
+			
+			<li Class="ItemProcessor.CompProperties_ItemProcessor">
+				<buildingOnGraphic>Things/Buildings/VBE_GinStill</buildingOnGraphic>
+				<numberOfInputs>1</numberOfInputs>
+				<acceptsNoneAsInput>false</acceptsNoneAsInput>
+				<InsertFirstItemDesc>VBE_InsertGinMushDesc</InsertFirstItemDesc>
+				<ignoresIngredientLists>true</ignoresIngredientLists>
+				<showProgressBar>true</showProgressBar>
+				<isSemiAutomaticMachine>true</isSemiAutomaticMachine>
+				<resetSemiautomaticIcon>UI/VBE_ResetGinMush</resetSemiautomaticIcon>
+				
+				<chooseIngredientsIcon>UI/VBE_EmptySyrupIcon</chooseIngredientsIcon>
+
+				<bringIngredientsText>VBE_StartInsertionGinMush</bringIngredientsText>
+				<bringIngredientsDesc>VBE_StartInsertionGinMushDesc</bringIngredientsDesc>
+				<bringIngredientsIcon>UI/VBE_InsertGinMush</bringIngredientsIcon >
+
+				<cancelIngredientsText>VBE_CancelBringingGinMush</cancelIngredientsText> 
+				<cancelIngredientsDesc>VBE_CancelBringingGinMushDesc</cancelIngredientsDesc>
+				<cancelIngredientsIcon>UI/VBE_CancelGinMush</cancelIngredientsIcon> 
+				
+				<isTemperatureDependingMachine>true</isTemperatureDependingMachine>
+				<minTemp>6</minTemp>
+				<maxTemp>20</maxTemp>
+				
+				<destroyIngredientsAtStartOfProcess>true</destroyIngredientsAtStartOfProcess>
+				
+			</li>
+
+		</comps>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		<minifiedDef>MinifiedThing</minifiedDef>
+	</ThingDef>
+
+</Defs>

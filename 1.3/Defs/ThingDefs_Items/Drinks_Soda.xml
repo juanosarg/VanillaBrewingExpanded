@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<ThingDef ParentName="VBE_DrugToolBase">
+		<defName>VBE_Soda</defName>
+		<label>soda</label>
+		<description>A very sweet and semi-citrusy beverage best enjoyed chilled. Whilst not exactly nutritious the sugar rush is welcomed and the effervescence is quite refreshing.</description>
+		<graphicData>
+			<texPath>Things/Items/Drinks/VBE_Soda</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<thingCategories>
+			<li>VBE_DrinksNonAlcoholic</li>
+		</thingCategories>
+		<equippedAngleOffset>-150</equippedAngleOffset>
+		<rotatable>false</rotatable>
+		<stackLimit>25</stackLimit>
+		<statBases>
+			<DeteriorationRate>0.5</DeteriorationRate>
+			<MarketValue>12</MarketValue>
+			<Mass>0.3</Mass>
+			<Flammability>0.5</Flammability>
+			<Nutrition>0.16</Nutrition>
+		</statBases>
+		<ingestible>
+			<foodType>Fluid, Processed</foodType>
+			<joyKind>Gluttonous</joyKind>
+			<joy>0.1</joy>     
+
+			<drugCategory>Social</drugCategory>
+			<ingestSound>Ingest_Beer</ingestSound>
+			<ingestHoldOffsetStanding>
+				<northDefault>
+					<offset>(0.18,0,0)</offset>
+				</northDefault>
+			</ingestHoldOffsetStanding>
+			<ingestCommandString>Drink {0}</ingestCommandString>
+			<ingestReportString>Drinking {0}.</ingestReportString>
+			<ingestHoldUsesTable>false</ingestHoldUsesTable>
+			<tasteThought>VBE_DrankSoda</tasteThought>
+		</ingestible>
+		<equipmentType>Primary</equipmentType>
+		<techLevel>Neolithic</techLevel>
+		<comps>     
+			<li>
+				<compClass>CompEquippable</compClass>
+			</li>
+			<li Class="CompProperties_Drug">
+				<listOrder>1000</listOrder>
+				<overdoseSeverityOffset>0</overdoseSeverityOffset>
+			</li>
+		</comps>
+		
+	</ThingDef>
+
+
+
+</Defs>

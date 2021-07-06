@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RecipeDef>
+		<defName>VBE_MakeSodaSyrupBulk</defName>
+		<label>make soda syrup (efficient)</label>
+		<description>Make soda syrup by mixing natural fruit juice with sugar. This recipe is much more efficient.</description>
+		<jobString>Making soda syrup.</jobString>
+		<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+		<workSkill>Cooking</workSkill>
+		<effectWorking>Cook</effectWorking>
+		<workAmount>1000</workAmount>
+		<soundWorking>Recipe_Brewing</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>Brewery</li>
+			<li>VBE_Bar</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>VBE_Juice</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>VCE_RawSugar</li>
+					</thingDefs>
+				</filter>
+				<count>4</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>VBE_Juice</li>
+				<li>VCE_RawSugar</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<thingDefs>
+				<li>VBE_Juice</li>
+				<li>VCE_RawSugar</li>
+			</thingDefs>
+		</defaultIngredientFilter>
+		<products>
+			<VBE_SodaSyrup>20</VBE_SodaSyrup>
+		</products>
+		<skillRequirements>
+			<Cooking>4</Cooking>
+		</skillRequirements>
+		<researchPrerequisite>VBE_MixologyResearch</researchPrerequisite>
+	</RecipeDef>
+</Defs>

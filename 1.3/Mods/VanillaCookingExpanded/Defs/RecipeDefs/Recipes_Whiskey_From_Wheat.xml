@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RecipeDef>
+		<defName>VBE_MakeWhiskeyMashFromFlour</defName>
+		<label>make whiskey mash from flour</label>
+		<description>Make a starchy and mostly liquid mixture with pulpy chunks strewn throughout. Ready To be aged.</description>
+		<jobString>Making whiskey mash.</jobString>
+		<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+		<workSkill>Cooking</workSkill>
+		<effectWorking>Cook</effectWorking>
+		<workAmount>1000</workAmount>
+		<soundWorking>Recipe_Brewing</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>Brewery</li>
+			<li>VBE_Bar</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>VCE_Flour</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>VCE_Flour</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<thingDefs>
+				<li>VCE_Flour</li>
+			</thingDefs>
+		</defaultIngredientFilter>
+		<products>
+			<VBE_WhiskeyMash>5</VBE_WhiskeyMash>
+		</products>
+		<researchPrerequisite>VBE_LiquorBrewing</researchPrerequisite>
+	</RecipeDef>
+</Defs>

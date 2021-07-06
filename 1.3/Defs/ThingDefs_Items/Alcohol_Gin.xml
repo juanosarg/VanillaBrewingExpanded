@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="VBE_DrugToolBase">
+		<defName>VBE_Gin</defName>
+		<label>gin</label>
+		<description>A particularly mild and colorless spirit, aromatically speaking this bottle has a pine-tree like scent as well as subtle fruity notes. This liquor has a reputation for being light-hearted and fun to drink and for causing what is known as  “gin drunkenness”, during which one feels increased empathy and understanding.</description>  
+		<graphicData>
+			<texPath>Things/Items/Drinks/VBE_Gin</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<thingCategories>
+			<li>VBE_DrinksLuxurySpirits</li>
+		</thingCategories>
+		<equippedAngleOffset>-150</equippedAngleOffset>
+		<rotatable>false</rotatable>
+		<stackLimit>25</stackLimit>
+		<statBases>
+			<DeteriorationRate>0.5</DeteriorationRate>
+			<MarketValue>12</MarketValue>
+			<Mass>0.3</Mass>
+			<Flammability>0.5</Flammability>
+			<Nutrition>0.08</Nutrition>
+		</statBases>
+		<ingestible>
+		<specialThoughtAsIngredient>VBE_GinAsIngredient</specialThoughtAsIngredient>
+			<foodType>Fluid, Processed, Liquor</foodType>
+			<joyKind>Chemical</joyKind>
+			<joy>0.40</joy>
+			<nurseable>true</nurseable>
+			<drugCategory>Social</drugCategory>
+			<ingestSound>Ingest_Beer</ingestSound>
+			<ingestHoldOffsetStanding>
+				<northDefault>
+					<offset>(0.18,0,0)</offset>
+				</northDefault>
+			</ingestHoldOffsetStanding>
+			<ingestCommandString>Drink {0}</ingestCommandString>
+			<ingestReportString>Drinking {0}.</ingestReportString>
+			<chairSearchRadius>25</chairSearchRadius>
+			<outcomeDoers>
+				
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>AlcoholHigh</hediffDef>
+					<severity>0.22</severity>
+					<toleranceChemical>Alcohol</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>VBE_GinHigh</hediffDef>
+					<severity>0.22</severity>
+
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>AlcoholTolerance</hediffDef>
+					<severity>0.025</severity>
+					<divideByBodySize>true</divideByBodySize>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<equipmentType>Primary</equipmentType>
+		<techLevel>Neolithic</techLevel>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>Alcohol</chemical>
+				<addictiveness>0.015</addictiveness>
+				<minToleranceToAddict>0.25</minToleranceToAddict>
+				<existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
+				<needLevelOffset>1</needLevelOffset>
+				<listOrder>10</listOrder>
+			</li>
+			<li>
+				<compClass>CompEquippable</compClass>
+			</li>
+		</comps>
+		
+	</ThingDef>
+	
+	<HediffDef>
+		<defName>VBE_GinHigh</defName>
+		<label>gin high</label>
+		<labelNoun>a gin high</labelNoun>
+		<description>Drank some gin. Increases social impact.</description>
+		<hediffClass>Hediff_Alcohol</hediffClass>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<isBad>false</isBad>
+		<comps>
+			
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.75</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>warm</label>
+				<statOffsets>
+					<SocialImpact>0.02</SocialImpact>
+
+				</statOffsets>		
+
+			</li>
+			<li>
+				<minSeverity>0.25</minSeverity>
+				<label>tipsy</label>
+				<statOffsets>
+					<SocialImpact>0.05</SocialImpact>
+
+				</statOffsets>	
+
+			</li>
+			<li>
+				<minSeverity>0.4</minSeverity>
+				<label>drunk</label>
+				
+				<statOffsets>
+					<SocialImpact>0.1</SocialImpact>
+
+				</statOffsets>	
+			</li>
+			<li>
+				<minSeverity>0.7</minSeverity>
+				<label>hammered</label>
+				<statOffsets>
+					<SocialImpact>0.15</SocialImpact>
+
+				</statOffsets>	
+
+			</li>
+			<li>
+				<minSeverity>0.9</minSeverity>
+				<label>blackout</label>
+				
+			</li>
+		</stages>
+	</HediffDef>
+
+
+
+
+
+
+
+
+</Defs>

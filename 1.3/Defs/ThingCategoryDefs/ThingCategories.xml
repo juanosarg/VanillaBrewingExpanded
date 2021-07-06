@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+    <ThingCategoryDef>
+      <defName>VBE_Drinks</defName>
+      <label>drinks</label>
+      <parent>Foods</parent>
+      <resourceReadoutRoot>false</resourceReadoutRoot>
+      <iconPath>Things/Items/Drinks/VBE_Whiskey/VBE_Whiskey_b</iconPath>
+    </ThingCategoryDef>
+	
+	<ThingCategoryDef>
+      <defName>VBE_DrinksSimpleSpirits</defName>
+      <label>simple spirits</label>
+      <parent>VBE_Drinks</parent>
+      <resourceReadoutRoot>false</resourceReadoutRoot>
+      <iconPath>Things/Items/Drinks/VBE_Whiskey/VBE_Whiskey_b</iconPath>
+    </ThingCategoryDef>
+	
+	<ThingCategoryDef>
+      <defName>VBE_DrinksLuxurySpirits</defName>
+      <label>luxury spirits</label>
+      <parent>VBE_Drinks</parent>
+      <resourceReadoutRoot>false</resourceReadoutRoot>
+      <iconPath>Things/Items/Drinks/VBE_DoubleAgedWhisky/VBE_DoubleAgedWhisky_b</iconPath>
+    </ThingCategoryDef>
+	
+	<ThingCategoryDef>
+      <defName>VBE_DrinksNonAlcoholic</defName>
+      <label>non-alcoholic drinks</label>
+      <parent>VBE_Drinks</parent>
+      <resourceReadoutRoot>false</resourceReadoutRoot>
+      <iconPath>Things/Items/Drinks/VBE_Juice/VBE_Juice_b</iconPath>
+    </ThingCategoryDef>
+
+    <ThingCategoryDef>
+      <defName>VBE_Musts</defName>
+      <label>musts and syrups</label>
+      <parent>Manufactured</parent>
+      <resourceReadoutRoot>false</resourceReadoutRoot>
+      <iconPath>Things/Items/Musts/VBE_SodaSyrup</iconPath>
+    </ThingCategoryDef>
+
+
+</Defs>

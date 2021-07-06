@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<HediffDef>
+		<defName>VBE_CiderAsIngredient</defName>
+		<label>drank cider based cocktail</label>
+		<makesSickThought>false</makesSickThought>
+		<hediffClass>VanillaBrewingExpanded.Hediff_CiderRemoveToxic</hediffClass>
+		<description>This colonist drank a cocktail that had cider as one of its ingredients. Many praise cider for its supposed antioxidant properties. Slightly removes toxic buildup.</description>
+		<tendable>false</tendable>
+		<isBad>false</isBad>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<initialSeverity>1.0</initialSeverity>
+		<maxSeverity>1.0</maxSeverity>
+		<comps>
+			<li Class="VanillaCookingExpanded.HediffCompProperties_WhileHavingThoughts">
+				<thoughtDefs>
+					<li>VBE_CiderAsIngredient</li>
+				</thoughtDefs>
+			</li>
+		</comps>
+		<stages>
+			<li>   
+
+			</li>
+		</stages>
+	</HediffDef>
+</Defs>

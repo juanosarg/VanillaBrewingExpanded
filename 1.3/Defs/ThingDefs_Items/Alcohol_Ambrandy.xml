@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="DrugBase" Abstract="true" Name="VBE_AmbrandyBase">
+
+		<description>Also known as “liquid sunshine” ambrandy is a twice-fermented, distilled liquor of the highest calibre. Glitterworld aristocrats are known to send entire private militias to assist in shipping singular bottles.\n\nBeyond being flavorful enough to bring one to tears, studies have found this liquor when deeply aged causes increased stimulation in the section of the human brain known for artistic creativity and expression while also dampening the section of the brain in control of emotions.\n\nEven the bottle itself is a beauty to behold, when hit with even the tiniest amount of light golden flecks are seen dancing in the liquid within, like embers rising from a campfire. While Ambrandy can be mixed into cocktails, those few who have had the privilege to drink it say it is best on its own.</description>
+		<graphicData>
+			<texPath>Things/Items/Drinks/VBE_Ambrandy</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<thingCategories>
+			<li>VBE_DrinksLuxurySpirits</li>
+		</thingCategories>
+
+		<rotatable>false</rotatable>
+		<stackLimit>25</stackLimit>
+		<statBases>
+			<DeteriorationRate>0.5</DeteriorationRate>
+			<MarketValue>12</MarketValue>
+			<Mass>0.3</Mass>
+			<Flammability>0.5</Flammability>
+			<Nutrition>0.08</Nutrition>
+		</statBases>
+		<ingestible>
+			<specialThoughtAsIngredient>VBE_AmbrandyAsIngredient</specialThoughtAsIngredient>
+			<foodType>Fluid, Processed, Liquor</foodType>
+			<joyKind>Chemical</joyKind>
+			<joy>0.17</joy>
+			<nurseable>true</nurseable>
+			<drugCategory>Social</drugCategory>
+			<ingestSound>Ingest_Beer</ingestSound>
+			<ingestHoldOffsetStanding>
+				<northDefault>
+					<offset>(0.18,0,0)</offset>
+				</northDefault>
+			</ingestHoldOffsetStanding>
+			<ingestCommandString>Drink {0}</ingestCommandString>
+			<ingestReportString>Drinking {0}.</ingestReportString>
+			<chairSearchRadius>25</chairSearchRadius>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>AlcoholHigh</hediffDef>
+					<severity>0.7</severity>
+
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>AmbrosiaHigh</hediffDef>
+					<severity>0.50</severity>
+
+				</li>
+
+			</outcomeDoers>
+		</ingestible>
+		<techLevel>Archotech</techLevel>
+
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>Alcohol</chemical>
+				<addictiveness>0</addictiveness>
+				<minToleranceToAddict>0.25</minToleranceToAddict>
+				<existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
+				<needLevelOffset>0.9</needLevelOffset>
+				<listOrder>10</listOrder>
+			</li>
+			<li Class="CompProperties_Drug">
+				<chemical>Ambrosia</chemical>
+				<addictiveness>0</addictiveness>
+				<minToleranceToAddict>0.15</minToleranceToAddict>
+				<existingAddictionSeverityOffset>0.1</existingAddictionSeverityOffset>
+				<needLevelOffset>0.9</needLevelOffset>
+				<listOrder>30</listOrder>
+			</li>
+
+		</comps>
+		
+
+	</ThingDef>
+
+	<ThingDef ParentName="VBE_AmbrandyBase">
+		<defName>VBE_AmbrandyAwful</defName>
+		<label>ambrandy (awful)</label>
+		<statBases>
+			<MarketValue>300</MarketValue>
+			<Beauty>100</Beauty>
+		</statBases>
+	</ThingDef>	
+	<ThingDef ParentName="VBE_AmbrandyBase">
+		<defName>VBE_AmbrandyPoor</defName>
+		<label>ambrandy (poor)</label>
+		<statBases>
+			<MarketValue>450</MarketValue>
+			<Beauty>150</Beauty>
+		</statBases>
+	</ThingDef>
+	<ThingDef ParentName="VBE_AmbrandyBase">
+		<defName>VBE_AmbrandyNormal</defName>
+		<label>ambrandy (normal)</label>
+		<statBases>
+			<MarketValue>600</MarketValue>
+			<Beauty>250</Beauty>
+		</statBases>
+	</ThingDef>
+	<ThingDef ParentName="VBE_AmbrandyBase">
+		<defName>VBE_AmbrandyGood</defName>
+		<label>ambrandy (good)</label>
+		<statBases>
+			<MarketValue>900</MarketValue>
+			<Beauty>400</Beauty>
+		</statBases>
+	</ThingDef>
+	<ThingDef ParentName="VBE_AmbrandyBase">
+		<defName>VBE_AmbrandyExcellent</defName>
+		<label>ambrandy (excellent)</label>
+		<statBases>
+			<MarketValue>1200</MarketValue>
+			<Beauty>600</Beauty>
+		</statBases>
+	</ThingDef>
+	<ThingDef ParentName="VBE_AmbrandyBase">
+		<defName>VBE_AmbrandyMasterwork</defName>
+		<label>ambrandy (masterwork)</label>
+		<statBases>
+			<MarketValue>1700</MarketValue>
+			<Beauty>1100</Beauty>
+		</statBases>
+		<ingestible>			
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>VBE_AmbrandyInspiration</hediffDef>
+					<severity>1</severity>					
+				</li>				
+			</outcomeDoers>
+		</ingestible>
+	</ThingDef>
+	<ThingDef ParentName="VBE_AmbrandyBase">
+		<defName>VBE_AmbrandyLegendary</defName>
+		<label>ambrandy (legendary)</label>
+		<statBases>
+			<MarketValue>2500</MarketValue>
+			<Beauty>1600</Beauty>
+		</statBases>
+		<ingestible>			
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>VBE_AmbrandyInspiration</hediffDef>
+					<severity>1</severity>					
+				</li>				
+			</outcomeDoers>
+		</ingestible>
+	</ThingDef>
+
+	<HediffDef>
+		<defName>VBE_AmbrandyInspiration</defName>
+		<label>ambrandy inspiration</label>
+		<labelNoun>an ambrandy inspiration</labelNoun>
+		<description>Consumed ambrandy. High quality ambrandy will provide an artistic inspiration if the colonist is capable of getting it.</description>
+		<hediffClass>VanillaBrewingExpanded.Hediff_AmbrandyInspiration</hediffClass>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<isBad>false</isBad>
+		<comps>
+
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.2</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li/>
+
+		</stages>
+	</HediffDef>
+
+
+
+</Defs>

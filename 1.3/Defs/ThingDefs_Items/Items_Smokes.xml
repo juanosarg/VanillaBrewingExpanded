@@ -1,0 +1,353 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="DrugBase">
+		<defName>VBE_Cigarettes</defName>
+		<label>cigarettes</label>
+		
+		<description>A small, rolled paper tube stuffed loosely with tobacco leaves. Offers a brief euphoria as well as mental stimulation, and is very addictive. The pungent odor is generally disliked at first, but becomes much more pleasurable as the smoker becomes more addicted. Can be crafted without equipment, at a crafting spot.</description>
+
+		<graphicData>
+			<texPath>Things/Items/Smokes/VBE_Cigarette</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+			<drawSize>0.9</drawSize>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<statBases>
+			<WorkToMake>450</WorkToMake>
+			<MarketValue>8</MarketValue>
+			<Mass>0.05</Mass>
+			<DeteriorationRate>6</DeteriorationRate>
+			<Flammability>1.3</Flammability>
+		</statBases>
+		<techLevel>Neolithic</techLevel>
+		<ingestible>
+			<foodType>Plant, Processed</foodType>
+			<joyKind>Chemical</joyKind>
+			<joy>0.30</joy>
+			<baseIngestTicks>720</baseIngestTicks>
+			<nurseable>true</nurseable>
+			<drugCategory>Social</drugCategory>
+			<ingestSound>Ingest_Smoke</ingestSound>
+			<ingestEffect>Smoke_Joint</ingestEffect>
+			<ingestEffectEat>EatVegetarian</ingestEffectEat>
+			<ingestHoldOffsetStanding>
+				<northDefault>
+					<offset>(0.27,0,0.08)</offset>
+					<behind>true</behind>
+				</northDefault>
+				<east>
+					<offset>(0.45,0,0.08)</offset>
+				</east>
+				<south>
+					<offset>(0.27,0,0.08)</offset>
+				</south>
+				<west>
+					<offset>(-0.50,0,0.08)</offset>
+					<flip>true</flip>
+				</west>
+			</ingestHoldOffsetStanding>
+			<ingestHoldUsesTable>false</ingestHoldUsesTable>
+			<ingestCommandString>Smoke {0}</ingestCommandString>
+			<ingestReportString>Smoking {0}.</ingestReportString>
+			<ingestReportStringEat>Consuming {0}.</ingestReportStringEat>
+			<useEatingSpeedStat>false</useEatingSpeedStat>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>VBE_TobaccoHigh</hediffDef>
+					<severity>1</severity>
+					<toleranceChemical>VBE_Tobacco</toleranceChemical>
+				</li>
+				
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>VBE_TobaccoTolerance</hediffDef>
+					<severity>0.030</severity>
+					<divideByBodySize>true</divideByBodySize>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>VBE_Tobacco</chemical>
+				<addictiveness>0.035</addictiveness>
+				<minToleranceToAddict>0.15</minToleranceToAddict>
+				<existingAddictionSeverityOffset>0.06</existingAddictionSeverityOffset>
+				<needLevelOffset>0.9</needLevelOffset>
+				<listOrder>20</listOrder>
+			</li>
+		</comps>
+	</ThingDef>
+
+
+
+
+
+	<ThingDef ParentName="DrugBase">
+		<defName>VBE_Cigars</defName>
+		<label>cigars</label>
+		<description>A fat, dried tobacco leaf stuffed to the brim with more tobacco leaves and a gold foil wrap around it. Cigars have a historically posh presentation and are usually only affordable by those who mingle with glitterworld elite regularly. Cigars are often flavored with citrus or vanilla to make their flavor and odor less acrid.</description>
+		<graphicData>
+			<texPath>Things/Items/Smokes/VBE_SmokeCigar</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<statBases>
+			<WorkToMake>800</WorkToMake>
+			<MarketValue>60</MarketValue>
+			<Mass>0.05</Mass>
+			<DeteriorationRate>6</DeteriorationRate>
+			<Flammability>1.3</Flammability>
+		</statBases>
+		<techLevel>Neolithic</techLevel>
+		<ingestible>
+			<foodType>Plant, Processed</foodType>
+			<joyKind>Chemical</joyKind>
+			<joy>0.90</joy>
+			<baseIngestTicks>1500</baseIngestTicks>
+			<nurseable>true</nurseable>
+			<drugCategory>Social</drugCategory>
+			<ingestSound>Ingest_Smoke</ingestSound>
+			<ingestEffect>Smoke_Joint</ingestEffect>
+			<ingestEffectEat>EatVegetarian</ingestEffectEat>
+			<ingestHoldOffsetStanding>
+				<northDefault>
+					<offset>(0.27,0,0.08)</offset>
+					<behind>true</behind>
+				</northDefault>
+				<east>
+					<offset>(0.45,0,0.08)</offset>
+				</east>
+				<south>
+					<offset>(0.27,0,0.08)</offset>
+				</south>
+				<west>
+					<offset>(-0.50,0,0.08)</offset>
+					<flip>true</flip>
+				</west>
+			</ingestHoldOffsetStanding>
+			<ingestHoldUsesTable>false</ingestHoldUsesTable>
+			<ingestCommandString>Smoke {0}</ingestCommandString>
+			<ingestReportString>Smoking {0}.</ingestReportString>
+			<ingestReportStringEat>Consuming {0}.</ingestReportStringEat>
+			<useEatingSpeedStat>false</useEatingSpeedStat>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>VBE_DeluxeTobaccoHigh</hediffDef>
+					<severity>1</severity>
+					<toleranceChemical>VBE_Tobacco</toleranceChemical>
+				</li>
+				
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>VBE_TobaccoTolerance</hediffDef>
+					<severity>0.015</severity>
+					<divideByBodySize>true</divideByBodySize>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>VBE_Tobacco</chemical>
+				<addictiveness>0.015</addictiveness>
+				<minToleranceToAddict>0.15</minToleranceToAddict>
+				<existingAddictionSeverityOffset>0.06</existingAddictionSeverityOffset>
+				<needLevelOffset>0.9</needLevelOffset>
+				<listOrder>20</listOrder>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	  <HediffDef>
+    <defName>VBE_TobaccoHigh</defName>
+    <label>tobacco high</label>
+    <labelNoun>a tobacco high</labelNoun>
+    <description>Nicotine in the bloodstream. Generates a soft feeling of fuzzy well-being.</description>
+    <hediffClass>Hediff_High</hediffClass>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-2.0</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+      <stages>
+        <li>
+          <hungerRateFactorOffset>-0.1</hungerRateFactorOffset>
+          
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <offset>0.1</offset>
+            </li>
+           
+          </capMods>
+        </li>
+      </stages>
+  </HediffDef>
+  
+  <ThoughtDef>
+    <defName>VBE_TobaccoHigh</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>VBE_TobaccoHigh</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>smooth and mild</label>
+        <description>That cigarette was just what I needed, such a smooth flavor.</description>
+        <baseMoodEffect>7</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  
+  	  <HediffDef>
+    <defName>VBE_DeluxeTobaccoHigh</defName>
+    <label>high-quality tobacco high</label>
+    <labelNoun>a high-quality tobacco high</labelNoun>
+    <description>Nicotine in the bloodstream. Generates a soft feeling of fuzzy well-being.</description>
+    <hediffClass>Hediff_High</hediffClass>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-2.0</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+      <stages>
+        <li>
+          <hungerRateFactorOffset>-0.1</hungerRateFactorOffset>
+          
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <offset>0.2</offset>
+            </li>
+           
+          </capMods>
+        </li>
+      </stages>
+  </HediffDef>
+  
+  <ThoughtDef>
+    <defName>VBE_DeluxeTobaccoHigh</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>VBE_DeluxeTobaccoHigh</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>puffing on luxury</label>
+        <description>A cigar makes me feel like I’ve made it big in life.</description>
+        <baseMoodEffect>15</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <!-- Smokeleaf addiction -->
+
+  <ChemicalDef>
+    <defName>VBE_Tobacco</defName>
+    <label>tobacco</label>
+    <addictionHediff>VBE_TobaccoAddiction</addictionHediff>
+    <toleranceHediff>VBE_TobaccoTolerance</toleranceHediff>
+    <onGeneratedAddictedToleranceChance>0.8</onGeneratedAddictedToleranceChance>
+  </ChemicalDef>
+
+  <NeedDef ParentName="DrugAddictionNeedBase">
+    <defName>VBE_Chemical_Tobacco</defName>
+    <needClass>Need_Chemical</needClass>
+    <label>tobacco</label>
+    <description>Because of a tobacco dependence, this person needs to regularly consume the drug to avoid withdrawal symptoms.</description>
+    <listPriority>25</listPriority>
+  </NeedDef>
+  
+  <HediffDef ParentName="DrugToleranceBase">
+    <defName>VBE_TobaccoTolerance</defName>
+    <label>tobacco tolerance</label>
+    <description>A built-up tolerance to tobacco. The more severe this tolerance is, the more tobacco it takes to get the same effect.</description>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.015</severityPerDay>
+      </li>
+      <li Class="HediffCompProperties_DrugEffectFactor">
+        <chemical>VBE_Tobacco</chemical>
+      </li>
+    </comps>
+    <hediffGivers>
+      <li Class="HediffGiver_RandomDrugEffect">
+        <hediff>Asthma</hediff>
+        <baseMtbDays>250</baseMtbDays>
+        <minSeverity>0.50</minSeverity>
+        <partsToAffect>
+          <li>Lung</li>
+        </partsToAffect>
+        <countToAffect>2</countToAffect>
+      </li>
+      <li Class="HediffGiver_RandomDrugEffect">
+        <hediff>Carcinoma</hediff>
+        <baseMtbDays>220</baseMtbDays>
+        <minSeverity>0.40</minSeverity>
+        <partsToAffect>
+          <li>Lung</li>
+        </partsToAffect>
+        <countToAffect>1</countToAffect>
+      </li>
+    </hediffGivers>
+  </HediffDef>
+
+  <HediffDef ParentName="AddictionBase">
+    <defName>VBE_TobaccoAddiction</defName>
+    <label>tobacco dependence</label>
+    <description>A chemical addiction to tobacco. Long-term use of tobacco has caused neurological adaptations at the cellular level, so the brain can no longer function properly without the drug.
+\nWithout regular doses of tobacco, withdrawal symptoms will begin. However, extended abstinence will force the brain to adapt back to its normal state, resolving the addiction.</description>
+    <hediffClass>Hediff_Addiction</hediffClass>
+    <causesNeed>VBE_Chemical_Tobacco</causesNeed>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.0333</severityPerDay>
+        <showDaysToRecover>true</showDaysToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+      </li>
+      <li>
+        <label>withdrawal</label>
+		<socialFightChanceFactor>2.0</socialFightChanceFactor>
+       <statOffsets>
+					<MentalBreakThreshold>10</MentalBreakThreshold>
+
+				</statOffsets>	
+        <mentalStateGivers>        
+          <li>
+            <mentalState>Binging_DrugMajor</mentalState>
+            <mtbDays>50</mtbDays>
+          </li>
+        </mentalStateGivers>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <ThoughtDef>
+    <defName>VBE_TobaccoWithdrawal</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>VBE_TobaccoAddiction</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <visible>false</visible>
+      </li>
+      <li>
+        <label>tobacco withdrawal</label>
+        <description>I really wish I could smoke. I'd kill for a cigarette.</description>
+        <baseMoodEffect>-18</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

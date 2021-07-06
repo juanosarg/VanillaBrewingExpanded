@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ResearchProjectDef>
+		<defName>VBE_MixologyResearch</defName>
+		<label>mixology</label>
+		<tab>VCE_Brewing</tab>
+		<techLevel>Industrial</techLevel>
+		<description>Allows construction of advanced machines that utilize electricity for perfect fermenting, industrial bottling, and the mixing of cocktails at the bar workbench.</description>
+		<baseCost>900</baseCost>
+		<researchViewX>0</researchViewX>
+		<researchViewY>1</researchViewY>
+		<prerequisites>
+			<li>Electricity</li>
+			<li>VBE_LiquorBrewing</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>VBE_LiquorBrewing</defName>
+		<label>liquor brewing</label>
+		<tab>VCE_Brewing</tab>
+		<techLevel>Medieval</techLevel>
+		<description>Utilize advanced brewing techniques that allow distillation and fermenting of harder spirits with unique effects.</description>
+		<baseCost>700</baseCost>
+		<researchViewX>0</researchViewX>
+		<researchViewY>0</researchViewY>
+		<prerequisites>
+			
+			<li>Brewing</li>
+		</prerequisites>
+	</ResearchProjectDef>
+
+
+
+
+
+
+</Defs>

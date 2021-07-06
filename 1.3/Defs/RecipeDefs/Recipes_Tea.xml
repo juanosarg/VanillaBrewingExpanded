@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+
+
+	<RecipeDef>
+		<defName>VBE_MakeTea</defName>
+		<label>make tea</label>
+		<description>Make a pleasing, aromatic beverage prepared by steeping a bag of tea leaves in boiling water.</description>
+		<jobString>Making tea.</jobString>
+		<workSkill>Cooking</workSkill>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<workAmount>1000</workAmount>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Brewing</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		
+		<recipeUsers>
+			<li>Campfire</li>
+			<li>ElectricStove</li>	
+			<li>FueledStove</li>				
+		</recipeUsers>
+
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>VBE_RawTea</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+			
+
+		</ingredients>
+		<fixedIngredientFilter>			
+			<thingDefs>
+				<li>VBE_RawTea</li>
+				
+			</thingDefs>
+			<categories>
+				
+			</categories>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>			
+			<thingDefs>
+				<li>VBE_RawTea</li>
+				
+			</thingDefs>
+			<categories>
+				
+			</categories>
+		</defaultIngredientFilter>
+		
+		<products>
+			<VBE_Tea>5</VBE_Tea>
+		</products>
+		<researchPrerequisite>Brewing</researchPrerequisite>
+		
+	</RecipeDef>
+
+	
+
+
+
+
+
+
+
+</Defs>

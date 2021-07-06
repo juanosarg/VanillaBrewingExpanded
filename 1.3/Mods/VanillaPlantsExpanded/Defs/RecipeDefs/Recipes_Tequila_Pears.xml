@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RecipeDef>
+		<defName>VBE_MakeTequilaMustFromPears</defName>
+		<label>make tequila must from prickly pear</label>
+		<description>Make a thin mixture of prickly cactus pear and insect meat starter, ready to be cut and fermented in a barrel.</description>
+		<jobString>Making tequila must.</jobString>
+		<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+		<workSkill>Cooking</workSkill>
+		<effectWorking>Cook</effectWorking>
+		<workAmount>1000</workAmount>
+		<soundWorking>Recipe_Brewing</soundWorking>
+		<recipeUsers>
+			<li>Brewery</li>
+			<li>VBE_Bar</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>VCE_RawPricklyPear</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Meat_Megaspider</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>VCE_RawPricklyPear</li>
+				<li>Meat_Megaspider</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<thingDefs>
+				<li>VCE_RawPricklyPear</li>
+				<li>Meat_Megaspider</li>
+			</thingDefs>
+		</defaultIngredientFilter>
+		<products>
+			<VBE_TequilaMust>5</VBE_TequilaMust>
+		</products>
+		<skillRequirements>
+			<Cooking>4</Cooking>
+		</skillRequirements>
+		<researchPrerequisite>VBE_LiquorBrewing</researchPrerequisite>
+	</RecipeDef>
+</Defs>

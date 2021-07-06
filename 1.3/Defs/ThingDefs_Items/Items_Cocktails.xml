@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="MealCooked">
+		<defName>VBE_SimpleCocktail</defName>
+		<label>simple cocktail</label>
+		<description>A simple cocktail quickly mixed from a duo of ingredients.</description>
+		<graphicData>
+			<texPath>Things/Items/Drinks/VBE_CocktailSimple</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MarketValue>15</MarketValue>
+			<WorkToMake>300</WorkToMake>
+			<Nutrition>0.25</Nutrition>
+		</statBases>
+		<ingestible>
+			<preferability>NeverForNutrition</preferability>
+			<joyKind>Chemical</joyKind>
+			<joy>0.35</joy>
+			<nurseable>true</nurseable>
+			<drugCategory>Social</drugCategory>
+			<ingestSound>Ingest_Drink</ingestSound>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>AlcoholHigh</hediffDef>
+					<severity>0.3</severity>
+					<toleranceChemical>Alcohol</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>AlcoholTolerance</hediffDef>
+					<severity>0.016</severity>
+					<divideByBodySize>true</divideByBodySize>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>VBE_ConsumedCocktail</hediffDef>
+					<severity>1</severity>
+
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>Alcohol</chemical>
+				<addictiveness>0.010</addictiveness>
+				<minToleranceToAddict>0.25</minToleranceToAddict>
+				<existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
+				<needLevelOffset>0.9</needLevelOffset>
+				<listOrder>10</listOrder>
+			</li>
+			<li Class="VanillaCookingExpanded.CompProperties_StackByCondiments">
+				<condimentTagToCheck>Condiments</condimentTagToCheck>
+			</li>
+		</comps>
+
+	</ThingDef>
+
+	<ThingDef ParentName="MealCooked">
+		<defName>VBE_FineCocktail</defName>
+		<label>fine cocktail</label>
+		<description>A fine complex cocktail, mixed precisely from multiple ingredients.</description>
+		<graphicData>
+			<texPath>Things/Items/Drinks/VBE_CocktailFine</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MarketValue>20</MarketValue>
+			<WorkToMake>450</WorkToMake>
+			<Nutrition>0.35</Nutrition>
+		</statBases>
+		<ingestible>
+			<preferability>NeverForNutrition</preferability>
+			<joyKind>Chemical</joyKind>
+			<joy>0.55</joy>
+			<nurseable>true</nurseable>
+			<drugCategory>Social</drugCategory>
+			<ingestSound>Ingest_Drink</ingestSound>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>AlcoholHigh</hediffDef>
+					<severity>0.45</severity>
+					<toleranceChemical>Alcohol</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>AlcoholTolerance</hediffDef>
+					<severity>0.025</severity>
+					<divideByBodySize>true</divideByBodySize>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>VBE_ConsumedCocktail</hediffDef>
+					<severity>1</severity>
+
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>Alcohol</chemical>
+				<addictiveness>0.010</addictiveness>
+				<minToleranceToAddict>0.25</minToleranceToAddict>
+				<existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
+				<needLevelOffset>0.9</needLevelOffset>
+				<listOrder>10</listOrder>
+			</li>
+			<li Class="VanillaCookingExpanded.CompProperties_StackByCondiments">
+				<condimentTagToCheck>Condiments</condimentTagToCheck>
+			</li>
+		</comps>
+
+	</ThingDef>
+
+	<ThingDef ParentName="MealCooked">
+		<defName>VBE_LavishCocktail</defName>
+		<label>lavish cocktail</label>
+		<description>A masterpiece of bartending incarnate, this cocktail was mixed from a wide variety of ingredients and chilled to perfection before meticulously shaken and served.</description>
+		<graphicData>
+			<texPath>Things/Items/Drinks/VBE_CocktailLavish</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MarketValue>40</MarketValue>
+			<WorkToMake>800</WorkToMake>
+			<Nutrition>0.45</Nutrition>
+		</statBases>
+		<ingestible>
+			<preferability>NeverForNutrition</preferability>
+			<joyKind>Chemical</joyKind>
+			<joy>0.75</joy>
+			<nurseable>true</nurseable>
+			<drugCategory>Social</drugCategory>
+			<ingestSound>Ingest_Drink</ingestSound>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>AlcoholHigh</hediffDef>
+					<severity>0.75</severity>
+					<toleranceChemical>Alcohol</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>AlcoholTolerance</hediffDef>
+					<severity>0.04</severity>
+					<divideByBodySize>true</divideByBodySize>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>VBE_ConsumedCocktail</hediffDef>
+					<severity>1</severity>
+
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>Alcohol</chemical>
+				<addictiveness>0.010</addictiveness>
+				<minToleranceToAddict>0.25</minToleranceToAddict>
+				<existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
+				<needLevelOffset>0.9</needLevelOffset>
+				<listOrder>10</listOrder>
+			</li>
+			<li Class="VanillaCookingExpanded.CompProperties_StackByCondiments">
+				<condimentTagToCheck>Condiments</condimentTagToCheck>
+			</li>
+		</comps>
+
+	</ThingDef>
+
+	<ThingDef ParentName="MealCooked">
+		<defName>VBE_GourmetCocktail</defName>
+		<label>gourmet cocktail</label>
+		<description>A veritable miracle of mixology. This cocktails every factor from temperature of glass, choice of stirring instrument and type of garnish has been precisely calculated for the maximum flavor and body possible.</description>
+		<graphicData>
+			<texPath>Things/Items/Drinks/VBE_CocktailGourmet</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<statBases>
+			<MarketValue>75</MarketValue>
+			<WorkToMake>800</WorkToMake>
+			<Nutrition>0.30</Nutrition>
+		</statBases>
+		<ingestible>
+			<preferability>NeverForNutrition</preferability>
+			<joyKind>Chemical</joyKind>
+			<joy>0.95</joy>
+			<nurseable>true</nurseable>
+			<drugCategory>Social</drugCategory>
+			<ingestSound>Ingest_Drink</ingestSound>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>AlcoholHigh</hediffDef>
+					<severity>0.89</severity>
+					<toleranceChemical>Alcohol</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>AlcoholTolerance</hediffDef>
+					<severity>0.025</severity>
+					<divideByBodySize>true</divideByBodySize>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>VBE_ConsumedCocktail</hediffDef>
+					<severity>1</severity>
+
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>Alcohol</chemical>
+				<addictiveness>0.010</addictiveness>
+				<minToleranceToAddict>0.25</minToleranceToAddict>
+				<existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
+				<needLevelOffset>0.9</needLevelOffset>
+				<listOrder>10</listOrder>
+			</li>
+			<li Class="VanillaCookingExpanded.CompProperties_StackByCondiments">
+				<condimentTagToCheck>Condiments</condimentTagToCheck>
+			</li>
+		</comps>
+
+	</ThingDef>
+
+	<HediffDef>
+		<defName>VBE_ConsumedCocktail</defName>
+		<label>consumed cocktail</label>
+		<labelNoun>a cocktail drink</labelNoun>
+		<description>Consumed a nice cocktail. Has a chance to provide a random inspiration.</description>
+		<hediffClass>VanillaBrewingExpanded.Hediff_ConsumedCocktail</hediffClass>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<scenarioCanAdd>true</scenarioCanAdd>
+		<isBad>false</isBad>
+		<comps>
+
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.2</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li/>
+
+		</stages>
+	</HediffDef>
+
+
+
+</Defs>

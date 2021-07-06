@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RecipeDef Name="VBE_CookGourmetCocktailMealBase" Abstract="True">
+		<fixedIngredientFilter>
+			<categories>
+				<li>VBE_DrinksSimpleSpirits</li>
+				<li>VBE_DrinksNonAlcoholic</li>
+				<li>VBE_DrinksLuxurySpirits</li>
+				<li>VCE_Condiments</li>
+			</categories>
+			<thingDefs>
+				<li>Milk</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>VBE_DrinksSimpleSpirits</li>
+				<li>VBE_DrinksNonAlcoholic</li>
+				<li>VBE_DrinksLuxurySpirits</li>
+				<li>VCE_Condiments</li>
+			</categories>
+			<thingDefs>
+				<li>Milk</li>
+			</thingDefs>
+		</defaultIngredientFilter>
+		<workSkill>Cooking</workSkill>
+	</RecipeDef>
+	<RecipeDef ParentName="VBE_CookGourmetCocktailMealBase">
+		<defName>VBE_MakeCocktailGourmet</defName>
+		<label>make gourmet cocktail</label>
+		<description>Make a gourmet cocktail, where every factor from temperature of glass, choice of stirring instrument and type of garnish has been precisely calculated for the maximum flavor and body possible.</description>
+		<jobString>Making gourmet cocktail.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<workSkill>Cooking</workSkill>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_Brewing</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>VBE_Bar</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>VBE_DrinksSimpleSpirits</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>VBE_DrinksLuxurySpirits</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>VBE_DrinksNonAlcoholic</li>
+					</categories>
+					<thingDefs>
+						<li>Milk</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>VCE_Condiments</li>
+					</categories>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<VBE_GourmetCocktail>1</VBE_GourmetCocktail>
+		</products>
+		<skillRequirements>
+			<Cooking>10</Cooking>
+		</skillRequirements>
+		<researchPrerequisite>VBE_MixologyResearch</researchPrerequisite>
+	</RecipeDef>
+</Defs>

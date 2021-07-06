@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+
+	<ItemProcessor.ItemAcceptedDef>
+		<defName>IP_SodaFountainFirstItem</defName>
+		<building>VBE_SodaFountain</building>
+		<slot>1</slot>
+		<items>			
+			<li>VBE_SodaSyrup</li>						
+		</items>							
+	</ItemProcessor.ItemAcceptedDef>
+	
+	<ItemProcessor.ItemAcceptedDef>
+		<defName>IP_AmbrandyDistilleryFirstItem</defName>
+		<building>VBE_AmbrandyDistillery</building>
+		<slot>1</slot>
+		<items>			
+			<li>VBE_AmbrandyMust</li>						
+		</items>							
+	</ItemProcessor.ItemAcceptedDef>
+	
+	<ItemProcessor.ItemAcceptedDef>
+		<defName>IP_WhiskeyCaskFirstItem</defName>
+		<building>VBE_WhiskeyCask</building>
+		<slot>1</slot>
+		<items>			
+			<li>VBE_WhiskeyMash</li>	
+			<li>VBE_Whiskey</li>			
+		</items>							
+	</ItemProcessor.ItemAcceptedDef>
+	
+	<ItemProcessor.ItemAcceptedDef>
+		<defName>IP_TequilaBarrelFirstItem</defName>
+		<building>VBE_TequilaBarrel</building>
+		<slot>1</slot>
+		<items>			
+			<li>VBE_TequilaMust</li>						
+		</items>							
+	</ItemProcessor.ItemAcceptedDef>
+	
+	<ItemProcessor.ItemAcceptedDef>
+		<defName>IP_VodkaDrumFirstItem</defName>
+		<building>VBE_VodkaDrum</building>
+		<slot>1</slot>
+		<items>			
+			<li>VBE_VodkaMash</li>						
+		</items>							
+	</ItemProcessor.ItemAcceptedDef>
+	
+	<ItemProcessor.ItemAcceptedDef>
+		<defName>IP_GinStillFirstItem</defName>
+		<building>VBE_GinStill</building>
+		<slot>1</slot>
+		<items>			
+			<li>VBE_GinMush</li>						
+		</items>							
+	</ItemProcessor.ItemAcceptedDef>
+</Defs>

@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef Name="VBE_CookCocktailMealBase" Abstract="True">
+		<fixedIngredientFilter>
+			<categories>
+				<li>VBE_DrinksSimpleSpirits</li>	
+				<li>VBE_DrinksNonAlcoholic</li>					
+			</categories>
+			<thingDefs>
+				<li>Milk</li>		
+				<li>Beer</li>								
+			</thingDefs>
+
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>VBE_DrinksSimpleSpirits</li>	
+				<li>VBE_DrinksNonAlcoholic</li>					
+			</categories>	
+			<thingDefs>
+				<li>Milk</li>		
+				<li>Beer</li>								
+			</thingDefs>			
+		</defaultIngredientFilter>
+		<workSkill>Cooking</workSkill>
+	</RecipeDef>
+	
+		<RecipeDef Name="VBE_CookCocktailFineMealBase" Abstract="True">
+		<fixedIngredientFilter>
+			<categories>
+				<li>VBE_DrinksSimpleSpirits</li>	
+				<li>VBE_DrinksNonAlcoholic</li>		
+				<li>VBE_DrinksLuxurySpirits</li>
+			</categories>
+			<thingDefs>
+				<li>Milk</li>		
+				<li>Beer</li>								
+			</thingDefs>
+
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>VBE_DrinksSimpleSpirits</li>	
+				<li>VBE_DrinksNonAlcoholic</li>		
+				<li>VBE_DrinksLuxurySpirits</li>				
+			</categories>	
+			<thingDefs>
+				<li>Milk</li>		
+				<li>Beer</li>								
+			</thingDefs>			
+		</defaultIngredientFilter>
+		<workSkill>Cooking</workSkill>
+	</RecipeDef>
+
+	
+
+
+
+	<RecipeDef ParentName="VBE_CookCocktailMealBase">
+		<defName>VBE_MakeCocktailSimple</defName>
+		<label>make simple cocktail</label>
+		<description>Make a simple cocktail quickly mixed from a duo of ingredients.</description>
+		<jobString>Making simple cocktail.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<workSkill>Cooking</workSkill>
+		<effectWorking>Cook</effectWorking>
+
+		<soundWorking>Recipe_Brewing</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+
+			<li>VBE_Bar</li>			
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>VBE_DrinksSimpleSpirits</li>
+					</categories>
+					<thingDefs>
+						<li>Beer</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>VBE_DrinksNonAlcoholic</li>
+					</categories>
+					<thingDefs>
+						<li>Milk</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+
+		<products>
+			<VBE_SimpleCocktail>1</VBE_SimpleCocktail>
+		</products>
+
+		<researchPrerequisite>VBE_MixologyResearch</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef ParentName="VBE_CookCocktailFineMealBase">
+		<defName>VBE_MakeCocktailFine</defName>
+		<label>make fine cocktail</label>
+		<description>Make a fine cocktail, mixed precisely from multiple ingredients.</description>
+		<jobString>Making fine cocktail.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<workSkill>Cooking</workSkill>
+		<effectWorking>Cook</effectWorking>
+
+		<soundWorking>Recipe_Brewing</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+
+			<li>VBE_Bar</li>			
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>VBE_DrinksSimpleSpirits</li>
+						<li>VBE_DrinksLuxurySpirits</li>
+					</categories>
+					<thingDefs>
+						<li>Beer</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>VBE_DrinksNonAlcoholic</li>
+					</categories>
+					<thingDefs>
+						<li>Milk</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			
+		</ingredients>
+
+		<products>
+			<VBE_FineCocktail>1</VBE_FineCocktail>
+		</products>
+		<skillRequirements>
+			<Cooking>6</Cooking>
+		</skillRequirements>
+		<researchPrerequisite>VBE_MixologyResearch</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef ParentName="VBE_CookCocktailFineMealBase">
+		<defName>VBE_MakeCocktailLavish</defName>
+		<label>make lavish cocktail</label>
+		<description>Make a lavish cocktail, mixed from a wide variety of ingredients and chilled to perfection before meticulously shaken and served.</description>
+		<jobString>Making lavish cocktail.</jobString>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<workSkill>Cooking</workSkill>
+		<effectWorking>Cook</effectWorking>
+
+		<soundWorking>Recipe_Brewing</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+
+			<li>VBE_Bar</li>			
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<categories>
+						<li>VBE_DrinksSimpleSpirits</li>
+					</categories>
+					<thingDefs>
+						<li>Beer</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>VBE_DrinksLuxurySpirits</li>
+					</categories>
+					
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<categories>
+						<li>VBE_DrinksNonAlcoholic</li>
+					</categories>
+					<thingDefs>
+						<li>Milk</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			
+		</ingredients>
+
+		<products>
+			<VBE_LavishCocktail>1</VBE_LavishCocktail>
+		</products>
+		<skillRequirements>
+			<Cooking>8</Cooking>
+		</skillRequirements>
+		<researchPrerequisite>VBE_MixologyResearch</researchPrerequisite>
+	</RecipeDef>
+	
+	
+
+</Defs>

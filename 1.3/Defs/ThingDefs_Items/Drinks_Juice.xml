@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+
+
+	
+
+	<ThingDef ParentName="MealBase">
+		<defName>VBE_Juice</defName>
+		<label>juice</label>
+		<description>Juiced fruit, tart and tangy, can be made from a singular fruit or a mixed variety - Also known as a juice medley. Many drinks can be brewed or mixed using juices as base. While no more nutritious than non juiced fruit it is much easier to store and transport.</description>
+		<graphicData>
+			<texPath>Things/Items/Drinks/VBE_Juice</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		 <tradeability>Buyable</tradeability>
+		  <stackLimit>75</stackLimit>
+		<statBases>
+			<MarketValue>1.20</MarketValue>
+			<WorkToMake>400</WorkToMake>
+			<Nutrition>0.05</Nutrition>
+		</statBases>
+		<thingCategories>
+			<li>VBE_DrinksNonAlcoholic</li>
+		</thingCategories>
+		<rotatable>false</rotatable>
+		<ingestible>
+			<preferability>RawTasty</preferability>			
+			<ingestSound>Ingest_Beer</ingestSound>
+			<maxNumToIngestAtOnce>20</maxNumToIngestAtOnce>
+			
+		</ingestible>
+		
+	</ThingDef>
+
+
+	
+
+</Defs>

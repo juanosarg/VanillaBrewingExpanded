@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Plants Expanded</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+
+
+
+				<!-- Adding Fruits to Juice Recipe -->
+
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[@Name = "VBE_MixJuiceBase"]/fixedIngredientFilter/categories</xpath>
+					<value>
+
+
+						<li>VCE_Fruit</li>
+
+
+					</value>
+				</li>
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[@Name = "VBE_MixJuiceBase"]/defaultIngredientFilter/categories</xpath>
+					<value>
+
+
+						<li>VCE_Fruit</li>
+
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName = "VBE_MixJuice"]/ingredients/li/filter</xpath>
+					<value>
+
+						<categories>
+							<li>VCE_Fruit</li>
+						</categories>	
+
+					</value>
+				</li>
+
+
+				
+				
+
+				<!-- Adding Bearberries to Gin Recipe -->
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName = "VBE_MakeGinMush"]/ingredients/li/filter/thingDefs</xpath>
+					<value>
+
+
+						<li>VCE_Bearberry</li>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName = "VBE_MakeGinMush"]/fixedIngredientFilter/thingDefs</xpath>
+					<value>
+
+
+						<li>VCE_Bearberry</li>
+
+					</value>
+				</li>
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs/RecipeDef[defName = "VBE_MakeGinMush"]/defaultIngredientFilter/thingDefs</xpath>
+					<value>
+
+
+						<li>VCE_Bearberry</li>
+
+					</value>
+				</li>
+
+			
+
+
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+

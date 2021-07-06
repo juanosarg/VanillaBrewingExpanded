@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="PlantBase">
+		<defName>VBE_Plant_Coffee</defName>
+		<label>coffee plant</label>
+		<description>A low-lying bush of tropical origin, dotted by small reddish berries when fully grown. The pits of these berries are known succinctly as “coffee beans” and can be roasted to bring out a robust and bitter flavor, as well as natural caffeine. This particular genus has been selectively bred for quick maturing compared to its ancient counterpart.</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.1</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plants/VBE_CoffeePlant</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>10</pathCost>
+		<ingestible />
+		<plant>
+			<fertilityMin>1</fertilityMin>
+			<growDays>12</growDays>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>VBE_RawCoffee</harvestedThingDef>
+			<harvestYield>25</harvestYield>
+			<sowMinSkill>5</sowMinSkill>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			</sowTags>
+			<immatureGraphicPath>Things/Plants/VBE_CoffeePlant_Immature</immatureGraphicPath>
+			<topWindExposure>0.1</topWindExposure>
+			<visualSizeRange>0.3~1.0</visualSizeRange>
+			<wildOrder>2</wildOrder>
+		</plant>
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantBase">
+		<defName>VBE_Plant_Tea</defName>
+		<label>tea grass</label>
+		<description>A very leafy shrub that is particularly easy to cultivate. Since early mankind it was discovered the leaves of these plants can be boiled into a variety of earthy and soothing tea. This particular genus has been selectively bred for quick maturing compared to its ancient counterpart.</description>
+		<statBases>
+			<MaxHitPoints>85</MaxHitPoints>
+			<Nutrition>0.1</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plants/VBE_TeaGrass</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>20</pathCost>
+		<ingestible />
+		<plant>
+			<fertilityMin>1</fertilityMin>
+			<growDays>9.5</growDays>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>VBE_RawTea</harvestedThingDef>
+			<harvestYield>19</harvestYield>
+			<sowMinSkill>3</sowMinSkill>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			</sowTags>
+			<maxMeshCount>4</maxMeshCount>
+			<topWindExposure>0.1</topWindExposure>
+			<visualSizeRange>0.3~0.8</visualSizeRange>
+			<wildOrder>2</wildOrder>
+		</plant>
+	</ThingDef>
+	
+	<ThingDef ParentName="PlantBase">
+		<defName>VBE_Plant_Tobacco</defName>
+		<label>tobacco plant</label>
+		<description>A short, broad-leafed plant that thrives in warm climates. Tobacco leaves can be dried quite easily to then be rolled and smoked, providing a mild stimulating effect.</description>
+		<statBases>
+			<MaxHitPoints>65</MaxHitPoints>
+			<Nutrition>0.1</Nutrition>
+		</statBases>
+		<graphicData>
+			<texPath>Things/Plants/VBE_TobaccoPlant</texPath>
+			<graphicClass>Graphic_Random</graphicClass>
+		</graphicData>
+		<selectable>true</selectable>
+		<pathCost>10</pathCost>
+		<ingestible />
+		<plant>
+			<fertilitySensitivity>0.6</fertilitySensitivity>
+			<growDays>8.5</growDays>
+			<dieIfLeafless>true</dieIfLeafless>
+			<harvestTag>Standard</harvestTag>
+			<harvestedThingDef>VBE_RawTobacco</harvestedThingDef>
+			<harvestYield>10</harvestYield>
+			<sowMinSkill>6</sowMinSkill>
+			<sowTags>
+				<li>Ground</li>
+				<li>Hydroponic</li>
+			</sowTags>
+			<topWindExposure>0.1</topWindExposure>
+			<visualSizeRange>0.3~1.0</visualSizeRange>
+			<wildOrder>2</wildOrder>
+		</plant>
+	</ThingDef>
+
+
+
+
+
+</Defs>

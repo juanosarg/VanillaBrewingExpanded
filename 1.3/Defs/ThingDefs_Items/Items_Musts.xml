@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>VBE_SodaSyrup</defName>
+		<label>soda syrup</label>
+		<description>A thick and disgustingly sweet mixture made by boiling citric acid and natural sugars together - Usually derived straight from cane sugar or as corn syrup. Must be cut with water and left to carbonate briefly in a sealed environment before consumption.</description>
+		<graphicData>
+			<texPath>Things/Items/Musts/VBE_SodaSyrup</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<rotatable>false</rotatable>
+		<stackLimit>25</stackLimit>
+		<thingCategories>
+			<li>VBE_Musts</li>
+		</thingCategories>
+		<statBases>
+			<DeteriorationRate>1.0</DeteriorationRate>
+			<MarketValue>2.5</MarketValue>
+			<Mass>0.8</Mass>
+			<Flammability>0.2</Flammability>
+			<MaxHitPoints>60</MaxHitPoints>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>5</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+			<li Class="CompProperties_Ingredients" />
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>VBE_AmbrandyMush</defName>
+		<label>ambrosia mush</label>
+		<description>Sliced and pressed ambrosia, can be left alone to ripen into must to be further distilled into an extremely fine liquor.</description>
+		<graphicData>
+			<texPath>Things/Items/Musts/VBE_AmbrandyMush</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<rotatable>false</rotatable>
+		<stackLimit>25</stackLimit>
+		<thingCategories>
+			<li>VBE_Musts</li>
+		</thingCategories>
+		<statBases>
+			<DeteriorationRate>1.0</DeteriorationRate>
+			<MarketValue>2.5</MarketValue>
+			<Mass>0.8</Mass>
+			<Flammability>0.2</Flammability>
+			<MaxHitPoints>60</MaxHitPoints>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<comps>
+			<li Class="VanillaCookingExpanded.CompProperties_MaturingAlcohol">
+				<daysToRotStart>6</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+				<maturingString>VBE_MushRipening</maturingString>
+				<maturingProperly>VBE_MushDryingCorrectly</maturingProperly>
+				<maturingSlowly>VBE_MushCurrentlyRefrigerated</maturingSlowly>
+				<maturingStopped>VBE_MushCurrentlyFrozen</maturingStopped>
+				<thingToTransformTo>VBE_AmbrandyMust</thingToTransformTo>
+			</li>
+			<li Class="CompProperties_Ingredients" />
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="ResourceBase">
+		<defName>VBE_AmbrandyMust</defName>
+		<label>ambrandy must</label>
+		<description>Fully ripened ambrosia liquified into essentially a thick juice and left alone to grow bacteria for fermenting. Ready to be distilled into a drinkable form.</description>
+		<graphicData>
+			<texPath>Things/Items/Musts/VBE_AmbrandyMust</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<rotatable>false</rotatable>
+		<stackLimit>25</stackLimit>
+		<thingCategories>
+			<li>VBE_Musts</li>
+		</thingCategories>
+		<statBases>
+			<DeteriorationRate>1.0</DeteriorationRate>
+			<MarketValue>2.5</MarketValue>
+			<Mass>0.8</Mass>
+			<Flammability>0.2</Flammability>
+			<MaxHitPoints>60</MaxHitPoints>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>5</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+			<li Class="CompProperties_Ingredients" />
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="ResourceBase">
+		<defName>VBE_WhiskeyMash</defName>
+		<label>whiskey mash</label>
+		<description>A starchy and mostly liquid mixture with pulpy chunks strewn throughout. Ready To be aged.</description>
+		<graphicData>
+			<texPath>Things/Items/Musts/VBE_WhiskyMust</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<rotatable>false</rotatable>
+		<stackLimit>25</stackLimit>
+		<thingCategories>
+			<li>VBE_Musts</li>
+		</thingCategories>
+		<statBases>
+			<DeteriorationRate>1.0</DeteriorationRate>
+			<MarketValue>2.5</MarketValue>
+			<Mass>0.8</Mass>
+			<Flammability>0.2</Flammability>
+			<MaxHitPoints>60</MaxHitPoints>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>5</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+			<li Class="CompProperties_Ingredients" />
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>VBE_TequilaMust</defName>
+		<label>tequila must</label>
+		<description>A thin mixture of juiced agave sap or prickly cactus pear and insect meat starter, ready to be cut and fermented in a barrel.</description>
+		<graphicData>
+			<texPath>Things/Items/Musts/VBE_TequilaMust</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<rotatable>false</rotatable>
+		<stackLimit>25</stackLimit>
+		<thingCategories>
+			<li>VBE_Musts</li>
+		</thingCategories>
+		<statBases>
+			<DeteriorationRate>1.0</DeteriorationRate>
+			<MarketValue>2.5</MarketValue>
+			<Mass>0.8</Mass>
+			<Flammability>0.2</Flammability>
+			<MaxHitPoints>60</MaxHitPoints>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>5</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+			<li Class="CompProperties_Ingredients" />
+		</comps>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<defName>VBE_VodkaMash</defName>
+		<label>vodka mash</label>
+		<description>A thick, starchy mash of raw potatoes and a starter, ready to be fermented.</description>
+		<graphicData>
+			<texPath>Things/Items/Musts/VBE_VodkaMust</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<rotatable>false</rotatable>
+		<stackLimit>25</stackLimit>
+		<thingCategories>
+			<li>VBE_Musts</li>
+		</thingCategories>
+		<statBases>
+			<DeteriorationRate>1.0</DeteriorationRate>
+			<MarketValue>2.5</MarketValue>
+			<Mass>0.8</Mass>
+			<Flammability>0.2</Flammability>
+			<MaxHitPoints>60</MaxHitPoints>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>5</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+			<li Class="CompProperties_Ingredients" />
+		</comps>
+	</ThingDef>
+	
+	<ThingDef ParentName="ResourceBase">
+		<defName>VBE_GinMush</defName>
+		<label>gin mush</label>
+		<description>A clear but cloudy mixture of juiced berries and miscellaneous grain, ready to be fermented.</description>
+		<graphicData>
+			<texPath>Things/Items/Musts/VBE_GinMust</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<healthAffectsPrice>false</healthAffectsPrice>
+		<rotatable>false</rotatable>
+		<stackLimit>25</stackLimit>
+		<thingCategories>
+			<li>VBE_Musts</li>
+		</thingCategories>
+		<statBases>
+			<DeteriorationRate>1.0</DeteriorationRate>
+			<MarketValue>2.5</MarketValue>
+			<Mass>0.8</Mass>
+			<Flammability>0.2</Flammability>
+			<MaxHitPoints>60</MaxHitPoints>
+		</statBases>
+		<tickerType>Rare</tickerType>
+		<comps>
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>5</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+			<li Class="CompProperties_Ingredients" />
+		</comps>
+	</ThingDef>
+
+</Defs>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ======= Ingredient based thoughts ========= -->
+	<ThoughtDef>
+		<defName>VBE_CiderAsIngredient</defName>
+		<thoughtClass>VanillaCookingExpanded.Thought_Hediff</thoughtClass>
+		<hediff>VBE_CiderAsIngredient</hediff>
+		<durationDays>1</durationDays>
+		<stages>
+			<li>
+				<label>Drank cider-based cocktail</label>
+				<description>Yummy.</description>
+				<baseMoodEffect>0</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>

@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef>
+		<defName>VBE_MakeSodaSyrup</defName>
+		<label>make soda syrup</label>
+		<description>Make soda syrup by mixing natural fruit juice with high fructose corn syrup.</description>
+		<jobString>Making soda syrup.</jobString>
+		<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+		<workSkill>Cooking</workSkill>
+		<effectWorking>Cook</effectWorking>
+		<workAmount>1000</workAmount>
+		<soundWorking>Recipe_Brewing</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>Brewery</li>	
+			<li>VBE_Bar</li>			
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>VBE_Juice</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawCorn</li>
+					</thingDefs>
+				</filter>
+				<count>20</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>			
+			<thingDefs>
+				<li>VBE_Juice</li>
+				<li>RawCorn</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>			
+			<thingDefs>
+				<li>VBE_Juice</li>
+				<li>RawCorn</li>
+			</thingDefs>
+		</defaultIngredientFilter>
+		<products>
+			<VBE_SodaSyrup>20</VBE_SodaSyrup>
+		</products>
+		<skillRequirements>
+			<Cooking>4</Cooking>
+		</skillRequirements>
+		<researchPrerequisite>VBE_MixologyResearch</researchPrerequisite>
+	</RecipeDef>
+
+	
+
+	<RecipeDef>
+		<defName>VBE_AmbrosiaMush</defName>
+		<label>make ambrosia mush</label>
+		<description>Make sliced and pressed ambrosia, can be left alone to ripen into must to be further distilled into an extremely fine liquor.</description>
+		<jobString>Making ambrosia mush.</jobString>
+		<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+		<workSkill>Cooking</workSkill>
+		<effectWorking>Cook</effectWorking>
+		<workAmount>1000</workAmount>
+		<soundWorking>Recipe_Brewing</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>Brewery</li>	
+			<li>VBE_Bar</li>			
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Ambrosia</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+			
+		</ingredients>
+		<fixedIngredientFilter>			
+			<thingDefs>
+				<li>Ambrosia</li>
+				
+			</thingDefs>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>			
+			<thingDefs>
+				<li>Ambrosia</li>
+				
+			</thingDefs>
+		</defaultIngredientFilter>
+		<products>
+			<VBE_AmbrandyMush>1</VBE_AmbrandyMush>
+		</products>
+		
+		<researchPrerequisite>VBE_MixologyResearch</researchPrerequisite>
+	</RecipeDef>
+
+	
+
+<RecipeDef>
+		<defName>VBE_MakeTequilaMust</defName>
+		<label>make tequila must from agave</label>
+		<description>Make a thin mixture of juiced agave sap and insect meat starter, ready to be cut and fermented in a barrel.</description>
+		<jobString>Making tequila must.</jobString>
+		<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+		<workSkill>Cooking</workSkill>
+		<effectWorking>Cook</effectWorking>
+		<workAmount>1000</workAmount>
+		<soundWorking>Recipe_Brewing</soundWorking>
+		
+		<recipeUsers>
+			<li>Brewery</li>	
+			<li>VBE_Bar</li>			
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawAgave</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Meat_Megaspider</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+			
+		</ingredients>
+		<fixedIngredientFilter>			
+			<thingDefs>
+				<li>RawAgave</li>
+				<li>Meat_Megaspider</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>			
+			<thingDefs>
+				<li>RawAgave</li>
+				<li>Meat_Megaspider</li>
+			</thingDefs>
+		</defaultIngredientFilter>
+		<products>
+			<VBE_TequilaMust>5</VBE_TequilaMust>
+		</products>
+		<skillRequirements>
+			<Cooking>4</Cooking>
+		</skillRequirements>
+		<researchPrerequisite>VBE_LiquorBrewing</researchPrerequisite>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>VBE_MakeWhiskeyMash</defName>
+		<label>make whiskey mash</label>
+		<description>Make a starchy and mostly liquid mixture with pulpy chunks strewn throughout. Ready To be aged.</description>
+		<jobString>Making whiskey mash.</jobString>
+		<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+		<workSkill>Cooking</workSkill>
+		<effectWorking>Cook</effectWorking>
+		<workAmount>1000</workAmount>
+		<soundWorking>Recipe_Brewing</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>Brewery</li>	
+			<li>VBE_Bar</li>			
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawCorn</li>
+						
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+			
+		</ingredients>
+		<fixedIngredientFilter>			
+			<thingDefs>
+				<li>RawCorn</li>
+				
+			</thingDefs>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>			
+			<thingDefs>
+				<li>RawCorn</li>
+				
+			</thingDefs>
+		</defaultIngredientFilter>
+		<products>
+			<VBE_WhiskeyMash>5</VBE_WhiskeyMash>
+		</products>
+		
+		<researchPrerequisite>VBE_LiquorBrewing</researchPrerequisite>
+	</RecipeDef>
+
+	<RecipeDef>
+		<defName>VBE_MakeVodkaMash</defName>
+		<label>make vodka mash</label>
+		<description>Make a thick, starchy mash of raw potatoes and a starter, ready to be fermented.</description>
+		<jobString>Making vodka mash.</jobString>
+		<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+		<workSkill>Cooking</workSkill>
+		<effectWorking>Cook</effectWorking>
+		<workAmount>1000</workAmount>
+		<soundWorking>Recipe_Brewing</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>Brewery</li>	
+			<li>VBE_Bar</li>			
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawPotatoes</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+			
+		</ingredients>
+		<fixedIngredientFilter>			
+			<thingDefs>
+				<li>RawPotatoes</li>
+				
+			</thingDefs>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>			
+			<thingDefs>
+				<li>RawPotatoes</li>
+				
+			</thingDefs>
+		</defaultIngredientFilter>
+		<products>
+			<VBE_VodkaMash>5</VBE_VodkaMash>
+		</products>
+		
+		<researchPrerequisite>VBE_LiquorBrewing</researchPrerequisite>
+	</RecipeDef>
+	
+	<RecipeDef>
+		<defName>VBE_MakeGinMush</defName>
+		<label>make gin mush</label>
+		<description>Make a clear but cloudy mixture of juiced berries and miscellaneous grain, ready to be fermented.</description>
+		<jobString>Making gin mush.</jobString>
+		<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+		<workSkill>Cooking</workSkill>
+		<effectWorking>Cook</effectWorking>
+		<workAmount>1000</workAmount>
+		<soundWorking>Recipe_Brewing</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<recipeUsers>
+			<li>Brewery</li>	
+			<li>VBE_Bar</li>			
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>RawBerries</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+			
+		</ingredients>
+		<fixedIngredientFilter>			
+			<thingDefs>
+				<li>RawBerries</li>
+				
+			</thingDefs>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>			
+			<thingDefs>
+				<li>RawBerries</li>
+				
+			</thingDefs>
+		</defaultIngredientFilter>
+		<products>
+			<VBE_GinMush>5</VBE_GinMush>
+		</products>
+		
+		<researchPrerequisite>VBE_LiquorBrewing</researchPrerequisite>
+	</RecipeDef>
+	
+	
+
+</Defs>
