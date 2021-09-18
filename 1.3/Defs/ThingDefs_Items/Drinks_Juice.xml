@@ -30,6 +30,7 @@
 			<preferability>RawTasty</preferability>			
 			<ingestSound>Ingest_Beer</ingestSound>
 			<maxNumToIngestAtOnce>20</maxNumToIngestAtOnce>
+			<foodType>VegetableOrFruit</foodType>
 			
 		</ingestible>
 		

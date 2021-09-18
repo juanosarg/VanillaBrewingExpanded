@@ -10,7 +10,7 @@
 			<texPath>Things/Items/Raw/VBE_CoffeeBeans</texPath>
 		</graphicData>
 		<statBases>
-			<MarketValue>1.9</MarketValue>
+			<MarketValue>1.1</MarketValue>
 			<Flammability>1.3</Flammability>
 		</statBases>
 		<comps>
@@ -35,7 +35,7 @@
 			<texPath>Things/Items/Raw/VBE_TeaLeaves</texPath>
 		</graphicData>
 		<statBases>
-			<MarketValue>1.9</MarketValue>
+			<MarketValue>1.1</MarketValue>
 			<Flammability>1.3</Flammability>
 		</statBases>
 		<comps>
@@ -60,7 +60,7 @@
 			<texPath>Things/Items/Raw/VBE_TobaccoLeaves</texPath>
 		</graphicData>
 		<statBases>
-			<MarketValue>1.9</MarketValue>
+			<MarketValue>1.1</MarketValue>
 			<Flammability>1.3</Flammability>
 		</statBases>
 		<comps>

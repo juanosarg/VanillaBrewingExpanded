@@ -54,7 +54,7 @@
 			<li>
 				<restFallFactor>0.90</restFallFactor>
 				<statOffsets>
-					<ImmunityGainSpeedFactor>0.15</ImmunityGainSpeedFactor>
+					<ImmunityGainSpeed>0.15</ImmunityGainSpeed>
 
 				</statOffsets>				
 			</li>

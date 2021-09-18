@@ -14,6 +14,7 @@
 		<thingCategories>
 			<li>VBE_Musts</li>
 		</thingCategories>
+		<tradeability>None</tradeability>
 		<statBases>
 			<DeteriorationRate>1.0</DeteriorationRate>
 			<MarketValue>2.5</MarketValue>
@@ -83,7 +84,7 @@
 		<techLevel>Neolithic</techLevel>
 		<comps>
 			<li Class="CompProperties_Drug">
-				<chemical>Alcohol</chemical>
+				
 				<addictiveness>0</addictiveness>
 				<minToleranceToAddict>1</minToleranceToAddict>
 				<existingAddictionSeverityOffset>0.20</existingAddictionSeverityOffset>
