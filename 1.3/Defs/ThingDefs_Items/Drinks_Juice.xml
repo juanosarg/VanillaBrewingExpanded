@@ -31,6 +31,7 @@
 			<ingestSound>Ingest_Beer</ingestSound>
 			<maxNumToIngestAtOnce>20</maxNumToIngestAtOnce>
 			<foodType>VegetableOrFruit</foodType>
+			<optimalityOffsetFeedingAnimals>-20</optimalityOffsetFeedingAnimals>
 			
 		</ingestible>
 		
