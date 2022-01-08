@@ -42,9 +42,9 @@
 	
 	
 	<VBE_MushRipening>Mush ripening</VBE_MushRipening>
-	<VBE_MushCurrentlyFrozen>This mush is frozen and will not rippen into ambrandy must</VBE_MushCurrentlyFrozen>
-	<VBE_MushCurrentlyRefrigerated>This mush is refrigerated and will not rippen into ambrandy must as fast as it could (rippens in {0})</VBE_MushCurrentlyRefrigerated>
-	<VBE_MushDryingCorrectly>This mush is rippening into ambrandy must correctly (rippens in {0})</VBE_MushDryingCorrectly>
+	<VBE_MushCurrentlyFrozen>This mush is frozen and will not ripen into ambrandy must</VBE_MushCurrentlyFrozen>
+	<VBE_MushCurrentlyRefrigerated>This mush is refrigerated and will not ripen into ambrandy must as fast as it could (ripens in {0})</VBE_MushCurrentlyRefrigerated>
+	<VBE_MushDryingCorrectly>This mush is ripening into ambrandy must correctly (ripens in {0})</VBE_MushDryingCorrectly>
 	
 	<VBE_CiderMaturing>Cider maturing</VBE_CiderMaturing>
 	<VBE_CiderCurrentlyFrozen>This unfermented cider is frozen and will not mature into cider</VBE_CiderCurrentlyFrozen>
