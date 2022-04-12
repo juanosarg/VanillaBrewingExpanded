@@ -20,7 +20,8 @@
 	<VBE_InsertMustOrWhiskeyDesc>Mash or Whiskey to Insert</VBE_InsertMustOrWhiskeyDesc>
 	<VBE_StartInsertionMustOrWhiskey>Bring Mash or Whiskey</VBE_StartInsertionMustOrWhiskey>
 	<VBE_StartInsertionMustOrWhiskeyDesc>Bring mash to the whiskey cask to start fermentation or whiskey to start double-aging process</VBE_StartInsertionMustOrWhiskeyDesc>
-	<VBE_CancelBringingMustOrWhiskey>Cancel bringing mash or whiskey must to the whiskey cask.</VBE_CancelBringingMustOrWhiskey>
+	<VBE_CancelBringingMustOrWhiskey>Cancel Bringing Mash or Whiskey</VBE_CancelBringingMustOrWhiskey>
+	<VBE_CancelBringingMustOrWhiskeyDesc>Cancel bringing mash or whiskey must to the whiskey cask.</VBE_CancelBringingMustOrWhiskeyDesc>
 	
 	<VBE_InsertTequilaMustDesc>Must to Insert</VBE_InsertTequilaMustDesc>
 	<VBE_StartInsertionTequilaMust>Bring Must</VBE_StartInsertionTequilaMust>
