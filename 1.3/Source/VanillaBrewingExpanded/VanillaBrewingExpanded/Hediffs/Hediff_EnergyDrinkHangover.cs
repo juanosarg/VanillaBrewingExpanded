@@ -10,7 +10,7 @@ namespace VanillaBrewingExpanded
         public override void PostAdd(DamageInfo? dinfo)
         {
             base.PostAdd(dinfo);
-            this.pawn.needs.rest.CurLevel -= 0.2f;
+            this.pawn.needs.rest?.CurLevel -= 0.2f;
         }
     }
 }
